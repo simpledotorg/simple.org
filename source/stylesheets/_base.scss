@@ -30,6 +30,7 @@ a,
 a:visited {
   color: #3A4BC2;
   text-decoration: none;
+  font-weight: 200;
 }
 
 a:hover,
@@ -68,10 +69,11 @@ h1 {
 h3 {
   font-size: 14px;
   margin-bottom: 0.2em;
-  font-weight: 400;
+  font-weight: 300;
+  margin-top: 2em;
 }
 
-p {
+p, li {
   margin-top: 0;
   line-height: 1.4;
   font-weight: 100;
@@ -128,6 +130,8 @@ nav span {
 
 .languages a {
     color: #30C0B0;
+    font-weight: 700;
+    font-size: 110%;
 }
 
 .people {
