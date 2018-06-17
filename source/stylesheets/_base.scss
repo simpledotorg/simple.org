@@ -1,131 +1,134 @@
 @font-face {
-font-family: Metropolis;
-src: url(fonts/Metropolis-Thin.otf);
-font-weight: 100;
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-Thin.otf);
+    font-weight: 100;
 }
 
 @font-face {
-font-family: Metropolis;
-src: url(fonts/Metropolis-Light.otf);
-font-weight: 200;
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-Light.otf);
+    font-weight: 200;
 }
 
 @font-face {
-font-family: Metropolis;
-src: url(fonts/Metropolis-Regular.otf);
-font-weight: 300;
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-Regular.otf);
+    font-weight: 300;
 }
 
 @font-face {
-font-family: Metropolis;
-src: url(fonts/Metropolis-Medium.otf);
-font-weight: 400;
+    font-family: Metropolis;
+    src: url(fonts/Metropolis-Medium.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Noto-Hindi;
+    src: url(fonts/NotoSansDevanagari-Regular.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Noto-Hindi;
+    src: url(fonts/NotoSansDevanagari-Bold.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Noto-Punjabi;
+    src: url(fonts/NotoSansGurmukhi-Regular.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Metropolis;
+    src: url(fonts/NotoSansGurmukhi-Bold.ttf);
+    font-weight: 400;
 }
 
 body {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 a,
 a:visited {
-  color: #3A4BC2;
-  text-decoration: none;
-  font-weight: 200;
+    color: #3A4BC2;
+    text-decoration: none;
+    font-weight: 200;
 }
 
 a:hover,
 a:active {
-  text-decoration: underline;
-  color: #000;
-}
-
-.play {
-  background: url(../images/play.png) 46px 50% no-repeat;
-  background-size: 18px;
-  padding-left: 60px;
-  color: #30C0B0;
-  font-weight: 300;
-  display: inline-block;
-  padding: 10px 60px 10px 80px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  transition: border-color 1s, color 1s;
-}
-
-.play:hover {
-    border-color: #666;
+    text-decoration: underline;
+    color: #000;
 }
 
 h1 {
-  text-indent: -2000em;
-  height: 37px;
-  width: 117px;
-  background: url(../images/logo.png);
-  background-size: cover;
-  float: left;
-  margin: 0 20px 0 0;
+    text-indent: -2000em;
+    height: 37px;
+    width: 117px;
+    background: url(../images/logo.png);
+    background-size: cover;
+    float: left;
+    margin: 0 20px 0 0;
 }
 
 h3 {
-  font-size: 14px;
-  margin-bottom: 0.2em;
-  font-weight: 300;
-  margin-top: 2em;
+    font-size: 14px;
+    margin-bottom: 0.2em;
+    font-weight: 300;
+    margin-top: 2em;
 }
 
 p, li {
-  margin-top: 0;
-  line-height: 1.4;
-  font-weight: 100;
+    margin-top: 0;
+    line-height: 1.4;
+    font-weight: 100;
 }
 
 .intro {
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 1.2em;
-  padding-top: 0.5em;
-  margin-bottom: 1em;
-  clear: left;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.2em;
+    padding-top: 0.5em;
+    margin-bottom: 1em;
+    clear: left;
 }
 
 .feature {
-  height: 300px;
+    height: 300px;
 }
 
 .half {
-  position: relative;
-  left: 0;
+    position: relative;
+    left: 0;
 }
 
 .contents {
-  padding: 20px;
-}
-
-.cta {
-	margin: 2em 0 5em 0;
+    padding: 20px;
 }
 
 nav {
-  margin: 30px 0 4em 0;
-  padding-top: 20px;
+    margin: 30px 0 4em 0;
+    padding-top: 20px;
 }
 
 nav a,
 nav span {
-  display: block;
-  float: left;
-  padding: 10px 10px 0 10px;
-  height: 30px;
-  text-align: center;
-  text-decoration: none;
-  font-weight: 200;
+    display: block;
+    float: left;
+    padding: 10px 10px 0 10px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 200;
 }
 
 .languages {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #ccc;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ccc;
 }
 
 .languages a {
@@ -135,16 +138,16 @@ nav span {
 }
 
 .people {
-  column-count: 2;
-  column-gap: 40px;
+    column-count: 2;
+    column-gap: 40px;
 }
 
 .people li {
-  font-size: 14px;
-  line-height: 1.2;
-  color: #999;
-  break-inside: avoid;
-  page-break-inside: avoid;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #999;
+    break-inside: avoid;
+    page-break-inside: avoid;
 }
 
 .photo {
@@ -156,17 +159,17 @@ nav span {
 }
 
 .caption {
-   position: absolute;
-   bottom: 0;
-   padding: 7px 0 0 0;
-   text-align: center;
-   margin: 0;
-   width: 100%;
-   background: #fff;
+    position: absolute;
+    bottom: 0;
+    padding: 7px 0 0 0;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    background: #fff;
 }
 
 footer {
-  padding: 100px 0 40px 0;
+    padding: 100px 0 40px 0;
 }
 
 .small {
@@ -174,44 +177,47 @@ footer {
 }
 
 footer a {
-  padding-right: 20px;
-  color: #30C0B0;
+    padding-right: 20px;
+    color: #30C0B0;
 }
 
 /* For devices larger than 550px */
 @media (min-width: 880px) {
-  body {
-    font-size: 18px;
-  }
-  .intro {
-    font-size: 42px;
-    padding-top: 1em;
-    max-width: 13em;
-  }
-  .half {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    float: left;
-    overflow: scroll;
-    left: 50%;
-  }
-  h3 {
-    font-size: 18px;
-    letter-spacing: -0.03em;
-  }
+    body {
+        font-size: 18px;
+    }
     
-  nav {
-    padding-top: 20px;     
-  }
+    .intro {
+        font-size: 42px;
+        padding-top: 1em;
+        max-width: 13em;
+    }
     
-  nav a,
-  nav span {
-    padding: 7px 10px 0 10px;
-  }
-  
-  .contents {
-    padding: 40px;
-    max-width: 600px;
-  }
+    .half {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        float: left;
+        overflow: scroll;
+        left: 50%;
+    }
+    
+    h3 {
+        font-size: 18px;
+        letter-spacing: -0.03em;
+    }
+
+    nav {
+        padding-top: 20px;     
+    }
+
+    nav a,
+    nav span {
+        padding: 7px 10px 0 10px;
+    }
+
+    .contents {
+        padding: 40px;
+        max-width: 600px;
+    }
 }
