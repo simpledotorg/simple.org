@@ -13,6 +13,10 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+# Use relative URLs for assets (to support GitHub Pages)
+activate :relative_assets
+set :relative_links, true
+
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
