@@ -942,7 +942,6 @@ nav span {
   width: 100%;
   right: 0;
   text-align: right;
-  color: #999;
   padding: 10px 0;
   border-bottom: 1px solid #eee; }
 
@@ -954,6 +953,12 @@ nav span {
 .languages a,
 .languages span {
   padding-right: 15px; }
+
+.contents.en a.lang-en,
+.contents.pn a.lang-pn,
+.contents.hi a.lang-hi {
+  font-weight: 200;
+  color: #999; }
 
 .people {
   -webkit-column-count: 2;
