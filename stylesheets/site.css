@@ -946,9 +946,11 @@ nav span {
   border-bottom: 1px solid #eee; }
 
 .languages a {
-  color: #30C0B0;
-  font-weight: 700;
-  font-size: 110%; }
+  color: #30C0B0; }
+
+.languages a.lang-pn,
+.languages a.lang-hi {
+  font-size: 115%; }
 
 .languages a,
 .languages span {
@@ -957,7 +959,6 @@ nav span {
 .contents.en a.lang-en,
 .contents.pn a.lang-pn,
 .contents.hi a.lang-hi {
-  font-weight: 200;
   color: #999; }
 
 .people {
@@ -1038,7 +1039,9 @@ footer a {
     max-width: 13em; }
 
   .half {
-    margin-left: 50%; }
+    margin-left: 50%;
+    -webkit-box-shadow: -20px 0 30px rgba(0, 0, 0, 0.06);
+            box-shadow: -20px 0 30px rgba(0, 0, 0, 0.06); }
 
   .feature {
     position: fixed;
