@@ -867,7 +867,7 @@ there.
   src: url(fonts/Metropolis-Medium.otf);
   font-weight: 400; }
 body {
-  font-size: 14px; }
+  font-size: 16px; }
 
 a,
 a:visited {
@@ -884,15 +884,14 @@ h1 {
   text-indent: -2000em;
   height: 30px;
   width: 100px;
-  background: url(../images/logo.png);
+  background: url(../images/logo.png) no-repeat;
   background-size: cover;
-  float: left;
-  margin: 0 5px 0 0;
+  margin: 0 5px 10px 0;
   position: relative;
   top: 3px; }
 
 h3 {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0.2em;
   font-weight: 300;
   margin-top: 2em; }
@@ -903,11 +902,11 @@ p, li {
   font-weight: 100; }
 
 .intro {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 100;
   line-height: 1.2em;
   padding-top: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   clear: left; }
 
 .feature {
@@ -921,14 +920,14 @@ p, li {
   padding: 20px; }
 
 nav {
-  margin: 30px 0 4em 0;
-  padding-top: 20px; }
+  margin: 0 0 4em 0;
+  padding-top: 0px; }
 
 nav a,
 nav span {
   display: block;
   float: left;
-  padding: 10px 5px 0 5px;
+  padding: 10px 10px 0 5px;
   height: 30px;
   text-align: center;
   text-decoration: none;
@@ -936,14 +935,23 @@ nav span {
 
 .languages {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #ccc; }
+  top: -40px;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  right: 0;
+  text-align: right;
+  color: #ccc;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee; }
 
 .languages a {
   color: #30C0B0;
   font-weight: 700;
   font-size: 110%; }
+
+.languages a,
+.languages span {
+  padding-right: 15px; }
 
 .people {
   -webkit-column-count: 2;
@@ -1010,7 +1018,8 @@ footer a {
     height: 37px;
     width: 117px;
     top: 0;
-    margin-right: 20px; }
+    margin-right: 20px;
+    float: left; }
 
   .intro {
     font-size: 42px;
@@ -1030,7 +1039,7 @@ footer a {
     letter-spacing: -0.03em; }
 
   nav {
-    padding-top: 20px; }
+    padding-top: 80px; }
 
   nav a,
   nav span {
@@ -1038,4 +1047,9 @@ footer a {
 
   .contents {
     padding: 40px;
-    max-width: 600px; } }
+    max-width: 600px; }
+
+  .languages {
+    top: 10px;
+    right: 10px;
+    border: none; } }
