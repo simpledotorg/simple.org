@@ -1,6 +1,7 @@
 ---
 en:
   lang: "en"
+  simple: "Simple"
   intro: "The fast, free app for clinicians to track patients with hypertension."
   api: "API"
   googleplay: "Google Play"

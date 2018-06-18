@@ -40,14 +40,13 @@ a:active {
 }
 
 h1 {
-    text-indent: -2000em;
-    height: 30px;
-    width: 100px;
     background: url(../images/logo.png) no-repeat;
-    background-size: cover;
+    background-size: auto 30px;
     margin: 0 5px 10px 0;
     position: relative;
     top: 3px;
+    font-size: 22px;
+    padding: 3px 0 0 36px;
 }
 
 h3 {
@@ -206,9 +205,6 @@ footer a {
     }
     
     h1 {
-        height: 37px;
-        width: 117px;
-        top: 0;
         margin-right: 20px;
         float: left;
     }
@@ -243,7 +239,7 @@ footer a {
 
     nav a,
     nav span {
-        padding: 7px 10px 0 10px;
+        padding: 5px 10px 0 10px;
     }
 
     .contents {
