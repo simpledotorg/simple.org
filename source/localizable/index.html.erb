@@ -2,7 +2,7 @@
 </div>
 
 <div class="half">
-  <div class="contents">
+  <div class="contents <%= I18n.t(:lang) %>">
 
     <nav>
       <h1>Simple</h1>
@@ -12,13 +12,13 @@
     </nav>
       
       <div class="languages small">
-          <span>English</span>
-          <a href="#">ਪੰਜਾਬੀ</a>
-          <a href="#">हिंदी</a>
+          <a href="/" class="lang-en">English</a>
+          <a href="/pn/" class="lang-pn">ਪੰਜਾਬੀ</a>
+          <a href="#" class="lang-hi">हिंदी</a>
       </div>
 
       <p class="intro">
-        The fast, free app for clinicians to track patients with hypertension.
+        <%= I18n.t(:intro) %>
       </p>
 
       <h3>
