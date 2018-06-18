@@ -910,15 +910,13 @@ p, li {
   clear: left; }
 
 .feature {
-  height: 300px; }
+  height: 400px;
+  background: url(../images/screenshots.jpg) 50% 50%;
+  background-size: cover; }
 
 .half {
   position: relative;
   left: 0; }
-
-.feature {
-  background: url(../images/screenshots.jpg) 50% 50%;
-  background-size: cover; }
 
 .contents {
   padding: 20px; }
@@ -940,11 +938,11 @@ nav span {
 .languages {
   position: absolute;
   top: -40px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   width: 100%;
   right: 0;
   text-align: right;
-  color: #ccc;
+  color: #999;
   padding: 10px 0;
   border-bottom: 1px solid #eee; }
 
@@ -1003,15 +1001,19 @@ nav span {
   width: 100%;
   background: #fff; }
 
-footer {
-  padding: 100px 0 40px 0; }
-
 .small {
   font-size: 12px; }
 
+footer {
+  padding: 20px 0 40px 0;
+  margin-top: 100px;
+  line-height: 2;
+  border-top: 1px solid #eee; }
+
 footer a {
-  padding-right: 20px;
-  color: #30C0B0; }
+  padding: 5px 20px 5px 0;
+  color: #30C0B0;
+  display: inline-block; }
 
 /* For devices larger than 550px */
 @media (min-width: 880px) {
