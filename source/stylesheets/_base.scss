@@ -81,6 +81,11 @@ p, li {
     left: 0;
 }
 
+.feature {
+    background: url(/images/screenshots.jpg) 50% 50%;
+    background-size: cover;
+}
+
 .contents {
     padding: 20px;
 }
@@ -206,12 +211,15 @@ footer a {
     }
     
     .half {
-        position: absolute;
+        margin-left: 50%;
+    }
+    
+    .feature {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 50%;
         height: 100%;
-        float: left;
-        overflow: scroll;
-        left: 50%;
     }
     
     h3 {
@@ -237,5 +245,6 @@ footer a {
         top: 10px;
         right: 10px;
         border: none;
+        background: none;
     }
 }
