@@ -872,44 +872,32 @@ body {
 a,
 a:visited {
   color: #3A4BC2;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 200; }
 
 a:hover,
 a:active {
   text-decoration: underline;
   color: #000; }
 
-.play {
-  background: url(../images/play.png) 46px 50% no-repeat;
-  background-size: 18px;
-  padding-left: 60px;
-  color: #30C0B0;
-  font-weight: 300;
-  display: inline-block;
-  padding: 10px 60px 10px 80px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  -webkit-transition: border-color 1s, color 1s;
-  transition: border-color 1s, color 1s; }
-
-.play:hover {
-  border-color: #666; }
-
 h1 {
   text-indent: -2000em;
-  height: 37px;
-  width: 117px;
+  height: 30px;
+  width: 100px;
   background: url(../images/logo.png);
   background-size: cover;
   float: left;
-  margin: 0 20px 0 0; }
+  margin: 0 5px 0 0;
+  position: relative;
+  top: 3px; }
 
 h3 {
   font-size: 14px;
   margin-bottom: 0.2em;
-  font-weight: 400; }
+  font-weight: 300;
+  margin-top: 2em; }
 
-p {
+p, li {
   margin-top: 0;
   line-height: 1.4;
   font-weight: 100; }
@@ -932,9 +920,6 @@ p {
 .contents {
   padding: 20px; }
 
-.cta {
-  margin: 2em 0 5em 0; }
-
 nav {
   margin: 30px 0 4em 0;
   padding-top: 20px; }
@@ -943,7 +928,7 @@ nav a,
 nav span {
   display: block;
   float: left;
-  padding: 10px 10px 0 10px;
+  padding: 10px 5px 0 5px;
   height: 30px;
   text-align: center;
   text-decoration: none;
@@ -956,37 +941,55 @@ nav span {
   color: #ccc; }
 
 .languages a {
-  color: #30C0B0; }
+  color: #30C0B0;
+  font-weight: 700;
+  font-size: 110%; }
 
 .people {
   -webkit-column-count: 2;
           column-count: 2;
-  -webkit-column-gap: 40px;
-          column-gap: 40px; }
+  margin-left: 0;
+  padding-left: 0; }
 
 .people li {
   font-size: 14px;
   line-height: 1.2;
+  margin-left: 0;
   color: #999;
+  list-style: none;
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
-  page-break-inside: avoid; }
+  page-break-inside: avoid;
+  position: relative;
+  padding-left: 36px; }
+
+.people li:after {
+  content: ".";
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background: #eee;
+  border-radius: 100px;
+  color: transparent; }
 
 .photo {
   height: 300px;
   margin: 1em 0 3em 0;
   position: relative;
   border: 10px solid #fff;
-  border-bottom-width: 40px;
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); }
 
 .caption {
   position: absolute;
-  bottom: -26px;
+  bottom: 0;
+  padding: 7px 0 0 0;
   text-align: center;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  background: #fff; }
 
 footer {
   padding: 100px 0 40px 0; }
@@ -1002,6 +1005,12 @@ footer a {
 @media (min-width: 880px) {
   body {
     font-size: 18px; }
+
+  h1 {
+    height: 37px;
+    width: 117px;
+    top: 0;
+    margin-right: 20px; }
 
   .intro {
     font-size: 42px;
