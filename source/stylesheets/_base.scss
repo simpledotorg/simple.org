@@ -116,8 +116,11 @@ nav span {
 
 .languages a {
     color: #30C0B0;
-    font-weight: 700;
-    font-size: 110%;
+}
+
+.languages a.lang-pn,
+.languages a.lang-hi {
+    font-size: 115%;
 }
 
 .languages a,
@@ -128,7 +131,6 @@ nav span {
 .contents.en a.lang-en,
 .contents.pn a.lang-pn,
 .contents.hi a.lang-hi {
-    font-weight: 200;
     color: #999;
 }
 
