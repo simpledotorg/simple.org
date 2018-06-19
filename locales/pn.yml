@@ -1,8 +1,8 @@
 ---
-pn:
-  lang: "pn"
+zh:
+  lang: "zh"
   simple: "ਆਸਾਨ"
   intro: "ਹਾਈਪਰਟੈਨਸ਼ਨ ਵਾਲੇ ਮਰੀਜ਼ਾਂ ਨੂੰ ਟਰੈਕ ਕਰਨ ਲਈ ਡਾਕਟਰੀ ਕਰਮਚਾਰੀਆਂ ਲਈ ਤੇਜ਼, ਮੁਫ਼ਤ ਐਪ"
   api: "ਏ੦ਪੀ੦ਆਈ"
-  googleplay: "ਗੂਗਲ"
+  googleplay: "Google Play"
   github: "GitHub"
