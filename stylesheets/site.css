@@ -885,15 +885,31 @@ h1 {
   background-size: auto 30px;
   margin: 0 5px 10px 0;
   position: relative;
-  top: 3px;
+  float: left;
+  top: 6px;
   font-size: 22px;
-  padding: 3px 0 0 36px; }
+  padding: 3px 20px 0 36px; }
+
+h1 a,
+h1 a:visited {
+  color: #000; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 100;
+  margin: 3em 0 0.5em 0; }
 
 h3 {
   font-size: 16px;
   margin-bottom: 0.2em;
   font-weight: 300;
   margin-top: 2em; }
+
+h4 {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 2em 0 0.5em 0;
+  color: #999; }
 
 p, li {
   margin-top: 0;
@@ -924,14 +940,13 @@ nav {
   margin: 0 0 4em 0;
   padding-top: 0; }
 
-nav a,
+nav a.link,
 nav span {
   display: block;
   float: left;
   padding: 10px 10px 0 5px;
   height: 30px;
   text-align: center;
-  text-decoration: none;
   font-weight: 200; }
 
 .languages {
@@ -1052,7 +1067,8 @@ footer a {
 
   h1 {
     margin-right: 20px;
-    float: left; }
+    float: left;
+    top: 3px; }
 
   .intro {
     font-size: 42px;
@@ -1078,7 +1094,7 @@ footer a {
   nav {
     padding-top: 80px; }
 
-  nav a,
+  nav a.link,
   nav span {
     padding: 5px 10px 0 10px; }
 
