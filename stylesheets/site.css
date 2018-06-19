@@ -948,7 +948,8 @@ nav span {
   color: #30C0B0; }
 
 .languages a.lang-pn,
-.languages a.lang-hi {
+.languages a.lang-hi,
+.languages a.lang-zh {
   font-size: 115%; }
 
 .languages a,
@@ -957,7 +958,8 @@ nav span {
 
 .contents.en a.lang-en,
 .contents.pn a.lang-pn,
-.contents.hi a.lang-hi {
+.contents.hi a.lang-hi,
+.contents.zh a.lang-zh {
   color: #999; }
 
 .people {
