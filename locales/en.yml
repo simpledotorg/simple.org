@@ -45,11 +45,14 @@ en:
   free3: "It will never cost money."
   freeA: "This project is supported by <a href=\"https://www.resolvetosavelives.org\">Resolve to Save Lives</a>, an initiative of the not-for-profit <a href=\"https://www.vitalstrategies.org/\">Vital Strategies</a>, which enables us to provide this software completely free of cost with no strings attached."
   
+  techQ: "What is Simple built with?"
+  techA: "The Android app is written in <a href=\"https://kotlinlang.org/\">Kotlin</a>. The API is written in <a href=\"https://rubyonrails.org/\">Ruby on Rails</a>. Clinical data is <a href=\"https://www.hl7.org/fhir/\">FHIR</a> compliant. Thanks for asking, fellow geeks!"
+  
   teamQ: "Who contributes to this project?"
   teamA: "This is an open source project with contributions from clinicians, designers, developers, and technologists. Some of the early contributors include:"
   
   ossQ: "Is Simple starting an open source community?"
-  ossA: "We are looking forward to establishing an open source community that includes designers, developers, implementers, heatlhcare workers, and patients. More information will be coming through this year. In the meantime, GitHub is the center for contributions."
+  ossA: "We are looking forward to establishing an open source community that includes designers, developers, implementers, healthcare workers, and patients. More information will be coming through this year. In the meantime, GitHub is the center for contributions."
   
   thanksQ: "Thank you"
   thanksA: "This project relies on excellent advice and participation from the partners of Resolve to Save Lives, the Government of India, the Government of Punjab, and countless clinical workers, patients, and colleagues who put in the hard work every day to improve the control of hypertension around the world."
