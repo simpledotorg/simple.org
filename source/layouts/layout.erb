@@ -16,7 +16,6 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,6 +31,32 @@
 
 </head>
 <body>
-  <%= yield %>
+    <div class="feature">
+    </div>
+
+    <div class="half">
+        <div class="contents <%= I18n.t(:lang) %>">
+        <nav>
+          <h1><a href="/"><%= I18n.t(:simple) %></a></h1>
+          <a class="link" href="http://api.simple.org"><%= I18n.t(:api) %></a>
+          <a class="link" href="https://github.com/orgs/resolvetosavelives/"><%= I18n.t(:github) %></a>
+        </nav>
+
+          <div class="languages small">
+              <a href="/" class="lang-en">English</a>
+              <a href="/pn/" class="lang-pn">ਪੰਜਾਬੀ</a>
+              <a href="#" class="lang-hi">हिंदी</a>
+              <a href="/zh/">普通话</a>
+          </div>
+          
+          <%= yield %>
+    
+          <footer class="small">
+              <a href="/privacy/"><%= I18n.t(:privacy) %></a>
+              <a href="https://opensource.org/licenses/MIT"><%= I18n.t(:MIT) %></a>
+              <a href="https://www.resolvetosavelives.org/contact"><%= I18n.t(:contact) %></a>
+          </footer>
+        </div>
+    </div>
 </body>
 </html>
