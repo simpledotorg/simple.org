@@ -166,8 +166,8 @@ nav span {
 }
 
 .free p:after {
-    content: ".";
     color: rgba(0,0,0,0);
+    content: '.';
     width: 60px;
     height: 60px;
     background: #eee;
@@ -176,6 +176,21 @@ nav span {
     top: 20px;
     left: 50%;
     margin-left: -30px;
+}
+
+.free p.free-forever:after {
+    background: #eee url(/images/infinity.png) 50% 50% no-repeat;
+    background-size: 42px;
+}
+
+.free p.free-code:after {
+    background: #eee url(/images/code.png) 50% 50% no-repeat;
+    background-size: 42px;
+}
+
+.free p.free-yes:after {
+    background: #eee url(/images/yes.png) 50% 50% no-repeat;
+    background-size: 42px;
 }
 
 .people {
