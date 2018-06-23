@@ -880,6 +880,18 @@ a:active {
   text-decoration: underline;
   color: #000; }
 
+.notice {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+  padding: 15px;
+  font-size: 85%; }
+
+body.en .notice {
+  display: none; }
+
 h1 {
   background: url(../images/logo.png) no-repeat;
   background-size: auto 30px;
