@@ -949,12 +949,24 @@ p, li {
   font-weight: 300;
   display: block;
   vertical-align: middle;
-  line-height: 1.2; }
+  line-height: 1.2;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
 
 .help span {
   font-size: 115%;
   vertical-align: middle;
   padding-right: 5px;
+  text-decoration: none;
+  -webkit-transition: font-size 0.2s;
+  transition: font-size 0.2s; }
+
+.help:hover span {
+  font-size: 140%; }
+
+.help:hover {
+  background-color: rgba(243, 243, 243, 0.95);
   text-decoration: none; }
 
 .half {
