@@ -941,6 +941,22 @@ p, li {
   background: url(../images/screenshots.jpg) 50% 50%;
   background-size: cover; }
 
+.help {
+  background: rgba(243, 243, 243, 0.85);
+  text-align: center;
+  font-size: 85%;
+  padding: 10px;
+  font-weight: 300;
+  display: block;
+  vertical-align: middle;
+  line-height: 1.2; }
+
+.help span {
+  font-size: 110%;
+  vertical-align: middle;
+  padding-right: 5px;
+  text-decoration: none; }
+
 .half {
   position: relative;
   left: 0; }
