@@ -950,7 +950,8 @@ p, li {
 
 nav {
   margin: 0 0 4em 0;
-  padding-top: 0; }
+  padding-top: 0;
+  position: relative; }
 
 nav a.link,
 nav span {
