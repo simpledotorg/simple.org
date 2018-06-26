@@ -130,13 +130,14 @@ p, li {
     vertical-align: middle;
     padding-right: 5px;
     text-decoration: none;
-    -webkit-transition: font-size 0.2s;
-    -moz-transition: font-size 0.2s;
-    transition: font-size 0.2s;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    transition: transform 0.2s;
+    display: inline-block;
 }
 
 .help:hover span {
-    font-size: 140%;
+    transform: scale(1.4);
 }
 
 .help:hover {
