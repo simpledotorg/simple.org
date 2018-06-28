@@ -24,8 +24,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
+
   <meta property="og:url"                content="http://www.simple.org/" />
   <meta property="og:type"               content="article" />
   <meta property="og:title"              content="Simple.org" />
@@ -56,14 +55,14 @@
     <div class="half">
         <div class="contents <%= I18n.t(:lang) %>">
         <nav>
-            <h1><a href="/"><%= I18n.t(:simple) %></a></h1>
-            <a class="link" href="/about/"><%= I18n.t(:about) %></a>
+            <h1><a href="<%= localized_url("/") %>"><%= I18n.t(:simple) %></a></h1>
+            <a class="link" href="<%= localized_url("/about") %>"><%= I18n.t(:about) %></a>
             <a class="link" href="https://github.com/orgs/resolvetosavelives/"><%= I18n.t(:github) %></a>
         </nav>
 
           <div class="languages small">
-              <a href="/" class="lang-en">English</a>
-              <a href="/pn/" class="lang-pn">ਪੰਜਾਬੀ</a>
+              <a href="/<%= global_current_url %>" class="lang-en">English</a>
+              <a href="/pn/<%= global_current_url %>" class="lang-pn">ਪੰਜਾਬੀ</a>
               <a href="#" class="lang-hi">हिंदी</a>
           </div>
 
