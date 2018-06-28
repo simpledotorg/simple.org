@@ -39,11 +39,24 @@ set :relative_links, true
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def localized_url(url)
+    "#{locale_prefix}/#{url}".gsub(/\/+/, "/")
+  end
+
+  def locale_prefix
+    (I18n.locale == :en) ? "" : "/" + I18n.locale.to_s
+  end
+
+  def global_current_url
+    segments = current_page.url.split('/').reject { |segment| segment.empty? }
+
+    # Clear out the language prefix if present
+    segments.shift if langs.map(&:to_s).include?(segments.first)
+
+    segments.join("/")
+  end
+end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings

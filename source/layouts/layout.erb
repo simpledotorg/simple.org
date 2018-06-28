@@ -16,20 +16,19 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <!-- Use the title from a page's frontmatter if it has one -->
-  <title><%= current_page.data.title %> <%= I18n.t(:simple) %></title>
-  <meta name="description" content="<%= I18n.t(:intro) %>">
-  <meta name="author" content="<%= I18n.t(:simple) %>">
+  <title><%= current_page.data.title %> <%= t(:simple) %></title>
+  <meta name="description" content="<%= t(:intro) %>">
+  <meta name="author" content="<%= t(:simple) %>">
 
   <!-- Browser/Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    
+
   <meta property="og:url"                content="http://www.simple.org/" />
   <meta property="og:type"               content="article" />
   <meta property="og:title"              content="Simple.org" />
-  <meta property="og:description"        content="<%= I18n.t(:intro) %>" />
+  <meta property="og:description"        content="<%= t(:intro) %>" />
   <meta property="og:image"              content="https://simple.org/images/social.jpg" />
 
   <!-- FONT
@@ -48,31 +47,31 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body class="<%= I18n.t(:lang) %>">
+<body class="<%= t(:lang) %>">
     <div class="feature">
         <a href="https://medium.com/@dburka/open-source-identity-design-for-simple-4025c6d48acc" class="help"><span class="emoji">❤️</span> Help by contributing to the brand design for Simple</a>
     </div>
 
     <div class="half">
-        <div class="contents <%= I18n.t(:lang) %>">
+        <div class="contents <%= t(:lang) %>">
         <nav>
-            <h1><a href="/"><%= I18n.t(:simple) %></a></h1>
-            <a class="link" href="/about/"><%= I18n.t(:about) %></a>
-            <a class="link" href="https://github.com/orgs/resolvetosavelives/"><%= I18n.t(:github) %></a>
+            <h1><a href="<%= localized_url("/") %>"><%= t(:simple) %></a></h1>
+            <a class="link" href="<%= localized_url("/about") %>"><%= t(:about) %></a>
+            <a class="link" href="https://github.com/orgs/resolvetosavelives/"><%= t(:github) %></a>
         </nav>
 
           <div class="languages small">
-              <a href="/" class="lang-en">English</a>
-              <a href="/pn/" class="lang-pn">ਪੰਜਾਬੀ</a>
+              <a href="/<%= global_current_url %>" class="lang-en">English</a>
+              <a href="/pn/<%= global_current_url %>" class="lang-pn">ਪੰਜਾਬੀ</a>
               <a href="#" class="lang-hi">हिंदी</a>
           </div>
 
           <%= yield %>
 
           <footer class="small">
-              <a href="/privacy/"><%= I18n.t(:privacy) %></a>
-              <a href="https://opensource.org/licenses/MIT"><%= I18n.t(:MIT) %></a>
-              <a href="https://www.resolvetosavelives.org/contact"><%= I18n.t(:contact) %></a>
+              <a href="<%= localized_url("/privacy") %>"><%= t(:privacy) %></a>
+              <a href="https://opensource.org/licenses/MIT"><%= t(:MIT) %></a>
+              <a href="https://www.resolvetosavelives.org/contact"><%= t(:contact) %></a>
           </footer>
         </div>
     </div>
