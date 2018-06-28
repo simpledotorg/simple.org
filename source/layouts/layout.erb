@@ -25,6 +25,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Open Graph Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta property="og:url"                content="http://www.simple.org/" />
   <meta property="og:type"               content="article" />
   <meta property="og:title"              content="Simple.org" />
@@ -37,6 +39,17 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <%= stylesheet_link_tag "site" %>
+  <style type="text/css">
+      
+      <% if lang != :en %>
+        h3 {
+              font-weight: 900;
+              font-size: 22px;
+          }
+      <% end %>
+        
+    
+  </style>
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -63,7 +76,7 @@
           <div class="languages small">
               <a href="/<%= global_current_url %>" class="lang-en">English</a>
               <a href="/pn/<%= global_current_url %>" class="lang-pn">ਪੰਜਾਬੀ</a>
-              <a href="#" class="lang-hi">हिंदी</a>
+              <a href="/hi/<%= global_current_url %>#" class="lang-hi">हिंदी</a>
           </div>
 
           <%= yield %>
