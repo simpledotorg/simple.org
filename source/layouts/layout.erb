@@ -33,9 +33,6 @@
   <meta property="og:description"        content="<%= t(:intro) %>" />
   <meta property="og:image"              content="https://simple.org/images/social.jpg" />
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <%= stylesheet_link_tag "site" %>
@@ -50,6 +47,17 @@
         
     
   </style>
+    
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <% if lang == :hi %>
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet"> 
+    <style type="text/css">
+        body {
+            font-family: Hind, sans-serif;
+        }
+    </style>
+  <% end %>
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
