@@ -37,21 +37,21 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <%= stylesheet_link_tag "site" %>
   <style type="text/css">
-      
+
       <% if lang != :en %>
         h3 {
               font-weight: 900;
               font-size: 22px;
           }
       <% end %>
-        
-    
+
+
   </style>
-    
+
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <% if lang == :hi %>
-    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
     <style type="text/css">
         body {
             font-family: Hind, sans-serif;
@@ -78,7 +78,7 @@
         <nav>
             <h1><a href="<%= localized_url("/") %>"><%= t(:simple) %></a></h1>
             <a class="link" href="<%= localized_url("/about") %>"><%= t(:about) %></a>
-            <a class="link" href="https://github.com/orgs/simpledotorg/"><%= t(:github) %></a>
+            <a class="link" href="https://github.com/simpledotorg/"><%= t(:github) %></a>
         </nav>
 
           <div class="languages small">
