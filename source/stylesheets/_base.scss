@@ -60,7 +60,7 @@ h1 {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    top: 4px;
+    top: 8px;
     font-size: 22px;
     padding: 3px 20px 0 36px;
 }
@@ -349,14 +349,14 @@ footer a {
     }
     
     .half {
-        margin-right: 50%;
+        margin-left: 50%;
         box-shadow: 20px 0 30px rgba(0,0,0,0.06);
     }
     
     .feature {
         position: fixed;
         top: 0;
-        right: 0;
+        left: 0;
         width: 50%;
         height: 100%;
     }
