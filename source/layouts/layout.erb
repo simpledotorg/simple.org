@@ -70,7 +70,7 @@
 </head>
 <body class="<%= t(:lang) %>">
     <div class="feature">
-        <a href="https://github.com/simpledotorg/simple.org/issues/1" class="help"><span class="emoji">❤️</span> Help by contributing to the brand design for Simple</a>
+        <!-- <a href="https://github.com/simpledotorg/simple.org/issues/1" class="help"><span class="emoji">❤️</span> Help by contributing to the brand design for Simple</a> -->
     </div>
 
     <div class="half">
@@ -78,14 +78,15 @@
         <nav>
             <h1><a href="<%= localized_url("/") %>"><%= t(:simple) %></a></h1>
             <a class="link" href="<%= localized_url("/about") %>"><%= t(:about) %></a>
+            <!--a class="link" href="<%= localized_url("/features") %>"><%= t(:features) %></a-->
             <a class="link" href="https://github.com/simpledotorg/"><%= t(:github) %></a>
         </nav>
 
-          <div class="languages small">
+          <!--div class="languages small">
               <a href="/<%= global_current_url %>" class="lang-en">English</a>
               <a href="/pn/<%= global_current_url %>" class="lang-pn">ਪੰਜਾਬੀ</a>
               <a href="/hi/<%= global_current_url %>#" class="lang-hi">हिंदी</a>
-          </div>
+          </div-->
 
           <%= yield %>
 
