@@ -55,14 +55,14 @@ body.en .notice {
 
 h1 {
     background: url(../images/simple-logo.svg) no-repeat;
-    background-size: auto 30px;
-    margin: 0 5px 10px 0;
+    background-size: auto 26px;
+    margin: 0 0 10px 0;
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    top: 8px;
-    font-size: 22px;
-    padding: 3px 20px 0 36px;
+    top: 3px;
+    font-size: 24px;
+    padding: 1px 10px 0 32px;
 }
 
 h1 a,
@@ -90,6 +90,13 @@ h4 {
     color: #999;
 }
 
+h5 {
+    font-size: 16px;
+    margin: 1em 0 0.2em 0;
+    font-weight: 300;
+    color: #FF3355;
+}
+
 p, li {
     margin-top: 0;
     line-height: 1.4;
@@ -107,8 +114,8 @@ p, li {
 
 .feature {
     height: 400px;
-    background: url(/images/screenshots.jpg) 50% 50%;
-    background-size: cover;
+    background: #F0F2F5 url(/images/screenshots.png) 50% 50% no-repeat;
+    background-size: contain;
 }
 
 .help {
@@ -151,12 +158,16 @@ p, li {
     left: 0;
 }
 
+.clear {
+    clear: both;
+}
+
 .contents {
     padding: 20px;
 }
 
 nav {
-    margin: 0 0 4em 0;
+    margin: 0 0 1em 0;
     padding-top: 0;
     position: relative;
 }
@@ -164,10 +175,11 @@ nav {
 nav a.link,
 nav span {
     display: inline-block;
-    padding: 10px 10px 0 5px;
+    padding: 10px 5px 0 5px;
     height: 30px;
     text-align: center;
-    font-weight: 200;
+    font-weight: 500;
+    color: #FF3355;
 }
 
 .languages {
@@ -216,8 +228,6 @@ nav span {
     content: '.';
     width: 60px;
     height: 60px;
-    background: #eee;
-    border-radius: 100px;
     position: absolute;
     top: 20px;
     left: 50%;
@@ -225,18 +235,18 @@ nav span {
 }
 
 .free p.free-forever:after {
-    background: #eee url(/images/infinity.png) 50% 50% no-repeat;
-    background-size: 42px;
+    background: url(/images/icon-forever.png) 50% 50% no-repeat;
+    background-size: 60px;
 }
 
 .free p.free-code:after {
-    background: #eee url(/images/code.png) 50% 50% no-repeat;
-    background-size: 42px;
+    background: url(/images/icon-code.png) 50% 50% no-repeat;
+    background-size: 60px;
 }
 
 .free p.free-yes:after {
-    background: #eee url(/images/yes.png) 50% 50% no-repeat;
-    background-size: 42px;
+    background: url(/images/icon-check.png) 50% 50% no-repeat;
+    background-size: 60px;
 }
 
 .people {
@@ -328,6 +338,30 @@ footer a {
 	height: 100%;
 }
 
+.howitworks {
+    clear: both;
+    position: relative;
+}
+
+.howitworks img {
+    width: 140px;
+}
+
+.howitworks-left img {
+    float: left;
+    margin: -20px 20px 20px 0;
+}
+
+.howitworks-right img {
+    float: right;
+    margin: -20px 0 20px 20px;
+}
+
+.howitworks h5 {
+    margin-top: 2em;
+}
+
+
 /* For devices larger than 550px */
 @media (min-width: 880px) {
     body {
@@ -342,6 +376,18 @@ footer a {
         padding-left: 50px;
     }
     
+    h3 {
+        font-size: 18px;
+        letter-spacing: -0.03em;
+    }
+    
+    h5 {
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+        letter-spacing: 0.05em;
+    }
+    
     .intro {
         font-size: 42px;
         margin-top: -40px;
@@ -349,7 +395,7 @@ footer a {
     }
     
     .half {
-        margin-left: 50%;
+        margin-left: 45%;
         box-shadow: 20px 0 30px rgba(0,0,0,0.06);
     }
     
@@ -357,18 +403,13 @@ footer a {
         position: fixed;
         top: 0;
         left: 0;
-        width: 50%;
+        width: 45%;
         height: 100%;
-    }
-    
-    h3 {
-        font-size: 18px;
-        letter-spacing: -0.03em;
     }
 
     nav {
         padding-top: 80px;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
     }
 
     nav a.link,
@@ -386,5 +427,34 @@ footer a {
         right: 10px;
         border: none;
         background: none;
+    }
+    
+    .howitworks div {
+        transform: translate(0, 50%);
+        border-top: 1px solid #FF3355;
+    }
+    
+    .howitworks-left div {
+        margin: 0 40px 0 204px;
+    }
+    
+    .howitworks-right div {
+        margin: 0 202px 0 40px;
+    }
+    
+    .howitworks-left img,
+    .howitworks-right img {
+        width: 240px;    
+    }
+    
+    .howitworks-left img {
+        margin: 0 20px 0 -20px;
+    }
+
+    .howitworks-right img {
+        margin: 0 -20px 0 20px;
+    }
+    .howitworks h5 {
+        margin-top: 1em;
     }
 }
