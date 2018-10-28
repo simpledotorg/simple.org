@@ -949,11 +949,10 @@ p, li {
 
 .feature {
   height: 400px;
-  background: #F0F2F5;
-  background: #F0F2F5 url(../images/screenshots.png) 50% 50% no-repeat;
-  background-size: contain; }
+  background: #EFEFF6; }
 
-.feature video {
+.feature video,
+.feature img {
   max-height: 100%;
   max-width: 100%;
   position: absolute;
