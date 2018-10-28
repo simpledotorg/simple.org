@@ -31,11 +31,11 @@ a:visited {
     color: #0075EB;
     text-decoration: none;
     font-weight: 200;
+    transition: color 0.2s;
 }
 
 a:hover,
 a:active {
-    text-decoration: underline;
     color: #000;
 }
 
@@ -68,6 +68,10 @@ h1 {
 h1 a,
 h1 a:visited {
     color: #000;
+}
+
+h1 a:hover {
+    color: rgba(0,0,0,0.7);
 }
 
 h2 {
@@ -114,8 +118,18 @@ p, li {
 
 .feature {
     height: 400px;
+    background: #F0F2F5;
     background: #F0F2F5 url(/images/screenshots.png) 50% 50% no-repeat;
     background-size: contain;
+}
+
+.feature video {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .help {
@@ -180,6 +194,10 @@ nav span {
     text-align: center;
     font-weight: 500;
     color: #FF3355;
+}
+
+nav a.link:hover {
+    color: #000;
 }
 
 .languages {
