@@ -949,7 +949,8 @@ p, li {
 
 .feature {
   height: 400px;
-  background: #EFEFF6; }
+  background: #F0F2F5 url(../images/screenshots.png) 50% 50% no-repeat;
+  background-size: contain; }
 
 .feature video,
 .feature img {
