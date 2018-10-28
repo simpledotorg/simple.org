@@ -1182,6 +1182,14 @@ footer a {
 .howitworks h5 {
   margin-top: 2em; }
 
+.image-float {
+  float: right;
+  margin: 0 0 16px 16px;
+  border: 5px solid #fff;
+  -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+  width: 150px; }
+
 /* For devices larger than 550px */
 @media (min-width: 880px) {
   body {
@@ -1203,6 +1211,10 @@ footer a {
     text-transform: uppercase;
     margin-bottom: 1em;
     letter-spacing: 0.05em; }
+
+  .image-float {
+    margin: 0 0 30px 30px;
+    width: 250px; }
 
   .intro {
     font-size: 42px;
