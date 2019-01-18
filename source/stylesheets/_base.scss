@@ -39,6 +39,13 @@ a:active {
     color: #000;
 }
 
+a.button {
+    font-size: 12px;
+    color: #0075EB;
+    border-color: #d6dfe9;
+    min-width: 20em;
+}
+
 .notice {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
@@ -75,9 +82,7 @@ h1 a:hover {
 }
 
 h2 {
-    font-size: 36px;
-    font-weight: 100;
-    margin: 3em 0 0.5em 0;
+    margin-top: 0;
 }
 
 h3 {
@@ -107,13 +112,17 @@ p, li {
     font-weight: 100;
 }
 
-.intro {
+.intro, h2 {
     font-size: 28px;
     font-weight: 100;
     line-height: 1.2em;
     padding-top: 0.5em;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
     clear: left;
+}
+
+.intro {
+    margin-bottom: 2em;
 }
 
 .feature {
@@ -121,6 +130,10 @@ p, li {
     //background: #EFEFF6;
     background: #F0F2F5 url(/images/screenshots-mobile.png) 50% 50% no-repeat;
     background-size: contain;
+}
+
+.feature.about {
+    background: red !important;
 }
 
 .feature video,
@@ -409,7 +422,7 @@ footer a {
         letter-spacing: -0.03em;
     }
     
-    h5 {
+    h4, h5 {
         font-size: 13px;
         text-transform: uppercase;
         margin-bottom: 1em;
@@ -421,7 +434,7 @@ footer a {
         width: 250px;
     }
     
-    .intro {
+    .intro, h2 {
         font-size: 42px;
         margin-top: -40px;
         max-width: 13em;

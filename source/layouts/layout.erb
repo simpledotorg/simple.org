@@ -70,11 +70,8 @@
 </head>
 <body class="<%= t(:lang) %>">
     
-    <div class="feature">
-        <!--video autoplay muted loop id="feature-video">
-          <source src="images/screens.mp4" type="video/mp4">
-          <img src="/images/screens.png" alt="">
-        </video-->
+    <div class="feature <%= global_current_url %>">
+        
     </div>
 
     <div class="half">
@@ -82,9 +79,9 @@
         <nav>
             <h1><a href="<%= localized_url("/") %>"><%= t(:simple) %></a></h1>
             <a class="link" href="<%= localized_url("/about") %>"><%= t(:about) %></a>
+            <a class="link" href="<%= localized_url("/getinvolved") %>"><%= t(:getinvolved) %></a>
             <!--a class="link" href="<%= localized_url("/features") %>"><%= t(:features) %></a-->
-            <a class="link" href="https://github.com/simpledotorg/"><%= t(:code) %></a>
-            <a class="link" href="https://www.pivotaltracker.com/n/projects/2184102"><%= t(:tasks) %></a>
+            <a class="link" href="https://github.com/simpledotorg/"><%= t(:github) %></a>
         </nav>
 
           <!--div class="languages small">
