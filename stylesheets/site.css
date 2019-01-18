@@ -887,6 +887,9 @@ a.button {
   border-color: #d6dfe9;
   min-width: 20em; }
 
+a.button img {
+  vertical-align: middle; }
+
 .notice {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -960,7 +963,10 @@ p, li {
   background-size: contain; }
 
 .feature.about {
-  background: red !important; }
+  background-image: url(../images/screenshots-progress.png); }
+
+.feature.getinvolved {
+  background-image: url(../images/screenshots-bp.png); }
 
 .feature video,
 .feature img {
