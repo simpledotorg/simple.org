@@ -46,6 +46,10 @@ a.button {
     min-width: 20em;
 }
 
+a.button img {
+    vertical-align: middle;
+}
+
 .notice {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
@@ -133,7 +137,7 @@ p, li {
 }
 
 .feature.about {
-    background: red !important;
+    //background: red !important;
 }
 
 .feature video,
