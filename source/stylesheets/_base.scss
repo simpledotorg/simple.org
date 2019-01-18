@@ -137,7 +137,11 @@ p, li {
 }
 
 .feature.about {
-    //background: red !important;
+    background-image: url(/images/screenshots-progress.png);
+}
+
+.feature.getinvolved {
+    background-image: url(/images/screenshots-bp.png);
 }
 
 .feature video,
