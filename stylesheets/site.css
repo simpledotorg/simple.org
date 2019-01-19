@@ -962,12 +962,6 @@ p, li {
   background: #F0F2F5 url(../images/screenshots-mobile.png) 50% 50% no-repeat;
   background-size: contain; }
 
-.feature.about {
-  background-image: url(../images/screenshots-progress.png); }
-
-.feature.getinvolved {
-  background-image: url(../images/screenshots-bp.png); }
-
 .feature video,
 .feature img {
   max-height: 100%;
@@ -1249,6 +1243,12 @@ footer a {
     width: 45%;
     height: 100%;
     background-image: url(../images/screenshots.png); }
+
+  .feature.about {
+    background-image: url(../images/screenshots-progress.png); }
+
+  .feature.getinvolved {
+    background-image: url(../images/screenshots-bp.png); }
 
   nav {
     padding-top: 80px;
