@@ -1225,7 +1225,8 @@ footer a {
     font-size: 13px;
     text-transform: uppercase;
     margin-bottom: 1em;
-    letter-spacing: 0.05em; }
+    letter-spacing: 0.05em;
+    font-weight: 300; }
 
   .image-float {
     margin: 0 0 30px 30px;
