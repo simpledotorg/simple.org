@@ -1253,7 +1253,9 @@ footer span {
     left: 0;
     width: 45%;
     height: 100%;
-    background-image: url(../images/screenshots.png); }
+    background-image: url(../images/screenshots.png);
+    background-size: contain;
+    background-position: 50% 50%; }
 
   .feature.about {
     background-image: url(../images/screenshots-progress.png); }
