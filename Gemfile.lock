@@ -84,7 +84,7 @@ GEM
       activesupport (>= 3.1)
     parallel (1.12.1)
     public_suffix (3.0.2)
-    rack (2.0.5)
+    rack (2.0.6)
     rake (12.3.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
@@ -111,4 +111,4 @@ DEPENDENCIES
   wdm (~> 0.1)
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
