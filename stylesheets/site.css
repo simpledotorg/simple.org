@@ -1216,7 +1216,8 @@ a.button-play {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 0;
-  text-transform: none; }
+  text-transform: none;
+  background: #fff; }
 
 /* For devices larger than 550px */
 @media (min-width: 880px) {
