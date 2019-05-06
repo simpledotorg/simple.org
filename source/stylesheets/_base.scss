@@ -65,15 +65,16 @@ body.en .notice {
 }
 
 h1 {
-    background: url(../images/simple-logo.svg) no-repeat;
-    background-size: auto 26px;
+    background: url(../images/simple-logo.svg) 0 2px no-repeat;
+    background-size: auto 32px;
     margin: 0 0 10px 0;
     position: relative;
     display: inline-block;
     vertical-align: middle;
     top: 3px;
-    font-size: 24px;
-    padding: 1px 10px 0 32px;
+    font-size: 32px;
+    letter-spacing: 0;
+    padding: 1px 10px 0 40px;
 }
 
 h1 a,
@@ -207,6 +208,7 @@ nav span {
     height: 30px;
     text-align: center;
     font-weight: 500;
+    font-size: 110%;
     color: #FF3355;
 }
 
@@ -423,6 +425,7 @@ a.button-play {
     letter-spacing: 0;
     text-transform: none;
     background: #fff;
+    margin: 8px 0 0 0;
 }
 
 
@@ -436,6 +439,7 @@ a.button-play {
         margin-right: 20px;
         top: 3px;
         font-size: 36px;
+        background-position: 0 0;
         background-size: auto 40px;
         padding-left: 50px;
     }
@@ -500,6 +504,7 @@ a.button-play {
     nav a.link,
     nav span {
         padding: 5px 10px 0 10px;
+        font-size: 100%;
     }
     
     nav .nav-links {
