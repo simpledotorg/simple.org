@@ -1213,7 +1213,7 @@ span.download {
   padding-top: 0.5em; }
 
 a.button-play {
-  padding: 6px 40px;
+  padding: 6px 0;
   height: auto;
   font-weight: 300;
   font-size: 16px;
@@ -1248,6 +1248,9 @@ a.button-play {
 
   a.button {
     min-width: 20em; }
+
+  a.button-play {
+    padding: 6px 40px; }
 
   .image-float {
     margin: 0 0 30px 30px;
