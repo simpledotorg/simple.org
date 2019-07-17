@@ -26,6 +26,10 @@ body {
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a,
 a:visited {
     color: #0075EB;
@@ -343,7 +347,7 @@ nav .nav-links {
 
 footer {
     padding: 20px 0 40px 0;
-    margin-top: 100px;
+    margin-top: 20px;
     line-height: 2;
     border-top: 1px solid #eee;
 }
@@ -426,6 +430,13 @@ a.button-play {
     text-transform: none;
     background: #fff;
     margin: 8px 0 0 0;
+}
+
+.license {
+    font-size: 14px;
+    padding: 20px 0;
+    margin-top: 60px;
+    border-top: 1px solid #eee;
 }
 
 
