@@ -1152,8 +1152,7 @@ nav .nav-links {
 footer {
   padding: 20px 0 40px 0;
   margin-top: 20px;
-  line-height: 2;
-  border-top: 1px solid #eee; }
+  line-height: 2; }
 
 footer a {
   padding: 5px 20px 5px 0;
@@ -1227,9 +1226,15 @@ a.button-play {
 
 .license {
   font-size: 14px;
-  padding: 20px 0;
+  padding: 20px;
   margin-top: 60px;
-  border-top: 1px solid #eee; }
+  border: 1px solid #eee; }
+
+.license h3 {
+  margin-top: 0; }
+
+.license p {
+  margin: 0.5em 0 0 0; }
 
 /* For devices larger than 550px */
 @media (min-width: 880px) {
