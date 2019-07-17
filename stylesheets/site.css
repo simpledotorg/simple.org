@@ -1224,18 +1224,6 @@ a.button-play {
   background: #fff;
   margin: 8px 0 0 0; }
 
-.license {
-  font-size: 14px;
-  padding: 20px;
-  margin-top: 60px;
-  border: 1px solid #eee; }
-
-.license h3 {
-  margin-top: 0; }
-
-.license p {
-  margin: 0.5em 0 0 0; }
-
 /* For devices larger than 550px */
 @media (min-width: 880px) {
   body {
@@ -1294,6 +1282,9 @@ a.button-play {
     background-image: url(../images/screenshots-progress.png); }
 
   .feature.getinvolved {
+    background-image: url(../images/screenshots-bp.png); }
+
+  .feature.license {
     background-image: url(../images/screenshots-bp.png); }
 
   nav {
