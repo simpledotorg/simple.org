@@ -15,7 +15,7 @@ en:
   USA: "USA"
   productdesign: "Product and design"
   design: "Design"
-  research: "User studies" 
+  research: "User testing" 
   development: "Development"
   informatics: "Informatics"
   epidemiologist: "Epidemiologist"
@@ -46,16 +46,16 @@ en:
   caption1: "Members of <a href=\"http://pib.nic.in/newsite/PrintRelease.aspx?relid=173938\">IHMI</a> in India"
   
   principlesQ: "What are our principles?"
-  principlesA: "We have published a set of <a href=\"/digitalprinciples/\">Digital Principles</a>. We have one overarching goal: save lives. We also endorse the <a href=\"https://digitalprinciples.org/\">Principles for Digital Development</a>. We will embody these concepts in our work culture and in the policies and processes guiding our development activities."
+  principlesA: "We have published a set of <a href=\"/digitalprinciples/\">Digital Principles</a>. We also endorse the <a href=\"https://digitalprinciples.org/\">Principles for Digital Development</a>. We embody these concepts in our work culture and in the policies and processes guiding our development activities."
   
   freeQ: "Is Simple really free?"
   free1: "Simple is truly free to use."
   free2: "Use the code in any way."
   free3: "It will never cost money."
-  freeA: "This project is supported by <a href=\"https://www.resolvetosavelives.org\">Resolve to Save Lives</a>, an initiative of the not-for-profit <a href=\"https://www.vitalstrategies.org/\">Vital Strategies</a>, which enables us to provide this software completely free of cost with no strings attached. This project will always be open source (<a href=\"/license\">MIT license</a>) &#8212; free and open to contributions from everyone."
+  freeA: "This project is supported by <a href=\"https://www.resolvetosavelives.org\">Resolve to Save Lives</a>, which enables us to provide Simple completely free of cost with no strings attached. This project will always be open source (<a href=\"/license\">MIT license</a>) &#8212; free and open to contributions from everyone."
   
   techQ: "What is Simple built with?"
-  techA: "The Android app is written in <a href=\"https://kotlinlang.org/\">Kotlin</a>. The API is written in <a href=\"https://rubyonrails.org/\">Ruby on Rails</a>. Clinical data is <a href=\"https://www.hl7.org/fhir/\">FHIR</a> compliant. Thanks for asking, fellow geeks!"
+  techA: "The Android app is written in <a href=\"https://kotlinlang.org/\">Kotlin</a>. The API is written in <a href=\"https://rubyonrails.org/\">Ruby on Rails</a>. Clinical data is <a href=\"https://www.hl7.org/fhir/\">FHIR</a> compliant. Thanks for asking, fellow geeks! More details in our <a href=\"http://docs.simple.org\">documentation</a> and on <a href=\"https://github.com/simpledotorg/\">Github</a>."
   
   teamQ: "Who contributes to this project?"
   teamA: "This is an open source project with contributions from clinicians, designers, developers, and technologists. Some of the early contributors include:"
