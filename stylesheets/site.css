@@ -1282,14 +1282,14 @@ a.button-play {
 .mobile-screen {
   background-size: 252px auto;
   background-repeat: no-repeat;
-  background-position: 11px 24px;
+  background-position: 10px 24px;
   display: block; }
 
 .mobile-screen-overlay {
   background-image: url(../images/mobile.png);
   width: 274px;
-  height: 526px;
-  background-size: cover;
+  height: 510px;
+  background-size: 274px auto;
   display: block; }
 
 /* For devices larger than 550px */
