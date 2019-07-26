@@ -869,6 +869,25 @@ there.
 body {
   font-size: 16px; }
 
+.barebones-wrapper {
+  padding: 40px;
+  background: #eee; }
+
+.barebones-wrapper nav {
+  margin: -40px -40px 40px -40px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: bold;
+  background: #fff; }
+
+.barebones-wrapper nav a {
+  font-weight: 500;
+  color: #FF3355; }
+
+.barebones-wrapper nav h1 {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7); }
+
 html {
   scroll-behavior: smooth; }
 
@@ -1226,6 +1245,39 @@ a.button-play {
   text-transform: none;
   background: #fff;
   margin: 8px 0 0 0; }
+
+.mobile-screen-wrapper,
+.mobile-screen-wrapper:visited {
+  display: block;
+  float: left;
+  width: 274px;
+  font-size: 13px;
+  margin: 0 32px 42px 0;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.4; }
+
+.mobile-screen-wrapper strong {
+  font-weight: bold;
+  display: block;
+  padding-left: 14px; }
+
+.mobile-screen-wrapper .desc {
+  display: block;
+  min-height: 8em;
+  padding-left: 14px; }
+
+.mobile-screen {
+  background-size: 252px auto;
+  background-repeat: no-repeat;
+  background-position: 11px 24px;
+  display: block; }
+
+.mobile-screen-overlay {
+  background-image: url(../images/mobile.png);
+  width: 274px;
+  height: 526px;
+  background-size: cover;
+  display: block; }
 
 /* For devices larger than 550px */
 @media (min-width: 880px) {
