@@ -1254,7 +1254,20 @@ a.button-play {
   font-size: 13px;
   margin: 0 32px 42px 0;
   color: rgba(0, 0, 0, 0.6);
-  line-height: 1.4; }
+  line-height: 1.4;
+  position: relative; }
+
+.mobile-screen-wrapper i {
+  position: absolute;
+  top: 2px;
+  left: -4px;
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s; }
+
+.mobile-screen-wrapper:hover i {
+  opacity: 1; }
 
 .mobile-screen-wrapper strong {
   font-weight: bold;
@@ -1263,7 +1276,7 @@ a.button-play {
 
 .mobile-screen-wrapper .desc {
   display: block;
-  min-height: 8em;
+  min-height: 10em;
   padding-left: 14px; }
 
 .mobile-screen {
