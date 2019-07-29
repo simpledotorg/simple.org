@@ -5,10 +5,14 @@ title: Home
     <p class="intro">
         <%= t(:intro) %>
           
-        <span class="download"><a href="https://play.google.com/store/apps/details?id=org.simple.clinic.staging" class="button button-play"><img src="/images/googleplay.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 8px;"> Try the demo on Google Play</a></span>
-      </p>
-
-      <h3><%= t(:whatQ) %></h3>
+        <span class="download">
+            
+            <a href="https://play.google.com/store/apps/details?id=org.simple.clinic.staging" class="button button-play"><img src="/images/googleplay.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 8px;"> Install the demo</a>
+        
+            <a href="https://youtu.be/YO3D1paAuqU" class="button button-play"><img src="/images/youtube.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 8px;"> Watch a demo</a>
+            
+        </span>
+        
       <p><%= t(:whatA) %></p>
       
       <div class="howitworks howitworks-left">
@@ -68,6 +72,12 @@ title: Home
       </div>
       
       <div class="clear"></div>
+
+      <h3 id="video">Watch a "How to use Simple" video</h3>
+      <p>This video was created for healthcare workers in India who use Simple. It explains the core functions of Simple in 5 minutes.</p>
+      <div class="videowrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YO3D1paAuqU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
 
       <h3><%= t(:freeQ) %></h3>
       <p><%= t(:freeA) %></p>      
