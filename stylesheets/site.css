@@ -1292,6 +1292,20 @@ a.button-play {
   background-size: 274px auto;
   display: block; }
 
+.videowrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.videowrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 /* For devices larger than 550px */
 @media (min-width: 880px) {
   body {
@@ -1320,7 +1334,8 @@ a.button-play {
     min-width: 20em; }
 
   a.button-play {
-    padding: 6px 40px; }
+    padding: 6px 40px;
+    min-width: 2em; }
 
   .image-float {
     margin: 0 0 30px 30px;

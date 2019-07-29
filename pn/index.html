@@ -45,6 +45,20 @@
 
 
   </style>
+    
+  <!-- Fix for Flash of Unstyled Content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+  <style type="text/css">
+    .hidden {display:none;}
+  </style>
+  <script type="text/javascript" src="/scripts/jquery.js"></script>
+  <script type="text/javascript">
+    $('html').addClass('hidden');
+    $(document).ready(function() {    
+        $(window).on('load', function () {...});
+      $('html').show();  
+     });  
+   </script>
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -85,10 +99,14 @@
               <p class="intro">
         ਹਾਇਪਰਟੈਂਸ਼ਨ ਦੇ ਰੋਗੀਆਂ ਦਾ ਪਤਾ ਲਗਾਉਣ ਲਈ ਚਿਕਿਤਸਕਾਂ ਲਈ ਤੇਜ਼, ਮੁਫ਼ਤ ਐਪ।
           
-        <span class="download"><a href="https://play.google.com/store/apps/details?id=org.simple.clinic.staging" class="button button-play"><img src="../images/googleplay.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 8px;"> Try the demo on Google Play</a></span>
-      </p>
-
-      <h3>ਸਿੰਪਲ ਕੀ ਹੈ?</h3>
+        <span class="download">
+            
+            <a href="https://play.google.com/store/apps/details?id=org.simple.clinic.staging" class="button button-play"><img src="../images/googleplay.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 8px;"> Install the demo</a>
+        
+            <a href="https://youtu.be/YO3D1paAuqU" class="button button-play"><img src="../images/youtube.png" alt="" style="height: 20px; vertical-align: middle; margin-right: 8px;"> Watch a demo</a>
+            
+        </span>
+        
       <p>ਕਈ ਸਥਾਨਾਂ ‘ਤੇ, ਬੱਲਡ ਪ੍ਰੈਸ਼ਰ ਦੇ ਮਾਪ ਦੇ ਰੋਗੀ ਦੇ ਰਿਕਾਰਡ ਲੰਬੇ ਸਮੇਂ ਤੱਕ ਸੰਭਾਲ ਲਈ ਗੈਰ-ਉਪਯੋਗੀ ਹੁੰਦੇ ਹਨ। ਇੱਕ ਆਸਾਨ, ਕੇਂਦਰੀਕ੍ਰਿਤ ਟ੍ਰੈਕਿੰਗ ਸਿਸਟਮ, ਆਸਾਨ ਅਤੇ ਪ੍ਰਭਾਵੀ ਉਪਚਾਰ ਪ੍ਰੋਟੋਕਾਲ ਨਾਲ ਜੁੜੇ ਚਿਕਿਤਸਕਾਂ ਦੀ ਰੋਗੀਆਂ ਦਾ ਜੀਵਨ ਬਚਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੇਗਾ।</p>
       
       <div class="howitworks howitworks-left">
@@ -149,6 +167,12 @@
       
       <div class="clear"></div>
 
+      <h3 id="video">Watch a "How to use Simple" video</h3>
+      <p>This video was created for healthcare workers in India who use Simple. It explains the core functions of Simple in 5 minutes.</p>
+      <div class="videowrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/YO3D1paAuqU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
       <h3>ਕੀ ਸਿੰਪਲ ਸੱਚਮੁੱਚ ਮੁਫ਼ਤ ਹੈ?</h3>
       <p>ਇਸ ਪ੍ਰੋਜੈਕਟ ਦਾ ਸਮੱਰਥਨ <a href="https://www.resolvetosavelives.org">Resolve to Save Lives</a>, ਗ਼ੈਰ-ਲਾਭ ਵਾਲੀ <a href="https://www.vitalstrategies.org/">Vital Strategies</a> ਦੀ ਇੱਕ ਪਹਿਲ ਦੁਆਰਾ ਸਮੱਰਥਿਤ ਹੈ, ਜੋ ਸਾਨੂੰ ਬਿਨਾਂ ਕੋਈ ਸਟ੍ਰਿੰਗ ਨੱਥੀ ਕੀਤੇ ਮੁਫ਼ਤ ਵਿੱਚ ਇਹ ਸਾਫਟਵੇਅਰ ਦੇਣ ਦੇ ਯੋਗ ਬਣਾਉਂਦੀ ਹੈ।</p>      
       <div class="free">
@@ -156,6 +180,7 @@
         <p class="free-code">ਕਿਸੇ ਵੀ ਤਰ੍ਹਾਂ ਕੋਡ ਵਰਤੋਂ।</p>
         <p class="free-forever">ਇਸ ‘ਤੇ ਕੋਈ ਖਰਚ ਨਹੀਂ ਹੁੰਦਾ</p>
       </div>
+
           
           <div>
           </div>
