@@ -1342,9 +1342,9 @@ a.button-play {
     width: 250px; }
 
   .intro, h2 {
-    font-size: 42px;
+    font-size: 36px;
     margin-top: -40px;
-    max-width: 13em; }
+    max-width: 15em; }
 
   .half {
     margin-left: 45%;
