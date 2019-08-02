@@ -965,6 +965,19 @@ h5 {
   font-weight: 300;
   color: #FF3355; }
 
+h1 i,
+h2 i,
+h3 i,
+h4 i,
+h5 i,
+h6 i {
+  font-size: 130%;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.4);
+  margin-right: 0.3em;
+  position: relative;
+  top: -2px; }
+
 p, li {
   margin-top: 0;
   line-height: 1.4;
