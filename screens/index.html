@@ -45,6 +45,20 @@
 
 
   </style>
+    
+  <!-- Fix for Flash of Unstyled Content
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+  <style type="text/css">
+    .hidden {display:none;}
+  </style>
+  <script type="text/javascript" src="/scripts/jquery.js"></script>
+  <script type="text/javascript">
+    $('html').addClass('hidden');
+    $(document).ready(function() {    
+        $(window).on('load', function () {...});
+      $('html').show();  
+     });  
+   </script>
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -66,7 +80,9 @@
             <a href="/"><i class="fas fa-arrow-left" style="margin-right: 6px;"></i> Back to Simple.org</a>
         </nav>
         
-            <a href="../images/screens/03-Training-video.png" class="mobile-screen-wrapper">
+        <h3 style="margin-bottom: 2em;">Simple app for healthcare workers: Android</h3>
+
+    <a href="../images/screens/03-Training-video.png" class="mobile-screen-wrapper">
         <span class="title"><strong>Introduction</strong></span>
         <span class="mobile-screen" style="background-image: url(../images/screens/03-Training-video.png);"><span class="mobile-screen-overlay"></span></span>
         <span class="desc">New users are presented with an optional 5 minute training video before starting to use Simple.</span>
@@ -168,6 +184,32 @@
         <span class="title"><strong>Progress overview</strong></span>
         <span class="mobile-screen" style="background-image: url(../images/screens/10-Progress.png);"><span class="mobile-screen-overlay"></span></span>
         <span class="desc">The progress tab shows statistics for this facility, to encourage healthcare workers in their work.</span>
+        <i class="fas fa-search-plus"></i>
+    </a>
+    
+
+<br style="clear: both;">
+
+<h3 style="margin-bottom: 2em;">Simple dashboard for managers: Web-based</h3>
+
+    <a href="../images/screens/dashboard-home.png" class="dashboard-screen-wrapper">
+        <span class="title"><strong>Dashboard home</strong></span>
+        <img src="../images/screens/dashboard-home.png" alt="">
+        <span class="desc">Managers can oversee new user permissions and access all districts</span>
+        <i class="fas fa-search-plus"></i>
+    </a>
+    
+    <a href="../images/screens/dashboard-district.png" class="dashboard-screen-wrapper">
+        <span class="title"><strong>Dashboard district view</strong></span>
+        <img src="../images/screens/dashboard-district.png" alt="">
+        <span class="desc">Oversee hypertension control rates, lost-to-follow-up rates, and compare facility performance.</span>
+        <i class="fas fa-search-plus"></i>
+    </a>
+    
+    <a href="../images/screens/dashboard-facility.png" class="dashboard-screen-wrapper">
+        <span class="title"><strong>Dashboard facility view</strong></span>
+        <img src="../images/screens/dashboard-facility.png" alt="">
+        <span class="desc">See hypertension control rate performance and each healthcare worker's activity. Also view data entry log of BPs added at this facility.</span>
         <i class="fas fa-search-plus"></i>
     </a>
     
