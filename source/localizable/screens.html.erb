@@ -2,7 +2,7 @@
 layout: barebones
 title: Screenshots
 
-screens:
+app_screens:
 
     - img: 03-Training-video.png
       title: Introduction
@@ -64,12 +64,42 @@ screens:
       title: Progress overview
       caption: The progress tab shows statistics for this facility, to encourage healthcare workers in their work.
 
+dashboard_screens:
+
+    - img: dashboard-home.png
+      title: Dashboard home
+      caption: Managers can oversee new user permissions and access all districts
+
+    - img: dashboard-district.png
+      title: Dashboard district view
+      caption: Oversee hypertension control rates, lost-to-follow-up rates, and compare facility performance.
+
+    - img: dashboard-facility.png
+      title: Dashboard facility view
+      caption: See hypertension control rate performance and each healthcare worker's activity. Also view data entry log of BPs added at this facility.
+
 ---
 
-<% current_page.data.screens.each do |screen| %>
+<h3 style="margin-bottom: 2em;">Simple app for healthcare workers: Android</h3>
+
+<% current_page.data.app_screens.each do |screen| %>
     <a href="/images/screens/<%= screen.img %>" class="mobile-screen-wrapper">
         <span class="title"><strong><%= screen.title %></strong></span>
         <span class="mobile-screen" style="background-image: url(/images/screens/<%= screen.img %>);"><span class="mobile-screen-overlay"></span></span>
+        <span class="desc"><%= screen.caption %></span>
+        <i class="fas fa-search-plus"></i>
+    </a>
+    
+<% end %>
+
+<br style="clear: both;">
+
+<h3 style="margin-bottom: 2em;">Simple dashboard for managers: Web-based</h3>
+
+<% current_page.data.dashboard_screens.each do |screen| %>
+    <a href="/images/screens/<%= screen.img %>" class="dashboard-screen-wrapper">
+        <span class="title"><strong><%= screen.title %></strong></span>
+        <img src="/images/screens/<%= screen.img %>" alt="">
         <span class="desc"><%= screen.caption %></span>
         <i class="fas fa-search-plus"></i>
     </a>

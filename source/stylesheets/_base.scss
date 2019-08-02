@@ -458,7 +458,9 @@ a.button-play {
 }
 
 .mobile-screen-wrapper,
-.mobile-screen-wrapper:visited {
+.mobile-screen-wrapper:visited,
+.dashboard-screen-wrapper,
+.dashboard-screen-wrapper:visited {
     display: block;
     float: left;
     width: 274px;
@@ -469,7 +471,15 @@ a.button-play {
     position: relative;
 }
 
-.mobile-screen-wrapper i {
+.dashboard-screen-wrapper,
+.dashboard-screen-wrapper:visited,
+.dashboard-screen-wrapper img {
+    width: auto;
+    max-width: 400px;
+}
+
+.mobile-screen-wrapper i,
+.dashboard-screen-wrapper i {
     position: absolute;
     top: 2px;
     left: -4px;
@@ -478,17 +488,20 @@ a.button-play {
     transition: opacity 0.2s;
 }
 
-.mobile-screen-wrapper:hover i {
+.mobile-screen-wrapper:hover i,
+.dashboard-screen-wrapper:hover i {
     opacity: 1;
 }
 
-.mobile-screen-wrapper strong {
+.mobile-screen-wrapper strong,
+.dashboard-screen-wrapper strong {
     font-weight: bold;
     display: block;
     padding-left: 14px;
 }
 
-.mobile-screen-wrapper .desc {
+.mobile-screen-wrapper .desc,
+.dashboard-screen-wrapper .desc {
     display: block;
     min-height: 10em;
     padding-left: 14px;
