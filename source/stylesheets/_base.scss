@@ -568,6 +568,13 @@ a.button-play {
         float: none;
         font-size: 110%;
     }
+    
+    .dashboard-screen-wrapper,
+    .dashboard-screen-wrapper:visited,
+    .dashboard-screen-wrapper img {
+        width: auto;
+        max-width: 300px;
+    }
 }
 
 /* For large screens */
