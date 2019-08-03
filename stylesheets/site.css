@@ -1331,7 +1331,24 @@ a.button-play {
   width: 100%;
   height: 100%; }
 
-/* For devices larger than 550px */
+/* For small screens */
+@media (max-width: 880px) {
+  .barebones-wrapper h3 {
+    text-align: center;
+    font-size: 140%; }
+
+  .barebones-wrapper h3 i {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 200%; }
+
+  .mobile-screen-wrapper,
+  .dashboard-screen-wrapper {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+    font-size: 110%; } }
+/* For large screens */
 @media (min-width: 880px) {
   body {
     font-size: 18px; }
