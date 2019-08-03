@@ -524,7 +524,7 @@ a.button-play {
 .mobile-screen {
     background-size: 252px auto;
     background-repeat: no-repeat;
-    background-position: 10px 24px;
+    background-position: 50% 24px;
     display: block;
 }
 
@@ -567,13 +567,19 @@ a.button-play {
         margin: 0 auto;
         float: none;
         font-size: 110%;
+        width: auto;
+    }
+    
+    .mobile-screen,
+    .mobile-screen-overlay,
+    .dashboard-screen {
+        margin: 0 auto;
     }
     
     .dashboard-screen-wrapper,
     .dashboard-screen-wrapper:visited,
     .dashboard-screen-wrapper img {
-        width: auto;
-        max-width: 300px;
+        width: 100%;
     }
 }
 
