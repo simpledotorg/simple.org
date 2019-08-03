@@ -1347,7 +1347,13 @@ a.button-play {
     text-align: center;
     margin: 0 auto;
     float: none;
-    font-size: 110%; } }
+    font-size: 110%; }
+
+  .dashboard-screen-wrapper,
+  .dashboard-screen-wrapper:visited,
+  .dashboard-screen-wrapper img {
+    width: auto;
+    max-width: 300px; } }
 /* For large screens */
 @media (min-width: 880px) {
   body {
