@@ -50,9 +50,9 @@ en:
   principlesA: "We have published a set of <a href=\"/digitalprinciples/\">Digital Principles</a>. We also endorse the <a href=\"https://digitalprinciples.org/\">Principles for Digital Development</a>. We embody these concepts in our work culture and in the policies and processes guiding our development activities."
   
   freeQ: "Is Simple really free?"
-  free1: "Simple is truly free to use."
-  free2: "Use the code in any way."
-  free3: "It will never cost money."
+  free1: "Simple is truly free to use"
+  free2: "Use the code in any way"
+  free3: "It will never cost money"
   freeA: "This project is supported by <a href=\"https://www.resolvetosavelives.org\">Resolve to Save Lives</a>, which enables us to provide Simple completely free of cost with no strings attached. This project will always be open source (<a href=\"/license\">MIT license</a>) &#8212; free and open to contributions from everyone."
   
   techQ: "What is Simple built with?"
