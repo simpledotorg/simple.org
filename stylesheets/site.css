@@ -853,7 +853,7 @@ there.
 @font-face {
   font-family: Metropolis;
   src: url(fonts/Metropolis-Thin.otf);
-  font-weight: 100; }
+  font-weight: 200; }
 @font-face {
   font-family: Metropolis;
   src: url(fonts/Metropolis-Light.otf);
@@ -996,6 +996,9 @@ ul ul {
 
 .intro {
   margin-bottom: 2em; }
+
+p {
+  color: rgba(0, 0, 0, 0.7); }
 
 .feature {
   height: 400px;
@@ -1239,11 +1242,37 @@ footer span {
 
 .image-float {
   float: right;
-  margin: 0 0 16px 16px;
+  margin: 0 24px 16px 16px;
+  display: block;
+  text-align: center;
+  width: 150px;
+  z-index: 1000000;
+  position: relative; }
+
+.image-float img {
+  width: 150px;
   border: 5px solid #fff;
   -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
-  width: 150px; }
+  display: block;
+  margin: 0 0 16px 0; }
+
+p.icons {
+  position: relative;
+  padding-left: 40px; }
+
+p.icons i {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  color: #FF3355;
+  font-size: 24px;
+  width: 28px;
+  text-align: center; }
+
+p.icons strong {
+  font-weight: 400;
+  font-size: 90%; }
 
 span.download {
   display: block;
@@ -1391,7 +1420,10 @@ a.button-play {
     min-width: 2em; }
 
   .image-float {
-    margin: 0 0 30px 30px;
+    width: 250px;
+    margin: 0 0 30px 30px; }
+
+  .image-float img {
     width: 250px; }
 
   .intro, h2 {
