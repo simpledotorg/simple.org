@@ -469,7 +469,8 @@ footer span {
 
 p.icons {
     position: relative;
-    padding-left: 40px;
+    padding-left: 52px;
+    line-height: 1.2;
 }
 
 p.icons i {
@@ -477,8 +478,8 @@ p.icons i {
     top: 2px;
     left: 0;
     color: #FF3355;
-    font-size: 24px;
-    width: 28px;
+    font-size: 28px;
+    width: 32px;
     text-align: center;
 }
 
@@ -653,12 +654,12 @@ a.button-play {
     }
     
     .image-float {
-        width: 250px;
+        width: 220px;
         margin: 0 0 30px 30px;
     }
     
     .image-float img {
-        width: 250px;
+        width: 220px;
     }
     
     .intro, h2 {
