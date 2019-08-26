@@ -881,8 +881,7 @@ body {
   background: #fff; }
 
 .barebones-wrapper nav a {
-  font-weight: 500;
-  color: #FF3355; }
+  font-weight: 500; }
 
 .barebones-wrapper nav h1 {
   -webkit-transform: scale(0.7);
@@ -1070,8 +1069,7 @@ nav span {
   height: 30px;
   text-align: center;
   font-weight: 500;
-  font-size: 110%;
-  color: #FF3355; }
+  font-size: 110%; }
 
 nav a.link:hover {
   color: #000; }
