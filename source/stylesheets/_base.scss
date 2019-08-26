@@ -614,6 +614,9 @@ a.button-play {
     .dashboard-screen-wrapper img {
         width: 100%;
     }
+    .feature a {
+        display: none;
+    }
 }
 
 /* For large screens */
@@ -682,6 +685,14 @@ a.button-play {
         background-image: url(/images/screenshots.png);
         background-size: contain;
         background-position: 50% 50%;
+    }
+    
+    .feature a {
+        position: absolute;
+        bottom: 24px;
+        left: 0;
+        width: 100%;
+        text-align: center;
     }
     
     .feature.about {
