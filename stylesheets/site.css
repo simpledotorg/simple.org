@@ -1257,15 +1257,16 @@ footer span {
 
 p.icons {
   position: relative;
-  padding-left: 40px; }
+  padding-left: 52px;
+  line-height: 1.2; }
 
 p.icons i {
   position: absolute;
   top: 2px;
   left: 0;
   color: #FF3355;
-  font-size: 24px;
-  width: 28px;
+  font-size: 28px;
+  width: 32px;
   text-align: center; }
 
 p.icons strong {
@@ -1418,11 +1419,11 @@ a.button-play {
     min-width: 2em; }
 
   .image-float {
-    width: 250px;
+    width: 220px;
     margin: 0 0 30px 30px; }
 
   .image-float img {
-    width: 250px; }
+    width: 220px; }
 
   .intro, h2 {
     font-size: 36px;
