@@ -1000,7 +1000,7 @@ p {
   color: rgba(0, 0, 0, 0.7); }
 
 .feature {
-  height: 400px;
+  height: 200px;
   background: #F0F2F5 url(../images/screenshot-mobile.jpg) 50% 0 no-repeat;
   background-size: cover; }
 
@@ -1058,7 +1058,7 @@ p {
   padding: 20px; }
 
 nav {
-  margin: 0 0 1em 0;
+  margin: 0 0 2em 0;
   padding-top: 0;
   position: relative; }
 
