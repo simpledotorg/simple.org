@@ -90,21 +90,25 @@ body.en .notice {
 }
 
 h1 {
-    background: url(../images/simple-logo.svg) 0 2px no-repeat;
-    background-size: auto 32px;
-    margin: 0 0 10px 0;
+    margin: 30px 0 10px 0;
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    top: 3px;
-    font-size: 32px;
+    text-indent: -2000em;
+    top: 0;
+    font-size: 12px;
     letter-spacing: 0;
-    padding: 1px 10px 0 40px;
+    padding: 0;
 }
 
 h1 a,
 h1 a:visited {
     color: #000;
+    display: block;
+    width: 160px;
+    height: 50px;
+    background: url(../images/simple-wordmark-standard.svg) 0 2px no-repeat;
+    background-size: contain;
 }
 
 h1 a:hover {
@@ -627,11 +631,9 @@ a.button-play {
     
     h1 {
         margin-right: 20px;
-        top: 3px;
+        margin-top: 0;
+        top: 5px;
         font-size: 36px;
-        background-position: 0 0;
-        background-size: auto 40px;
-        padding-left: 50px;
     }
     
     h3 {
