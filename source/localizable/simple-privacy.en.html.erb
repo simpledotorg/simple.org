@@ -1,0 +1,75 @@
+---
+title: Privacy Policy for Patients
+---
+
+
+      <h2>
+        Privacy Policy for the Simple app for clincians
+      </h2>
+
+    <p>Patient data collected through the BP Passport app and Simple app</p>
+    <ul>
+    <li>Name</li>
+    <li>Age or Date of Birth</li>
+    <li>Phone number (if available)</li>
+    <li>Gender</li>
+    <li>Brief address (Colony / Ward / Village), District, and State</li>
+    <li>Brief medical history (in the form of yes/no questions)</li>
+    <li>BP reading(s), medication prescribed, and date of next visit</li>
+    <li>Treatment facility and time of treatment</li>
+    <li>Basic information about whether the patient has transferred to a public facility, is receiving private care, has died</li>
+    </ul>
+
+    <h3>Simple App Access</h3>
+    <p>Only users who have been approved by designated personnel get access to patient data through the app. Designated personnel can also revoke access to prevent the user from gaining access to additional data.</p>
+
+    <p>The app requires the user to enter a PIN (set by them) before they gain access to Protected Health Information. There is protection against brute force entry to the app.</p>
+
+    <p>Screenshots, automatic backups, and installations of app on SD card are disabled to prevent access to PHI.</p>
+    
+    <h3>Dashboard</h3>
+    <p>Reports on registration of patients and recording of BPs by users (nurses) across facilities is available to approved staff and approved officials on <a href="http://dashboard.simple.org/">dashboard.simple.org</a>. Reports do not contain any Protected Health Information (PHI).</p>
+
+    <h3>Report Generation</h3>
+    <p>Data from the app is visualized with the help of third-party software called Metabase (https://www.metabase.com/) that enables decision-making. Metabase is self-hosted on AWS Mumbai servers, which are approved by the Government of India (ref: http://meity.gov.in/content/gi-cloud-meghraj).</p>
+    
+    <h3>Logging and Analytics</h3>
+    
+    <p>Whenever a user accesses PHI in the app, this access is logged, and a copy of the log is sent to Mixpanel (https://mixpanel.com/). Approved staff can use this service to figure out which patients’ information was accessed by a particular user (nurse or doctor) and which users (nurses or doctors) had access to information about a particular patient.</p>
+
+    <p>Patients’ phone numbers are masked on the app, and clicks to reveal the phone number are logged.</p>
+
+    <p>Analytics on app usage (such as the number of times a certain button is clicked) is sent to Heap Analytics to help us monitor the performance of the app. These analytics do not contain any Protected Health Information.</p>
+    
+    <p>Console access is logged, encrypted, and backed up.</p>
+
+
+    <h3>Hosting and Storage of Private Health Information (PHI)</h3>
+    <p>All data is stored on AWS (Amazon Web Services) Mumbai servers, which are approved by the Government of India (ref: http://meity.gov.in/content/gi-cloud-meghraj). Only designated personnel have access to the server.</p>
+    
+    <h3>Anonymised data for testing</h3>
+    <p>So far, we have been using fake data (created by us) for testing. In the future, we plan to use anonymised data (scrambled patient records) for this purpose. No full record will be recoverable for any patient from these scrambled records. Even so, only designated personnel will have access to the anonymised data.</p>
+    
+    <h3>Designated personnel with access to PHI and anonymised data</h3>
+    <p>Access to Protected Health Information (PHI) is granted solely on a need-to-know basis, and limited to technical staff who require access to the records in order to build and maintain the application itself or data entry operators who help digitise patient records from the paper treatment cards that were a precursor to the app.</p>
+
+    <p>All designated personnel who are not part of the Resolve to Save Lives organization have signed 
+    non-disclosure agreements (either individually or through the organizations they work with). </p>
+
+    <p>List of designated personnel with access to PHI: <a href="https://tinyurl.com/simple-phi-access">List of personnel</a></p>
+
+    <h3>Security</h3>
+    <p>Data is encrypted at rest using the AES-256 algorithm and Amazon RDS handles authentication of access and decryption.</p>
+
+    <p>Data is secured in transit, via SSL by enforcing HTTPS on all communications between mobile devices and the backend.</p>
+
+    <p>The database and servers are provisioned in different VPCs (Virtual Private Clouds).</p>
+
+    <p>&nbsp;</p>
+    <h3>Also:</h3>
+    <p>&nbsp;</p>
+    <p><a href="/patient-privacy">Privacy Policy: Patients</a></p>
+    <p><a href="/simple-privacy">Privacy Policy: Simple app for clinicians</a></p>
+    <p><a href="/privacy">Privacy Policy: Vital Strategies</a></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
