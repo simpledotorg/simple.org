@@ -1285,11 +1285,11 @@ a.button-play {
   padding: 6px 0;
   height: auto;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0;
   text-transform: none;
   background: #fff;
-  margin: 8px 0 0 0; }
+  margin: 8px 0 8px 0; }
 
 .mobile-screen-wrapper,
 .mobile-screen-wrapper:visited,
@@ -1365,6 +1365,29 @@ a.button-play {
 
 /* For small screens */
 @media (max-width: 880px) {
+  h3, h5 {
+    font-size: 20px; }
+
+  p {
+    font-size: 20px; }
+
+  footer {
+    border-top: 1px solid #ddd;
+    margin-top: 100px; }
+
+  footer a,
+  footer span {
+    font-size: 16px; }
+
+  a.button-play {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    a.button-play img {
+      width: 32px;
+      height: 32px;
+      margin-right: 14px; }
+
   .barebones-wrapper h3 {
     text-align: center;
     font-size: 140%; }
@@ -1396,6 +1419,9 @@ a.button-play {
     display: none; } }
 /* For large screens */
 @media (min-width: 880px) {
+  .mobile {
+    display: none; }
+
   body {
     font-size: 18px; }
 
@@ -1422,6 +1448,11 @@ a.button-play {
   a.button-play {
     padding: 6px 40px;
     min-width: 2em; }
+    a.button-play img {
+      height: 20px;
+      width: 20px;
+      vertical-align: middle;
+      margin-right: 8px; }
 
   .image-float {
     width: 220px;
