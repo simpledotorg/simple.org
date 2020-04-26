@@ -1415,6 +1415,10 @@ a.button-play {
   .dashboard-screen-wrapper img {
     width: 100%; }
 
+  .feature {
+    height: 20px;
+    background: #0A2E52; }
+
   .feature a {
     display: none; } }
 /* For large screens */
