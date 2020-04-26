@@ -1190,7 +1190,7 @@ nav .nav-links {
   font-size: 12px; }
 
 footer {
-  padding: 20px 0 40px 0;
+  padding: 100px 0 40px 0;
   margin-top: 20px;
   line-height: 2; }
 
@@ -1465,6 +1465,9 @@ a.button-play {
 
   .feature.license {
     background-image: url(../images/screenshots-bp.png); }
+
+  .feature.bp-passport {
+    background-image: url(../images/screenshots-bp-passport.png); }
 
   nav {
     padding-top: 80px;
