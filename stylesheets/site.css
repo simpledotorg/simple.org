@@ -1003,11 +1003,6 @@ ul ul {
 p {
   color: rgba(0, 0, 0, 0.7); }
 
-.feature {
-  height: 200px;
-  background: #F0F2F5 url(../images/screenshot-mobile.jpg) 50% 0 no-repeat;
-  background-size: cover; }
-
 .feature video,
 .feature img {
   max-height: 100%;
@@ -1476,6 +1471,7 @@ a.button-play {
             box-shadow: 20px 0 30px rgba(0, 0, 0, 0.06); }
 
   .feature {
+    background: #F0F2F5 url(../images/screenshot-mobile.jpg) 50% 0 no-repeat;
     position: fixed;
     top: 0;
     left: 0;
