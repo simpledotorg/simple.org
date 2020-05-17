@@ -852,14 +852,6 @@ there.
 /* Larger than Desktop HD */
 @font-face {
   font-family: Metropolis;
-  src: url(fonts/Metropolis-Thin.otf);
-  font-weight: 200; }
-@font-face {
-  font-family: Metropolis;
-  src: url(fonts/Metropolis-Light.otf);
-  font-weight: 200; }
-@font-face {
-  font-family: Metropolis;
   src: url(fonts/Metropolis-Regular.otf);
   font-weight: 300; }
 @font-face {
@@ -951,7 +943,7 @@ h2 {
 
 h3 {
   font-size: 16px;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.3em;
   font-weight: 500;
   margin-top: 2em;
   letter-spacing: 0; }
@@ -1141,9 +1133,6 @@ nav .nav-links {
   margin-left: 0;
   padding-left: 0; }
 
-.people span {
-  font-weight: 200; }
-
 .people li {
   font-size: 14px;
   line-height: 1.4;
@@ -1182,7 +1171,7 @@ nav .nav-links {
   background: #fff; }
 
 .small {
-  font-size: 12px; }
+  font-size: 14px; }
 
 footer {
   padding: 100px 0 40px 0;
@@ -1285,6 +1274,10 @@ a.button-play {
   text-transform: none;
   background: #fff;
   margin: 8px 0 8px 0; }
+  a.button-play.button-appstore {
+    background: #000;
+    color: #fff;
+    border-color: #000; }
 
 .mobile-screen-wrapper,
 .mobile-screen-wrapper:visited,
@@ -1375,7 +1368,7 @@ a.button-play {
     font-size: 16px; }
 
   a.button-play {
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px; }
     a.button-play img {
@@ -1439,7 +1432,7 @@ a.button-play {
     text-transform: uppercase;
     margin-bottom: 1em;
     letter-spacing: 0.05em;
-    font-weight: 300; }
+    font-weight: 500; }
 
   a.button {
     min-width: 20em; }
