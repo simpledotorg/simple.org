@@ -3,7 +3,7 @@ en:
   
   lang: "en"
   simple: "Simple"
-  intro: "The fast, free app for clinicians to manage their patients with high blood pressure."
+  intro: "Fast, free software for clinicians to manage patients with hypertension."
   api: "API"
   blog: "Blog"
   documentation: "Docs"
@@ -50,10 +50,10 @@ en:
   principlesA: "We have published a set of <a href=\"/digitalprinciples/\">Digital Principles</a>. We also endorse the <a href=\"https://digitalprinciples.org/\">Principles for Digital Development</a>. We embody these concepts in our work culture and in the policies and processes guiding our development activities."
   
   freeQ: "Is Simple really free?"
-  free1: "Simple is truly free to use"
+  free1: "Truly free to use"
   free2: "Use the code in any way"
-  free3: "It will never cost money"
-  freeA: "This project is supported by <a href=\"https://www.resolvetosavelives.org\">Resolve to Save Lives</a>, which enables us to provide Simple completely free of cost with no strings attached. This project will always be open source (<a href=\"/license\">see our license</a>) &#8212; free and open to contributions from everyone."
+  free3: "Free forever"
+  freeA: "This project is supported by <a href=\"https://www.resolvetosavelives.org\">Resolve to Save Lives</a>, which enables us to provide Simple completely free of cost with no strings attached. This project will always be <a href=\"/license\">open source</a> &#8212; free and open to contributions from everyone."
   
   techQ: "What is Simple built with?"
   techA: "The Android app is written in <a href=\"https://kotlinlang.org/\">Kotlin</a>. The API is written in <a href=\"https://rubyonrails.org/\">Ruby on Rails</a>. Clinical data is <a href=\"https://www.hl7.org/fhir/\">FHIR</a> compliant. Thanks for asking, fellow geeks! More details in our <a href=\"http://docs.simple.org\">documentation</a> and on <a href=\"https://github.com/simpledotorg/\">Github</a>."
