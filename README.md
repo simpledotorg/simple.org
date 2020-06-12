@@ -16,3 +16,7 @@ $ middleman server
 ```
 
 Now you should be able to go to http://localhost:4567 and see the site running locally.
+
+## Deployment
+
+After merging your commits to `master` and pulling the latest, run `rake publish`.
