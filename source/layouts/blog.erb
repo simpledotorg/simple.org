@@ -73,23 +73,25 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
   </head>
   <body class="<%= t(:lang) %> body-blog">
-    <nav>
-      <h1><a href="<%= localized_url("/") %>">Simple</a></h1>
-      <span class="nav-links">
-        <a class="link" href="<%= localized_url("/about/") %>"><%= t(:about) %></a>
-        <a class="link" href="<%= localized_url("/blog/") %>"><%= t(:blog) %></a>
-        <a class="link" href="https://docs.simple.org"><%= t(:documentation) %></a>
-        <a class="link" href="https://github.com/simpledotorg/"><%= t(:github) %></a>
-      </span>
-    </nav>
-    <%= yield %>
-    <footer class="small">
-      <a href="<%= localized_url("/screens/") %>">Screenshots</a>
-      <a href="<%= localized_url("/privacy/") %>"><%= t(:privacy) %></a>
-      <a href="<%= localized_url("/license/") %>">Open source license</a>
-      <a href="<%= localized_url("/digitalprinciples/") %>">Digital principles</a>
-      <a href="<%= localized_url("/contact/") %>"><%= t(:contact) %></a>
-      <span>* Note: All patients in screenshots are fake</span>
-    </footer>
+    <div class="contents">
+      <nav>
+        <h1><a href="<%= localized_url("/") %>">Simple</a></h1>
+        <span class="nav-links">
+          <a class="link" href="<%= localized_url("/about/") %>"><%= t(:about) %></a>
+          <a class="link" href="<%= localized_url("/blog/") %>"><%= t(:blog) %></a>
+          <a class="link" href="https://docs.simple.org"><%= t(:documentation) %></a>
+          <a class="link" href="https://github.com/simpledotorg/"><%= t(:github) %></a>
+        </span>
+      </nav>
+      <%= yield %>
+      <footer class="small">
+        <a href="<%= localized_url("/screens/") %>">Screenshots</a>
+        <a href="<%= localized_url("/privacy/") %>"><%= t(:privacy) %></a>
+        <a href="<%= localized_url("/license/") %>">Open source license</a>
+        <a href="<%= localized_url("/digitalprinciples/") %>">Digital principles</a>
+        <a href="<%= localized_url("/contact/") %>"><%= t(:contact) %></a>
+        <span>* Note: All patients in screenshots are fake</span>
+      </footer>
+    </div>
   </body>
 </html>
