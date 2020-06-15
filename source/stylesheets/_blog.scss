@@ -134,13 +134,7 @@ $color-text--faded: rgba(0, 0, 0, 0.55);
 	@media (min-width: 880px) {
 		.contents {
 			max-width: 100%;
-			padding: 0 20px;
-		}
-
-		.half {
 			padding: 60px;
-			max-width: 100%;
-			// margin: 0 auto;
 		}
 
 		h1 {
