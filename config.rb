@@ -22,7 +22,7 @@ activate :relative_assets
 set :relative_links, true
 
 # With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
+page '/blog/*', layout: 'blog'
 
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
@@ -65,3 +65,9 @@ end
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+# Blog
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.layout = "blog"
+end
