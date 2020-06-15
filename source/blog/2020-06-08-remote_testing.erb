@@ -1,0 +1,36 @@
+---
+title: Remote user testing during lockdown
+date: 2020/06/08
+reading_time: 3 
+summary: Simple is now deployed at hospitals in northern Bangladesh as well as in over 500 hospitals in India
+author: Pragati Mehrotra
+author_social_link: https://twitter.com/Pragti_  
+author_details: Design, India
+---
+
+<div class="article-cover">
+  <img src="" alt="" />
+<div>
+<div class="article-header">
+  <div class="article-header__details">
+    <h4><%= current_page.date.strftime('%d %B %Y') %></h4>
+    <h4><%= current_page.data.reading_time %> min read</h4>
+  </div>
+  <h1 class="intro">
+    <%= current_page.data.title %>
+  </h1>
+  <p class="brief global">
+    <%= current_page.data.summary %>
+  </p>
+  <div class="person--blog">
+    <img />
+    <div class="person__details">
+      <h3>
+        <a href="<%= current_page.data.author_social_link %>" target="_blank">
+          <%= current_page.data.author %>
+        </a>
+      </h3>
+      <h5><%= current_page.data.author_details %></h5>
+    </div>
+  </div>
+</div>
