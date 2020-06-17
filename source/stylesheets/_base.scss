@@ -180,7 +180,7 @@ p {
     max-width: 100%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0;
     transform: translate(-50%, -50%);
 }
 
@@ -731,15 +731,15 @@ a.button-play {
     }
     
     .half {
-        margin-left: 45%;
-        box-shadow: 20px 0 30px rgba(0,0,0,0.06);
+        margin-right: 45%;
+        //box-shadow: 20px 0 30px rgba(0,0,0,0.06);
     }
     
     .feature {
         background: #F0F2F5 url(/images/screenshot-mobile.jpg) 50% 0 no-repeat;
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         width: 45%;
         height: 100%;
         background-image: url(/images/screenshots.png);
@@ -750,7 +750,7 @@ a.button-play {
     .feature a {
         position: absolute;
         bottom: 24px;
-        left: 0;
+        right: 0;
         width: 100%;
         text-align: center;
     }
@@ -789,6 +789,7 @@ a.button-play {
     .contents {
         padding: 40px;
         max-width: 600px;
+        margin: 0 auto;
     }
     
     .languages {
