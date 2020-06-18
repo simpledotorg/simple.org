@@ -1,0 +1,38 @@
+---
+title: Blog
+social: social.jpg
+---
+
+<div>
+  <p class="intro">
+    The fast, free app for clinicians to manage their patients with high blood pressure.
+  </p>
+  <div class="articles--large">
+    <% blog.articles[0...2].each do |article| %>
+      <div class="article-preview">
+        <a href="article.html" class="article-preview--cover">
+          <img
+            class="article-preview--cover--image"
+            src="images/blog/article-preview.png"
+            alt="Article Preview"
+          />
+        </a>
+        <div class="article-preview--details">
+          <h4><%= article.date.strftime('%b %e %Y') %><h4>
+          <h4><%= article.data.reading_time %> minutes</h4>
+        </div>
+        <a href="#">
+          <h2><%= article.title %></h2>
+        </a>
+        <p class="global"><%= article.data.intro %></p>
+        <div class="person--blog">
+          <img src="images/people/daniel-burka.jpg" alt="<%= article.data.author %>" class="person--photo" />
+          <div class="person--details">
+            <h3><a href="<%= article.data.author_social_link %>" target="_blank"><%= article.data.author %></a></h3>
+            <h5><%= article.data.author_details %></h5>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
