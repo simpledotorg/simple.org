@@ -2,29 +2,28 @@
 title: Remote user testing during lockdown
 date: 2020/06/08
 reading_time: 3 
+cover_image_path: /images/blog/remote-user-testing-during-lockdown/cover.png
 intro: Simple is now deployed at hospitals in northern Bangladesh as well as in over 500 hospitals in India
 author: Pragati Mehrotra
+author_image_path: /images/blog/authors/pragati_mehrotra.jpg
 author_social_link: https://twitter.com/Pragti_  
 author_details: Design, India
 ---
 
-<div class="article-cover">
-  <img src="" alt="" />
-<div>
 <div class="article-header">
-  <div class="article-header__details">
+  <div class="article-header--details">
     <h4><%= current_page.date.strftime('%d %B %Y') %></h4>
     <h4><%= current_page.data.reading_time %> min read</h4>
   </div>
-  <h1 class="intro">
-    <%= current_page.data.title %>
-  </h1>
-  <p class="brief global">
-    <%= current_page.data.intro %>
-  </p>
+  <h1 class="intro"><%= current_page.data.title %></h1>
+  <p class="brief global"><%= current_page.data.intro %></p>
   <div class="person--blog">
-    <img />
-    <div class="person__details">
+    <img
+      class="person--photo"
+      src="<%= current_page.data.author_image_path %>"
+      alt="<%= current_page.data.author %>"
+    />
+    <div class="person--details">
       <h3>
         <a href="<%= current_page.data.author_social_link %>" target="_blank">
           <%= current_page.data.author %>
@@ -33,4 +32,83 @@ author_details: Design, India
       <h5><%= current_page.data.author_details %></h5>
     </div>
   </div>
+</div>
+<div class="article-content">
+  <section>
+    <p>
+      As the COVID-19 pandemic sweeps across India and the world, our Simple team is working remotely during the lockdown. Restrictions on travel mean we cannot visit healthcare facilities, co-create with our users, or gain first-person insights to improve our software.  
+    </p>
+    <p>
+      But we did not drop the ball on our user-driven design philosophy. Our team experimented with tools and methods and adapted to the current situation.
+    </p>
+    <p>
+      We learned a lot from <span>four</span> remote studies conducted in the last <span>five weeks</span>.
+    </p>
+  </section>
+    <div class="image--full">
+      <img src="<%= current_page.data.cover_image_path %>" alt="Remote user testing illustration"/>
+    </div>
+  <section>
+    <h3>
+      Observation over the phone
+    </h3>
+    <p>
+      Our users don’t own laptops and screen sharing from a smartphone is too burdensome for user tests. Also most staff nurses don’t have fast wifi at home, so an hour-long video call is too onerous and we want to respect the cost of their cell data. So we employ the simplest method: a phone call.
+    </p>
+    <p>
+      We script our conversations to make the most out of a telephone call. And, we create simpler prototypes (less than 6–7 screens) so that we can easily follow along as they share their feedback while talking to us on speakerphone.
+    </p> 
+    <h3>
+      Empathy is more important than ever
+    </h3>
+    <p>
+      It’s not easy being interviewed by a stranger that you cannot see. It can be uncomfortable to be recorded too. We start each interview by asking basic warm-up questions like, “How are they doing?” or “How is work?”, which helps establish trust and makes participants more confident to express their opinions.
+    </p>
+    <h3>
+      We let silence happen
+    </h3>
+    <p>
+      It’s tempting to jump in and help out the user when they are not saying anything, but we let them take their time to formulate a response. We constantly try to read between their pauses and anticipate confusion without being able to see them.
+    </p>
+    <h3>
+      We let silence happen
+    </h3>
+    <p>
+      It’s tempting to jump in and help out the user when they are not saying anything, but we let them take their time to formulate a response. We constantly try to read between their pauses and anticipate confusion without being able to see them.
+    </p>
+    <h3>
+      Cloud-based prototypes
+    </h3>
+    <p>
+      In normal interviews, we might use app-based prototypes like Marvel or Protopie. But, for ease-of-use during a phone interview, our design prototypes have to open in a browser because asking them to download another mobile app to view our designs was a big point of friction. We have found Figma prototypes to be really effective.
+    </p>
+    <h3>
+      Prepare for technical glitches
+    </h3>
+    <p>
+      Even though we try to keep it basic, technical glitches are inevitable when loading cloud-based prototypes on smartphones in rural India. We were prepared for glitchy prototypes and, when prototypes didn’t load well, we sent participants pictures over WhatsApp and asked for feedback.
+    </p>
+  </section>
+  <section>
+    <h2>
+      Conclusion
+    </h2>
+    <p>
+      Remote user studies may not be as good as in-person conversations but they have advantages. For example:
+    </p>
+    <ol>
+      <li>
+        Since users were not at work, we could have their undivided attention for an hour.
+      </li>
+      <li>
+        More than 2 of us can listen to the participant’s responses over a conference call, without making the participants feel self-conscious.
+      </li>
+      <li>
+        Without travel time to remote locations, we can conduct studies more frequently.
+      </li>
+    </ol>
+    <p>
+      Remote research does not replace face-to-face conversation. We are eagerly looking forward to the day when we can visit healthcare facilities again and broaden our knowledge of our users and their context. Until then, we continue to explore ways to include them in our design process from the comfort of our homes.
+    </p>
+  </section>
 </div>

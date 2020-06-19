@@ -152,18 +152,6 @@ $color-text--faded: rgba(0, 0, 0, 0.55);
 			letter-spacing: -0.03em;
 		}
 
-		.article-cover,
-		.article-content,
-		.article-preview,
-		.article-end {
-			h4 {
-			}
-
-			h5 {
-				// font-size: 12px;
-			}
-		}
-
 		section p,
 		li {
 			font-size: 19px;
@@ -347,12 +335,6 @@ $color-text--faded: rgba(0, 0, 0, 0.55);
 		margin: 12px 0 0 0;
 		text-align: center;
 		line-height: 142%;
-	}
-
-	@media (min-width: 880px) {
-		img {
-			margin: 0 0 0 -80px;
-		}
 	}
 }
 
@@ -608,5 +590,16 @@ $color-text--faded: rgba(0, 0, 0, 0.55);
 				margin: 0 0 14px 0;
 			}
 		}
+	}
+}
+
+.image--full {
+	max-width: 1192px;
+	margin-right: auto;
+	margin-bottom: 64px;
+	margin-left: auto;
+
+	img {
+		max-width: 100%;
 	}
 }
