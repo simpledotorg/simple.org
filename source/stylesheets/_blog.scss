@@ -588,11 +588,12 @@ $color-text--faded: rgba(0, 0, 0, 0.55);
 }
 
 .image--cover { max-width: 100%; }
-.image--full {
+.image--wide {
 	max-width: 1192px;
 	margin-right: auto;
 	margin-bottom: 64px;
 	margin-left: auto;
 	text-align: center;
 }
+.image--full { max-width: 688px; }
 img { max-width: 100%; }
