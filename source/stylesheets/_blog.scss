@@ -323,12 +323,6 @@ $color-text--faded: rgba(0, 0, 0, 0.55);
 .article-cover {
 	margin: 0 0 50px 0;
 
-	img {
-		margin: 0 0 0 -20px;
-		width: 100vw;
-		height: auto;
-	}
-
 	h4.image-description {
 		width: 100%;
 		color: $color-text--faded;
@@ -593,13 +587,11 @@ $color-text--faded: rgba(0, 0, 0, 0.55);
 	}
 }
 
+.image--cover { max-width: 100%; }
 .image--full {
 	max-width: 1192px;
 	margin-right: auto;
 	margin-bottom: 64px;
 	margin-left: auto;
-
-	img {
-		max-width: 100%;
-	}
 }
+img { max-width: 100%; }
