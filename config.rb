@@ -70,4 +70,5 @@ end
 activate :blog do |blog|
   blog.prefix = "blog"
   blog.layout = "article"
+  blog.permalink = "{title}"
 end
