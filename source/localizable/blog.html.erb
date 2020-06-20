@@ -1,0 +1,109 @@
+---
+title: Blog
+social: social.jpg
+---
+
+<div>
+  <p class="intro">
+    <%= t(:intro) %>
+  </p>
+  <div class="articles--large">
+    <% blog.articles[0...2].each do |article| %>
+      <div class="article-preview">
+        <a class="article-preview--cover" href="<%= article.url %>">  
+          <img
+            class="article-preview--cover--image"
+            src="<%= article.data.cover_image_path %>"
+            alt="<%= article.data.cover_image_alt %>"
+          />
+        </a>
+        <div class="article-preview--details">
+          <h4>
+            <%= article.date.strftime('%b %e %Y') %>
+          <h4>
+          <h4>
+            <%= article.data.reading_time %> minutes
+          </h4>
+        </div>
+        <a href="<%= article.url %>">
+          <h2>
+            <%= article.title %>
+          </h2>
+        </a>
+        <p class="global">
+          <%= article.data.intro %>
+        </p>
+        <div class="person--blog">
+          <img
+            class="person--photo"
+            src="<%= article.data.author_image_path %>"
+            alt="<%= article.data.author %>"
+          />
+          <div class="person--details">
+            <h3>
+              <a href="<%= article.data.author_social_link %>" target="_blank">
+                <%= article.data.author %>
+              </a>
+             </h3>
+            <h5>
+              <%= article.data.author_details %>
+            </h5>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <% total_articles = blog.articles.length %>
+  <% blog.articles[2...total_articles].each_with_index do |article, index| %>
+    <% if index == 0 || index % 3 == 0 %>
+      <div class="articles--normal">
+    <% end %>
+      <div class="article-preview">
+        <a href="<%= article.url %>" class="article-preview--cover">
+          <img
+            class="article-preview--cover--image"
+            src="<%= article.data.cover_image_path %>"
+            alt="<%= article.data.cover_image_alt %>"
+          />
+        </a>
+        <div class="article-preview--details">
+          <div class="article-preview--details">
+            <h4>
+              <%= article.date.strftime('%b %e %Y') %>
+            <h4>
+            <h4>
+              <%= article.data.reading_time %> minutes
+            </h4>
+          </div>
+          <a href="<%= article.url %>">
+            <h2>
+              <%= article.title %>
+            </h2>
+          </a>
+          <p class="global">
+            <%= article.data.intro %>
+          </p>
+          <div class="person--blog">
+            <img
+              class="person--photo"
+              src="<%= article.data.author_image_path %>"
+              alt="<%= article.data.author %>"
+            />
+            <div class="person--details">
+              <h3>
+                <a href="<%= article.data.author_social_link %>" target="_blank">
+                  <%= article.data.author %>
+                </a>
+              </h3>
+              <h5>
+                <%= article.data.author_details %>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% if index + 1 % 3 == 0 %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
