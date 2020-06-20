@@ -84,13 +84,25 @@
         </span>
       </nav>
       <%= yield %>
-      <footer class="small">
-        <a href="<%= localized_url("/screens/") %>">Screenshots</a>
-        <a href="<%= localized_url("/privacy/") %>"><%= t(:privacy) %></a>
-        <a href="<%= localized_url("/license/") %>">Open source license</a>
-        <a href="<%= localized_url("/digitalprinciples/") %>">Digital principles</a>
-        <a href="<%= localized_url("/contact/") %>"><%= t(:contact) %></a>
-        <span>* Note: All patients in screenshots are fake</span>
+      <footer class="mw-medium mx-auto">
+        <a class="fs-medium fs-small:large" href="<%= localized_url("/screens/") %>">
+          Screenshots
+        </a>
+        <a class="fs-medium fs-small:large" href="<%= localized_url("/privacy/") %>">
+          <%= t(:privacy) %>
+        </a>
+        <a class="fs-medium fs-small:large" href="<%= localized_url("/license/") %>">
+          Open source license
+        </a>
+        <a class="fs-medium fs-small:large" href="<%= localized_url("/digitalprinciples/") %>">
+          Digital principles
+        </a>
+        <a class="fs-medium fs-small:large" href="<%= localized_url("/contact/") %>">
+          <%= t(:contact) %>
+        </a>
+        <span class="fs-medium fs-small:large">
+          * Note: All patients in screenshots are fake
+        </span>
       </footer>
     </div>
   </body>
