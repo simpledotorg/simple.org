@@ -92,7 +92,6 @@ $width-xlarge: 1192px;
 			margin: 0 0 11px 0;
 			padding: 0;
 			font-weight: 400;
-			// font-weight: 500;
 			font-size: 27px;
 			line-height: 115%;
 			letter-spacing: 0;
@@ -104,14 +103,12 @@ $width-xlarge: 1192px;
 			font-weight: 500;
 			line-height: 136%;
 			letter-spacing: 0;
-			// letter-spacing: -0.015em;
 		}
 
 		h4 {
 			color: $color-text;
 			font-size: 14px;
 			font-weight: 300;
-			line-height: 100%;
 			text-transform: none;
 			letter-spacing: 0;
 		}
@@ -520,11 +517,16 @@ $width-xlarge: 1192px;
 			padding: 10px 30px 7px 30px;
 
 			p {
-				margin: 0;
+				margin: 0 0 20px 0;
 				padding: 0;
+				font-size: 20px;
+				line-height: 150%;
+				font-style: italic;
 				color: $color-text--faded;
-				font-size: 24px;
-				line-height: 133%;
+			}
+
+			p:last-child {
+				margin: 0;
 			}
 
 			&:before {
@@ -593,6 +595,12 @@ $width-xlarge: 1192px;
 	}
 }
 
+.image--cover .image--wide, .image--contain {
+	h4 {
+		text-align: center;
+		line-height: 150%;
+	}
+}
 .image--cover { max-width: 100%; }
 .image--wide {
 	max-width: $width-xlarge;
@@ -604,6 +612,7 @@ $width-xlarge: 1192px;
 .image--contain {
 	max-width: $width-medium;
 	margin-right: auto;
+	margin-bottom: 64px;
 	margin-left: auto;
 }
 img { max-width: 100%; }
@@ -616,6 +625,7 @@ img { max-width: 100%; }
 .mw-medium { max-width: $width-medium; }
 .mw-xlarge { max-width: $width-xlarge; }
 .mx-auto { margin-right: auto; margin-left: auto; }
+.mb-medium { margin-bottom: 16px; }
 
 @media (min-width: $width-large) {
 	.fs-small:large { font-size: 14px; }
