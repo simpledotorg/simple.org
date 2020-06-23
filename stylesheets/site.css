@@ -1629,7 +1629,6 @@ a.button-play {
     color: rgba(0, 0, 0, 0.7);
     font-size: 14px;
     font-weight: 300;
-    line-height: 100%;
     text-transform: none;
     letter-spacing: 0; }
   .body-blog .article-cover h5,
@@ -1923,11 +1922,14 @@ a.button-play {
   margin: 30px 0 32px -20px;
   padding: 10px 30px 7px 30px; }
   .body-blog .article-content .quote p {
-    margin: 0;
+    margin: 0 0 20px 0;
     padding: 0;
-    color: rgba(0, 0, 0, 0.55);
-    font-size: 24px;
-    line-height: 133%; }
+    font-size: 20px;
+    line-height: 150%;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.55); }
+  .body-blog .article-content .quote p:last-child {
+    margin: 0; }
   .body-blog .article-content .quote:before {
     content: '';
     position: absolute;
@@ -1986,6 +1988,10 @@ a.button-play {
       .body-blog .article-header .article-header--details {
         margin: 0 0 14px 0; } }
 
+.image--cover .image--wide h4, .image--contain h4 {
+  text-align: center;
+  line-height: 150%; }
+
 .image--cover {
   max-width: 100%; }
 
@@ -1999,6 +2005,7 @@ a.button-play {
 .image--contain {
   max-width: 688px;
   margin-right: auto;
+  margin-bottom: 64px;
   margin-left: auto; }
 
 img {
@@ -2028,6 +2035,9 @@ img {
 .mx-auto {
   margin-right: auto;
   margin-left: auto; }
+
+.mb-medium {
+  margin-bottom: 16px; }
 
 @media (min-width: 880px) {
   .fs-small:large {
