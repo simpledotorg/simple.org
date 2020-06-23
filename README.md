@@ -21,6 +21,6 @@ Now you should be able to go to http://localhost:4567 and see the site running l
 
 After merging your commits to `master` and pulling the latest, run `rake publish`.
 
-If try to deploy and get `error: src refspec gh-pages does not match any`, delete the `build` directory and try `rake publish` again.
+If you see `error: src refspec gh-pages does not match any` after running `rake publish`, delete the `build` directory and try `rake publish` again.
 
 If you continue to have issues deploying, email cvallejo@resolvetosavelives.org.
