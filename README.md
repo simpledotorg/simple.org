@@ -35,7 +35,7 @@ Error: `src refspec gh-pages does not match any`
 1. Run `git pull origin master`
 2. Run `git fetch`
 3. Run `rm -rf build` to delete your `build/` directory
-3. Run `rake publish`
+4. Run `rake publish`
 
 Error: `Could not find middleman-blog-4.0.3 in any of the sources`
 1. Make sure you have the proper ruby version installed. **Note:** If you're using `rvm`, run `rvm use 2.5.1` to use Ruby version 2.5.1.
