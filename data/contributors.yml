@@ -189,4 +189,9 @@
   country: "USA"
   image_path: "/images/people/rob-sanheim.jpg"
   social_media_path: "https://twitter.com/rsanheim"
+- name: "Honey Sonwani"
+  role: "development"
+  country: "India"
+  image_path: "/images/people/honey-sonwani.jpg"
+  social_media_path: "https://twitter.com/honey_sonwani"
 ...
