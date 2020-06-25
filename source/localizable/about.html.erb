@@ -73,20 +73,20 @@ social: social.jpg
 <p><%= t(:thanksA) %></p>
 
 <h3><%= t(:teamQ) %></h3>
-    <p><%= t(:teamA) %></p>
-    <ul class="people">
-        <% data.contributors.each do |contributor| %>
-            <li>
-                <a href="<%= contributor.social_media_path %>">
-                    <%= contributor.name %>
-                    <img
-                        src="<%= contributor.image_path %>"
-                        alt="<%= contributor.name %>"
-                    >
-                </a>
-                <div class="small">
-                    <%= t(contributor.role) %>, <%= t(contributor.country) %>
-                </div>
-            </li>
-        <% end %>
-    </ul>
+<p><%= t(:teamA) %></p>
+<ul class="people">
+    <% data.contributors.each do |contributor| %>
+        <li>
+            <a href="<%= contributor.social_media_path %>">
+                <%= contributor.name %>
+                <img
+                    src="<%= contributor.image_path %>"
+                    alt="<%= contributor.name %>"
+                >
+            </a>
+            <div class="small">
+                <%= t(contributor.role) %>, <%= t(contributor.country) %>
+            </div>
+        </li>
+    <% end %>
+</ul>
