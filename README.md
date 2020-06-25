@@ -30,6 +30,17 @@ Now you should be able to go to http://localhost:4567 and see the site running l
 
 After merging your commits to `master` and pulling the latest, run `rake publish`.
 
-If you see `error: src refspec gh-pages does not match any` after running `rake publish`, delete the `build` directory and try `rake publish` again.
+### `Error: No matching gh-pages`
+Error: `src refspec gh-pages does not match any`
+1. Run `git pull origin master`
+2. Run `git fetch`
+3. Run `rm -rf build` to delete your `build/` directory
+3. Run `rake publish`
+
+### `Error: Missing gem`
+Error: `Could not find middleman-blog-4.0.3 in any of the sources`
+1. Make sure you have the proper ruby version installed. **Note:** If you're using `rvm`, run `rvm use 2.5.1` to use Ruby version 2.5.1.
+2. Run `rm -rf build` to delete your `build/` directory
+3. Run `rake publish`
 
 If you continue to have issues deploying, email cvallejo@resolvetosavelives.org.
