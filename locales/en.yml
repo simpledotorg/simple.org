@@ -14,6 +14,7 @@ en:
   Canada: "Canada"
   India: "India"
   USA: "USA"
+  Mexico: "Mexico"
   productdesign: "Product and design"
   design: "Design"
   research: "User testing" 
@@ -23,6 +24,7 @@ en:
   deployment: "Deployment"
   clinician: "Clinician"
   illustration: "Illustrator"
+  operations: "Operations"
   ICMR: "ICMR"
   PM: "Project management"
   
