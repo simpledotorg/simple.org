@@ -179,4 +179,9 @@
   country: "India"
   image_path: "/images/people/vineet-nair.jpg"
   social_media_path: "https://www.linkedin.com/in/nairvineetv/"
+- name: "Prabhanshu Gupta"
+  role: "development"
+  country: "India"
+  image_path: "/images/people/prabhanshu-gupta.jpg"
+  social_media_path: "https://www.linkedin.com/in/prabhanshu-gupta"
 ...
