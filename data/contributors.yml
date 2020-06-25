@@ -184,4 +184,9 @@
   country: "India"
   image_path: "/images/people/prabhanshu-gupta.jpg"
   social_media_path: "https://www.linkedin.com/in/prabhanshu-gupta"
+- name: "Rob Sanheim"
+  role: "development"
+  country: "USA"
+  image_path: "/images/people/rob-sanheim.jpg"
+  social_media_path: "https://twitter.com/rsanheim"
 ...
