@@ -194,4 +194,9 @@
   country: "India"
   image_path: "/images/people/honey-sonwani.jpg"
   social_media_path: "https://twitter.com/honey_sonwani"
+- name: "Dr. Reena Gupta"
+  role: "clinician"
+  country: "USA"
+  image_path: "/images/people/reena-gupta.jpg"
+  social_media_path: ""
 ...
