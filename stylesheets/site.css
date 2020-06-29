@@ -1299,6 +1299,14 @@ a.button-play {
   width: auto;
   max-width: 400px; }
 
+.dashboard-screen-wrapper img,
+.dashboard-screen-wrapper:visited img {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); }
+
 .mobile-screen-wrapper i,
 .dashboard-screen-wrapper i {
   position: absolute;
