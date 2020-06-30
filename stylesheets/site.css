@@ -2019,6 +2019,9 @@ a.button-play {
 img {
   max-width: 100%; }
 
+.d-block {
+  display: block; }
+
 .fs-small {
   font-size: 14px; }
 
@@ -2030,6 +2033,12 @@ img {
 
 .fs-xlarge {
   font-size: 24px; }
+
+.m-0 {
+  margin: 0; }
+
+.mb-48px {
+  margin-bottom: 48px; }
 
 .mw-full {
   max-width: 100%; }
@@ -2049,4 +2058,26 @@ img {
 
 @media (min-width: 880px) {
   .fs-small:large {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .d-flex-large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .f-wrap-large {
+    -webkit-box-flex: wrap;
+        -ms-flex: wrap;
+            flex: wrap; }
+
+  .w-50pt-large {
+    width: 50%; }
+
+  .m-0-large {
+    margin: 0; }
+
+  .pr-24px-large {
+    padding-right: 24px; }
+
+  .pl-24px-large {
+    padding-left: 24px; } }
