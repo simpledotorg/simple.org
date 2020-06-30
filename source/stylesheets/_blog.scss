@@ -630,6 +630,31 @@ img { max-width: 100%; }
 .mx-auto { margin-right: auto; margin-left: auto; }
 .mb-medium { margin-bottom: 16px; }
 
+.video {
+	max-width: $width-xlarge;
+	margin: 0 auto;
+	margin-bottom: 32px;
+}
+
+.video-wrapper {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.video-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.video-caption {
+	text-align: center;
+}
+
 @media (min-width: $width-large) {
 	.fs-small:large { font-size: 14px; }
 	.d-flex-large { display: flex; }
