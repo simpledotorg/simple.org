@@ -623,6 +623,7 @@ img { max-width: 100%; }
 .fs-large { font-size: 20px; }
 .fs-xlarge { font-size: 24px; }
 .m-0 { margin: 0; }
+.mb-48px { margin-bottom: 48px; }
 .mw-full { max-width: 100%; }
 .mw-medium { max-width: $width-medium; }
 .mw-xlarge { max-width: $width-xlarge; }
@@ -634,6 +635,7 @@ img { max-width: 100%; }
 	.d-flex-large { display: flex; }
 	.f-wrap-large { flex: wrap; }
 	.w-50pt-large { width: 50%; }
+	.m-0-large { margin: 0; }
 	.pr-24px-large { padding-right: 24px; }
 	.pl-24px-large { padding-left: 24px; }
 }
