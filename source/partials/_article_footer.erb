@@ -1,0 +1,93 @@
+<%
+  next_article =
+    current_article.previous_article ? current_article.previous_article : blog.articles.first
+  previous_article =
+    current_article.next_article ? current_article.next_article : blog.articles.last
+%>
+<div class="separators"></div>
+<div class="mw-xlarge mx-auto d-flex-large f-wrap-large">
+  <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
+    <a class="article-preview--cover" href="<%= previous_article.url %>">
+      <img
+        class="article-preview--cover--image"
+        src="<%= previous_article.data.cover_image_path %>"
+        alt="<%= previous_article.data.cover_image_alt %>"
+      >
+    </a>
+    <div class="article-preview--details">
+      <h4>
+        <%= previous_article.date.strftime('%b %e %Y') %>
+      </h4>
+      <h4>
+        <%= previous_article.data.reading_time %> minutes
+      </h4>
+    </div>
+    <a href="<%= previous_article.url %>">
+      <h2>
+        <%= previous_article.title %>
+      </h2>
+    </a>
+    <p class="global">
+      <%= previous_article.data.intro %>
+    </p>
+    <div class="person--blog">
+      <img
+        class="person--photo"
+        src="<%= previous_article.data.author_image_path %>"
+        alt="<%= previous_article.data.author %>"
+      >
+      <div class="person--details">
+        <h3>
+          <a href="<%= previous_article.data.author_social_link %>">
+            <%= previous_article.data.author %>
+          </a>
+        </h3>
+        <h5>
+          <%= previous_article.data.author_details %>
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="article-preview m-0 w-50pt-large pl-24px-large">
+    <a class="article-preview--cover" href="<%= next_article.url %>">
+      <img
+        class="article-preview--cover--image"
+        src="<%= next_article.data.cover_image_path %>"
+        alt="<%= next_article.data.cover_image_alt %>"
+      >
+    </a>
+    <div class="article-preview--details">
+      <h4>
+        <%= next_article.date.strftime('%b %e %Y') %>
+      </h4>
+      <h4>
+        <%= next_article.data.reading_time %> minutes
+      </h4>
+    </div>
+    <a href="<%= next_article.url %>">
+      <h2>
+        <%= next_article.title %>
+      </h2>
+    </a>
+    <p class="global">
+      <%= next_article.data.intro %>
+    </p>
+    <div class="person--blog">
+      <img
+        class="person--photo"
+        src="<%= next_article.data.author_image_path %>"
+        alt="<%= next_article.data.author %>"
+      >
+      <div class="person--details">
+        <h3>
+          <a href="<%= next_article.data.author_social_link %>">
+            <%= next_article.data.author %>
+          </a>
+        </h3>
+        <h5>
+          <%= next_article.data.author_details %>
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
