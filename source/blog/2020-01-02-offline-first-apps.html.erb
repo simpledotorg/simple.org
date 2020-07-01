@@ -11,138 +11,136 @@ author_social_link: "https://twitter.com/govindkrjoshi"
 author_details: "Development, India"
 ---
 
-<div class="article-content">
-  <section>
-    <p>
-      Let me set the scene. A nurse named Ravdeep works in a busy clinic in a rural hospital in India. Patients are lined up outside her door in a chaotic line all of the way down the hall. Ravdeep is responsible for taking blood pressures and blood sugar measures for each patient. She quickly enters their data into the <a href="https://simple.org">Simple</a> app on her tablet, and sends them to the doctor if they appear to be hypertensive or diabetic.
-    </p>
-    <p>
-      This public hospital isn’t fancy, but you might be surprised to know that Ravdeep’s clinic has excellent 4G internet. In fact, much of India is covered with strong, affordable mobile networks. So, why would we choose to make an app like Simple using an offline-first approach?
-    </p>
-    <p>
-      The big secondary benefit is that the app will work in the corners of India with limited internet. In a country as diverse as India, this is crucial.
-    </p>
-  </section>
-  <section>
-    <h2>
-      What is offline-first?
-    </h2>
-    <p>
-      A typical clinical app is in constant contact with a remote server, so each time patient data is updated it gets saved on the server. Designing an app offline-first is different because that data is saved locally on-device and is later “synced” or saved to a remote server. That means that the app will always be able to function with or without online internet. But, it also means that you need two databases with one on the device itself and one on the server and they must be kept in sync.
-    </p>
-  </section>
-  <section>
-    <h2>
-      Pros
-    </h2>
-    <ul>
-      <li>
-        <b>Works fast every time.</b> Every second counts in a healthcare facility. Offline-first software is incredibly snappy. For us, this is the #1 benefit to going offline-first.
-      </li>
-      <li>
-        <b>Works offline.</b> The most obvious benefit of offline-first is that the app works when internet connectivity is low or really spotty. This gives Simple the flexibility to work in places where internet access is intermittent.
-      </li>
-      <li>
-        <b>Works on a wide range of devices.</b> The Android app is being used in public health facilities by users on their own personal devices. Having the ability to adjust how often we push and pull data allows us to optimize resources like battery, network usage, device storage, etc.
-      </li>
-      <li>
-        <b>App continues to work without a central server.</b> A user can continue using a fully-functional app without syncing with a central server if they wish to do so. This lets small private practitioners track the health of their patients without sharing their data, if they wish to do so.
-      </li>
-      <li>
-        <b>Minimises the loss of data.</b> Data is never lost even if our servers are unavailable. This gives us some breathing room during maintenance and upgrades.
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2>
-      Challenges
-    </h2>
-    <ul>
-      <li>
-        <b>Sync is really hard.</b> We constantly run into challenges with syncing. If the app doesn’t sync regularly enough to the server, nurses get confused and frustrated. But if we sync data too aggressively we can drain the nurse’s battery. Striking the right balance is tricky.
-      </li>
-      <li>
-        <b>Doubles some of the work.</b> As you can imagine, having two complete databases means a lot of back-end and front-end coordination and duplication of effort.
-      </li>
-      <li>
-        <b>Multiple users in one facility.</b> Inconsistent sync is a problem for one healthcare worker, but in team-based care it is even more problematic. The local database on each of the nurses’ phones is not consistent, and this can lead to confusion where one nurse will often see a different (more recently updated) view of the data.
-      </li>
-      <li>
-        <b>Deleting data and resolving conflicts.</b> With multiple users, it’s very possible to end up with data conflicts that must be resolved. For instance, one user edits a patient record but before she syncs data another user edits the same data on their device. It’s possible to resolve conflicts, but this adds to the complexity of the software.
-      </li>
-      <li>
-        <b>Maintaining backwards compatibility.</b> Making changes to the API can be very difficult. The API needs to work across many versions of the app, each of which have a slightly different understanding of how data is structured.
-      </li>
-    </ul>
-  </section>
-  <section>
-    <h2>
-      What we learned so far
-    </h2>
-    <p>
-      The Simple app is being used in over 400 hospitals in India to manage over 190,000 patients with hypertension. We are constantly learning. Here are a few lessons we learned so far:
-    </p>
-  </section>
-  <div class="image--contain">
-    <img
-      src="/images/blog/offline-first-apps/bp-passport.jpg"
-      alt="Physical BP Passports — the QR code contains a UUID"
-    >
-  </div>
-  <section>
-    <h3>
-      UUIDs are your friends
-    </h3>
-    <p>
-      Since the records are created on the mobile app and synced to server, we need an identifier that is easy to generate and is unique across all the devices. This makes UUIDs an ideal choice for our primary keys.
-    </p>
-    <ul>
-      <li>
-        We also use UUIDs in our BP Passports (temporary identity cards issued to patients to easily find them in future visits). This allows us to print these cards from any location without fear of duplication.
-      </li>
-      <li>
-        The spec for UUID v3 allows us to deterministically generate new UUIDs based on a hash. Using this version, we can easily integrate data from external systems without having to maintain references in either of the databases.
-      </li>
-    </ul>
-    <h3>
-      Tracking time is really important
-    </h3>
-    <p>
-      In an offline first app, the changes made by a user may not be reflected on the server for a long time, which results in old changes overwriting newer ones. To prevent this, we track when the change was made on the mobile app and the time when the change was seen by the server. With both times we can determine and keep the relevant changes. This is also known as bi-temporal modelling and this blog post provides a nice introduction to the concept.
-    </p>
-    <h3>
-      Limit what data gets synced
-    </h3>
-    <p>
-      When we started, every time a user registered with Simple we would sync all of the data from the server starting from the earliest record. This worked fine when we only had a few facilities, but as the number of patients in the database grew, we started facing two problems:
-    </p>
-    <ol>
-      <li>
-        The user would have to download the entire dataset, a large part of which was irrelevant to the user. It is uncommon that a patient visits facilities in two different districts.
-      </li>
-      <li>
-        Syncing from the earliest record first would result in users waiting for an unknown amount of time to get all the patients in their facility.
-      </li>
-    </ol>
-    <p>
-      To improve the user experience we now sync data only for facilities within their district and we sync data for the user’s own facility first. This reduces the initial load and lets the clinician to start recording her patients quickly.
-    </p>
-  </section>
-  <section>
-    <h2>
-      Is offline-first worth the added effort?
-    </h2>
-    <p>
-      Going offline-first was one of the best decisions we made in our technical architecture. When we watch a nurse in a busy outpatient department, it’s apparent how crucial performance is to her day. We have seen clinicians treating up to 200 patients in a single day — every extra second in a patient interaction at that velocity multiplies quickly.
-    </p>
-    <p>
-      Committing to offline-first also has opened up more deployment opportunities for Simple. In the next few months we will deploy to several locations where internet access is inconsistent. When our government partners asked if we could handle these environments, we could confidently say “yes!”
-    </p>
-  </section>
-  <div class="separators"></div>
-  <section>
-    <p>
-      Simple is a free, open source, project through Resolve to Save Lives. If you are working on similar software and you have questions about our offline first approach, look at our code and documentation and get in touch with us. We’ll be happy to chat with you and explain in more detail what we’re doing. Thanks!
-    </p>
-  </section>
+<section>
+  <p>
+    Let me set the scene. A nurse named Ravdeep works in a busy clinic in a rural hospital in India. Patients are lined up outside her door in a chaotic line all of the way down the hall. Ravdeep is responsible for taking blood pressures and blood sugar measures for each patient. She quickly enters their data into the <a href="https://simple.org">Simple</a> app on her tablet, and sends them to the doctor if they appear to be hypertensive or diabetic.
+  </p>
+  <p>
+    This public hospital isn’t fancy, but you might be surprised to know that Ravdeep’s clinic has excellent 4G internet. In fact, much of India is covered with strong, affordable mobile networks. So, why would we choose to make an app like Simple using an offline-first approach?
+  </p>
+  <p>
+    The big secondary benefit is that the app will work in the corners of India with limited internet. In a country as diverse as India, this is crucial.
+  </p>
+</section>
+<section>
+  <h2>
+    What is offline-first?
+  </h2>
+  <p>
+    A typical clinical app is in constant contact with a remote server, so each time patient data is updated it gets saved on the server. Designing an app offline-first is different because that data is saved locally on-device and is later “synced” or saved to a remote server. That means that the app will always be able to function with or without online internet. But, it also means that you need two databases with one on the device itself and one on the server and they must be kept in sync.
+  </p>
+</section>
+<section>
+  <h2>
+    Pros
+  </h2>
+  <ul>
+    <li>
+      <b>Works fast every time.</b> Every second counts in a healthcare facility. Offline-first software is incredibly snappy. For us, this is the #1 benefit to going offline-first.
+    </li>
+    <li>
+      <b>Works offline.</b> The most obvious benefit of offline-first is that the app works when internet connectivity is low or really spotty. This gives Simple the flexibility to work in places where internet access is intermittent.
+    </li>
+    <li>
+      <b>Works on a wide range of devices.</b> The Android app is being used in public health facilities by users on their own personal devices. Having the ability to adjust how often we push and pull data allows us to optimize resources like battery, network usage, device storage, etc.
+    </li>
+    <li>
+      <b>App continues to work without a central server.</b> A user can continue using a fully-functional app without syncing with a central server if they wish to do so. This lets small private practitioners track the health of their patients without sharing their data, if they wish to do so.
+    </li>
+    <li>
+      <b>Minimises the loss of data.</b> Data is never lost even if our servers are unavailable. This gives us some breathing room during maintenance and upgrades.
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>
+    Challenges
+  </h2>
+  <ul>
+    <li>
+      <b>Sync is really hard.</b> We constantly run into challenges with syncing. If the app doesn’t sync regularly enough to the server, nurses get confused and frustrated. But if we sync data too aggressively we can drain the nurse’s battery. Striking the right balance is tricky.
+    </li>
+    <li>
+      <b>Doubles some of the work.</b> As you can imagine, having two complete databases means a lot of back-end and front-end coordination and duplication of effort.
+    </li>
+    <li>
+      <b>Multiple users in one facility.</b> Inconsistent sync is a problem for one healthcare worker, but in team-based care it is even more problematic. The local database on each of the nurses’ phones is not consistent, and this can lead to confusion where one nurse will often see a different (more recently updated) view of the data.
+    </li>
+    <li>
+      <b>Deleting data and resolving conflicts.</b> With multiple users, it’s very possible to end up with data conflicts that must be resolved. For instance, one user edits a patient record but before she syncs data another user edits the same data on their device. It’s possible to resolve conflicts, but this adds to the complexity of the software.
+    </li>
+    <li>
+      <b>Maintaining backwards compatibility.</b> Making changes to the API can be very difficult. The API needs to work across many versions of the app, each of which have a slightly different understanding of how data is structured.
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>
+    What we learned so far
+  </h2>
+  <p>
+    The Simple app is being used in over 400 hospitals in India to manage over 190,000 patients with hypertension. We are constantly learning. Here are a few lessons we learned so far:
+  </p>
+</section>
+<div class="image--contain">
+  <img
+    src="/images/blog/offline-first-apps/bp-passport.jpg"
+    alt="Physical BP Passports — the QR code contains a UUID"
+  >
 </div>
+<section>
+  <h3>
+    UUIDs are your friends
+  </h3>
+  <p>
+    Since the records are created on the mobile app and synced to server, we need an identifier that is easy to generate and is unique across all the devices. This makes UUIDs an ideal choice for our primary keys.
+  </p>
+  <ul>
+    <li>
+      We also use UUIDs in our BP Passports (temporary identity cards issued to patients to easily find them in future visits). This allows us to print these cards from any location without fear of duplication.
+    </li>
+    <li>
+      The spec for UUID v3 allows us to deterministically generate new UUIDs based on a hash. Using this version, we can easily integrate data from external systems without having to maintain references in either of the databases.
+    </li>
+  </ul>
+  <h3>
+    Tracking time is really important
+  </h3>
+  <p>
+    In an offline first app, the changes made by a user may not be reflected on the server for a long time, which results in old changes overwriting newer ones. To prevent this, we track when the change was made on the mobile app and the time when the change was seen by the server. With both times we can determine and keep the relevant changes. This is also known as bi-temporal modelling and this blog post provides a nice introduction to the concept.
+  </p>
+  <h3>
+    Limit what data gets synced
+  </h3>
+  <p>
+    When we started, every time a user registered with Simple we would sync all of the data from the server starting from the earliest record. This worked fine when we only had a few facilities, but as the number of patients in the database grew, we started facing two problems:
+  </p>
+  <ol>
+    <li>
+      The user would have to download the entire dataset, a large part of which was irrelevant to the user. It is uncommon that a patient visits facilities in two different districts.
+    </li>
+    <li>
+      Syncing from the earliest record first would result in users waiting for an unknown amount of time to get all the patients in their facility.
+    </li>
+  </ol>
+  <p>
+    To improve the user experience we now sync data only for facilities within their district and we sync data for the user’s own facility first. This reduces the initial load and lets the clinician to start recording her patients quickly.
+  </p>
+</section>
+<section>
+  <h2>
+    Is offline-first worth the added effort?
+  </h2>
+  <p>
+    Going offline-first was one of the best decisions we made in our technical architecture. When we watch a nurse in a busy outpatient department, it’s apparent how crucial performance is to her day. We have seen clinicians treating up to 200 patients in a single day — every extra second in a patient interaction at that velocity multiplies quickly.
+  </p>
+  <p>
+    Committing to offline-first also has opened up more deployment opportunities for Simple. In the next few months we will deploy to several locations where internet access is inconsistent. When our government partners asked if we could handle these environments, we could confidently say “yes!”
+  </p>
+</section>
+<div class="separators"></div>
+<section>
+  <p>
+    Simple is a free, open source, project through Resolve to Save Lives. If you are working on similar software and you have questions about our offline first approach, look at our code and documentation and get in touch with us. We’ll be happy to chat with you and explain in more detail what we’re doing. Thanks!
+  </p>
+</section>

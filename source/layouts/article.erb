@@ -84,7 +84,9 @@
         </span>
       </nav>
       <%= partial "partials/article_header" %>
-      <%= yield %>
+      <div class="article-content">
+        <%= yield %>
+      </div>
       <%= partial "partials/article_footer" %>
       <footer class="mw-medium mx-auto">
         <a class="fs-medium fs-small:large" href="<%= localized_url("/screens/") %>">
