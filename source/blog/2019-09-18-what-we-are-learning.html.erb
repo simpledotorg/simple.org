@@ -11,35 +11,6 @@ author_social_link: "https://twitter.com/dburka"
 author_details: "Product and Design, Canada"
 ---
 
-<div class="article-cover">
-  <img
-    src="<%= current_page.data.cover_image_path %>"
-    alt="<%= current_page.data.cover_image_alt %>"
-  >
-</div>
-<div class="article-header">
-  <div class="article-header--details">
-    <h4><%= current_page.date.strftime('%d %B %Y') %></h4>
-    <h4><%= current_page.data.reading_time %> min read</h4>
-  </div>
-  <h1 class="intro"><%= current_page.data.title %></h1>
-  <p class="brief global"><%= current_page.data.intro %></p>
-  <div class="person--blog">
-    <img
-      class="person--photo"
-      src="<%= current_page.data.author_image_path %>"
-      alt="<%= current_page.data.author %>"
-    >
-    <div class="person--details">
-      <h3>
-        <a href="<%= current_page.data.author_social_link %>">
-          <%= current_page.data.author %>
-        </a>
-      </h3>
-      <h5><%= current_page.data.author_details %></h5>
-    </div>
-  </div>
-</div>
 <div class="article-content">
   <section>
     <h2>
