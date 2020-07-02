@@ -2,7 +2,9 @@
 <% if current_page.data.cover_image_path %>
   <div class="article-cover">
     <img
-      src="<%= current_page.data.cover_image_path %>"
+      class="lazyload"
+      src="<%= current_page.data.cover_image_placeholder_path %>"
+      data-src="<%= current_page.data.cover_image_path %>"
       alt="<%= current_page.data.cover_image_alt %>"
     >
   </div>
