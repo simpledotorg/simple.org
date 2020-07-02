@@ -56,6 +56,10 @@ helpers do
 
     segments.join("/")
   end
+
+  def get_contributor_by_name(name)
+    data.contributors.select { |contributor| contributor.name == name }.first
+  end
 end
 
 # Build-specific configuration
