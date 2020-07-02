@@ -3,6 +3,7 @@ title: "A day in the life"
 date: "2019/10/10"
 reading_time: "4"
 cover_image_path: "/images/blog/a-day-in-the-life/cover.jpg"
+cover_image_placeholder_path: "/images/blog/a-day-in-the-life/cover-placeholder.jpg"
 cover_image_alt: "Action shot of a patient named Harnanth Singh who offered to share his story"
 intro: "Simple is completing it's first launch anniversary. Here is the story of how a nurse is using it to save lives."
 author: "Akshay Verma"
@@ -34,7 +35,9 @@ author: "Akshay Verma"
 </section>
 <div class="image--contain">
   <img
-    src="/images/blog/a-day-in-the-life/a-doctor-recording-patient-visits.jpg"
+    class="lazyload"
+    src="/images/blog/a-day-in-the-life/a-doctor-recording-patient-visits-placeholder.jpg"
+    data-src="/images/blog/a-day-in-the-life/a-doctor-recording-patient-visits.jpg"
     alt="A doctor recording patient visits using Simple"
   >
   <h4>
@@ -51,7 +54,9 @@ author: "Akshay Verma"
 </section>
 <div class="image--contain">
   <img
-    src="/images/blog/a-day-in-the-life/time-spent-in-simple.png"
+    class="lazyload"
+    src="/images/blog/a-day-in-the-life/time-spent-in-simple-placeholder.png"
+    data-src="/images/blog/a-day-in-the-life/time-spent-in-simple.png"
     alt="Table of metrics Simple team uses to assess app's performance"
   >
 </div>
@@ -106,7 +111,9 @@ author: "Akshay Verma"
 </section>
 <div class="image--contain">
   <img
-    src="/images/blog/a-day-in-the-life/behind-the-scenes.jpg"
+    class="lazyload"
+    src="/images/blog/a-day-in-the-life/behind-the-scenes-placeholder.jpg"
+    data-src="/images/blog/a-day-in-the-life/behind-the-scenes.jpg"
     alt="Behind the scenes with Harnanth Singh and Nurse Ranjit Kaur"
   >
   <h4>
@@ -115,9 +122,12 @@ author: "Akshay Verma"
 </div>
 <div class="image--contain">
   <img
-    src="<%= current_page.data.cover_image_path %>"
+    class="lazyload"
+    src="<%= current_page.data.cover_image_placeholder_path %>"
+    data-src="<%= current_page.data.cover_image_path %>"
     alt="<%= current_page.data.cover_image_alt %>"
   >
   <h4>
     <%= current_page.data.cover_image_alt %>
+  </h4>
 </div>
