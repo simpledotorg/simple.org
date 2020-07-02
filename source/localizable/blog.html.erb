@@ -9,6 +9,7 @@ social: social.jpg
   </p>
   <div class="articles--large">
     <% blog.articles[0...2].each do |article| %>
+      <% author = get_contributor_by_name(article.data.author) %>
       <div class="article-preview">
         <a class="article-preview--cover" href="<%= article.url %>">  
           <img
@@ -36,17 +37,17 @@ social: social.jpg
         <div class="person--blog">
           <img
             class="person--photo"
-            src="<%= article.data.author_image_path %>"
-            alt="<%= article.data.author %>"
+            src="<%= author.image_path %>"
+            alt="<%= author.name %>"
           >
           <div class="person--details">
             <h3>
-              <a href="<%= article.data.author_social_link %>">
-                <%= article.data.author %>
+              <a href="<%= author.social_media_path %>">
+                <%= author.name %>
               </a>
              </h3>
             <h5>
-              <%= article.data.author_details %>
+              <%= t(author.role) %>, <%= t(author.country) %>
             </h5>
           </div>
         </div>
@@ -55,6 +56,7 @@ social: social.jpg
   </div>
   <% total_articles = blog.articles.length %>
   <% blog.articles[2...total_articles].each_with_index do |article, index| %>
+    <% author = get_contributor_by_name(article.data.author) %>
     <% if index == 0 || index % 3 == 0 %>
       <div class="articles--normal">
     <% end %>
@@ -86,17 +88,17 @@ social: social.jpg
           <div class="person--blog">
             <img
               class="person--photo"
-              src="<%= article.data.author_image_path %>"
-              alt="<%= article.data.author %>"
+              src="<%= author.image_path %>"
+              alt="<%= author.name %>"
             >
             <div class="person--details">
               <h3>
-                <a href="<%= article.data.author_social_link %>">
-                  <%= article.data.author %>
+                <a href="<%= author.social_media_link %>">
+                  <%= author.name %>
                 </a>
               </h3>
               <h5>
-                <%= article.data.author_details %>
+                <%= t(author.role) %>, <%= t(author.country) %> 
               </h5>
             </div>
           </div>

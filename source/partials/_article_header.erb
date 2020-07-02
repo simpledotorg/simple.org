@@ -1,3 +1,4 @@
+<% author = get_contributor_by_name current_page.data.author %>
 <% if current_page.data.cover_image_path %>
   <div class="article-cover">
     <img
@@ -24,17 +25,17 @@
   <div class="person--blog">
     <img
       class="person--photo"
-      src="<%= current_page.data.author_image_path %>"
-      alt="<%= current_page.data.author %>"
+      src="<%= author.image_path %>"
+      alt="<%= author.name %>"
     >
     <div class="person--details">
       <h3>
-        <a href="<%= current_page.data.author_social_link %>">
-          <%= current_page.data.author %>
+        <a href="<%= author.social_media_path %>">
+          <%= author.name %>
         </a>
       </h3>
       <h5>
-        <%= current_page.data.author_details %>
+        <%= t(author.role) %>, <%= t(author.country) %>
       </h5>
     </div>
   </div>
