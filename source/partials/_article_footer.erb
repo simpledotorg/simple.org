@@ -1,8 +1,12 @@
 <%
   next_article =
     current_article.previous_article ? current_article.previous_article : blog.articles.first
+  next_article_author =
+    get_contributor_by_name next_article.data.author
   previous_article =
     current_article.next_article ? current_article.next_article : blog.articles.last
+  previous_article_author =
+    get_contributor_by_name previous_article.data.author
 %>
 <div class="separators"></div>
 <div class="mw-xlarge mx-auto d-flex-large f-wrap-large">
@@ -33,17 +37,17 @@
     <div class="person--blog">
       <img
         class="person--photo"
-        src="<%= previous_article.data.author_image_path %>"
-        alt="<%= previous_article.data.author %>"
+        src="<%= previous_article_author.image_path %>"
+        alt="<%= previous_article_author.name %>"
       >
       <div class="person--details">
         <h3>
-          <a href="<%= previous_article.data.author_social_link %>">
-            <%= previous_article.data.author %>
+          <a href="<%= previous_article_author.social_media_link %>">
+            <%= previous_article_author.name %>
           </a>
         </h3>
         <h5>
-          <%= previous_article.data.author_details %>
+          <%= t(previous_article_author.role) %>, <%= t(previous_article_author.country) %>
         </h5>
       </div>
     </div>
@@ -75,17 +79,17 @@
     <div class="person--blog">
       <img
         class="person--photo"
-        src="<%= next_article.data.author_image_path %>"
-        alt="<%= next_article.data.author %>"
+        src="<%= next_article_author.image_path %>"
+        alt="<%= next_article_author.name %>"
       >
       <div class="person--details">
         <h3>
-          <a href="<%= next_article.data.author_social_link %>">
-            <%= next_article.data.author %>
+          <a href="<%= next_article_author.social_media_link %>">
+            <%= next_article_author.name %>
           </a>
         </h3>
         <h5>
-          <%= next_article.data.author_details %>
+          <%= t(next_article_author.role) %>, <%= t(next_article_author.country) %>
         </h5>
       </div>
     </div>
