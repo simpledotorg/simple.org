@@ -13,8 +13,9 @@
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
     <a class="article-preview--cover" href="<%= previous_article.url %>">
       <img
-        class="article-preview--cover--image"
-        src="<%= previous_article.data.cover_image_path %>"
+        class="lazyload article-preview--cover--image"
+        src="<%= previous_article.data.cover_image_placeholder_path %>"
+        data-src="<%= previous_article.data.cover_image_path %>"
         alt="<%= previous_article.data.cover_image_alt %>"
       >
     </a>
@@ -55,8 +56,9 @@
   <div class="article-preview m-0 w-50pt-large pl-24px-large">
     <a class="article-preview--cover" href="<%= next_article.url %>">
       <img
-        class="article-preview--cover--image"
-        src="<%= next_article.data.cover_image_path %>"
+        class="lazyload article-preview--cover--image"
+        src="<%= next_article.data.cover_image_placeholder_path %>"
+        data-src="<%= next_article.data.cover_image_path %>"
         alt="<%= next_article.data.cover_image_alt %>"
       >
     </a>
