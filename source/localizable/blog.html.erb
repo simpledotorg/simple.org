@@ -13,8 +13,9 @@ social: social.jpg
       <div class="article-preview">
         <a class="article-preview--cover" href="<%= article.url %>">  
           <img
-            class="article-preview--cover--image"
-            src="<%= article.data.cover_image_path %>"
+            class="lazyload article-preview--cover--image"
+            src="<%= article.data.cover_image_placeholder_path %>"
+            data-src="<%= article.data.cover_image_path %>"
             alt="<%= article.data.cover_image_alt %>"
           >
         </a>
@@ -63,8 +64,9 @@ social: social.jpg
       <div class="article-preview">
         <a href="<%= article.url %>" class="article-preview--cover">
           <img
-            class="article-preview--cover--image"
-            src="<%= article.data.cover_image_path %>"
+            class="lazyload article-preview--cover--image"
+            src="<%= article.data.cover_image_placeholder_path %>"
+            data-src="<%= article.data.cover_image_path %>"
             alt="<%= article.data.cover_image_alt %>"
           >
         </a>

@@ -615,7 +615,10 @@ $width-xlarge: 1192px;
 	margin-bottom: 64px;
 	margin-left: auto;
 }
-img { max-width: 100%; }
+img {
+	width: 100%;
+	max-width: 100%;
+}
 
 .d-block { display: block; }
 .fs-small { font-size: 14px; }
