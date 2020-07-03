@@ -3,6 +3,7 @@ title: "Simple Wins \"Best in Show\" at the IxDA Awards in Milan"
 date: "2020/02/12"
 reading_time: "3"
 cover_image_path: "/images/blog/simple-wins-best-in-show/cover.jpg"
+cover_image_placeholder_path: "/images/blog/simple-wins-best-in-show/cover-placeholder.jpg"
 cover_image_alt: "Trophy for \"2020 Best in Show\""
 intro: "Simple, the app made in India for managing patients with hypertension, was recognized with the top prize at the Interaction 20 Conference"
 author: "Akshay Verma"
@@ -42,7 +43,9 @@ author: "Akshay Verma"
 </section>
 <div class="image--wide">
   <img
-    src="<%= current_page.data.cover_image_path %>"
+    class="lazyload"
+    src="<%= current_page.data.cover_image_placeholder_path %>"
+    data-src="<%= current_page.data.cover_image_path %>"
     alt="<%= current_page.data.cover_image_alt %>"
   >
 </div>
@@ -62,7 +65,9 @@ author: "Akshay Verma"
 </section>
 <div class="image--wide">
   <img
-    src="/images/blog/simple-wins-best-in-show/working-with-healthcare-workers.jpg"
+    class="lazyload"
+    src="/images/blog/simple-wins-best-in-show/working-with-healthcare-workers-placeholder.jpg"
+    data-src="/images/blog/simple-wins-best-in-show/working-with-healthcare-workers.jpg"
     alt="Working with healthcare workers in the field in India: Tanushree Jindal and Akshay Verma"
   >
   <h4>
@@ -113,7 +118,9 @@ author: "Akshay Verma"
 </section>
 <div class="image--wide">
   <img
-    src="/images/blog/simple-wins-best-in-show/design-team-in-milan.jpg"
+    class="lazyload"
+    src="/images/blog/simple-wins-best-in-show/design-team-in-milan-placeholder.jpg"
+    data-src="/images/blog/simple-wins-best-in-show/design-team-in-milan.jpg"
     alt="Mahima Chandak, Daniel Burka, and Akshay Verma were in Milan to receive the award on behalf of the Simple team."
   >
   <h4>
