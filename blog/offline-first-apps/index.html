@@ -187,7 +187,9 @@
 </section>
 <div class="image--contain">
   <img
-    src="../../images/blog/offline-first-apps/bp-passport.jpg"
+    class="lazyload"
+    src="../../images/blog/offline-first-apps/bp-passport-placeholder.jpg"
+    data-src="../../images/blog/offline-first-apps/bp-passport.jpg"
     alt="Physical BP Passports — the QR code contains a UUID"
   >
 </div>
@@ -253,8 +255,9 @@
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
     <a class="article-preview--cover" href="/blog/simple-wins-best-in-show/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/simple-wins-best-in-show/cover.jpg"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/simple-wins-best-in-show/cover-placeholder.jpg"
+        data-src="../../images/blog/simple-wins-best-in-show/cover.jpg"
         alt="Trophy for "2020 Best in Show""
       >
     </a>
@@ -295,8 +298,9 @@
   <div class="article-preview m-0 w-50pt-large pl-24px-large">
     <a class="article-preview--cover" href="/blog/co-creation-with-nurses/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/co-creation-with-nurses/cover.jpg"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/co-creation-with-nurses/cover-placeholder.jpg"
+        data-src="../../images/blog/co-creation-with-nurses/cover.jpg"
         alt="A nurse and a Community Health Officer sharing their ideas for Simple at a Health and Wellness Centre in Bathinda, Punjab"
       >
     </a>
@@ -356,5 +360,9 @@
         </span>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script>
+      lazyload();
+    </script>
   </body>
 </html>

@@ -237,8 +237,9 @@
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
     <a class="article-preview--cover" href="/blog/what-we-are-learning/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/what-we-are-learning/cover.jpg"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/what-we-are-learning/cover-placeholder.jpg"
+        data-src="../../images/blog/what-we-are-learning/cover.jpg"
         alt="A doctor using Simple in a primary health center in Maharashtra, India in 2019"
       >
     </a>
@@ -279,8 +280,9 @@
   <div class="article-preview m-0 w-50pt-large pl-24px-large">
     <a class="article-preview--cover" href="/blog/how-storyboarding-from-real-data-drives-good-product-decisions/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/how-storyboarding-from-real-data/cover.jpg"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/how-storyboarding-from-real-data/cover-placeholder.jpg"
+        data-src="../../images/blog/how-storyboarding-from-real-data/cover.jpg"
         alt="Comic-style illustration depicting the different parts of the user's experience"
       >
     </a>
@@ -340,5 +342,9 @@
         </span>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script>
+      lazyload();
+    </script>
   </body>
 </html>

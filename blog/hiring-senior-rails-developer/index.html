@@ -76,7 +76,7 @@
       </nav>
         <div class="article-cover">
     <img
-      src="../../images/blog/hiring-senior-rails-developer/cover.jpg"
+      src="../../images/blog/hiring-senior-rails-developer/cover.png"
       alt="Screenshot of the Simple Dashboard app"
     >
   </div>
@@ -279,8 +279,9 @@
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
     <a class="article-preview--cover" href="/blog/remote-user-testing-during-lockdown/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/remote-user-testing-during-lockdown/cover.png"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/remote-user-testing-during-lockdown/cover-placeholder.png"
+        data-src="../../images/blog/remote-user-testing-during-lockdown/cover.png"
         alt="Remote user testing illustration"
       >
     </a>
@@ -321,8 +322,9 @@
   <div class="article-preview m-0 w-50pt-large pl-24px-large">
     <a class="article-preview--cover" href="/blog/simple-and-bangladesh/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/simple-and-bangladesh/cover.jpg"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/simple-and-bangladesh/cover-placeholder.jpg"
+        data-src="../../images/blog/simple-and-bangladesh/cover.jpg"
         alt="An image gallery of people using Simple"
       >
     </a>
@@ -382,5 +384,9 @@
         </span>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script>
+      lazyload();
+    </script>
   </body>
 </html>

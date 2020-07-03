@@ -161,7 +161,9 @@
 </section>
 <div class="image--contain">
   <img
+    class="lazyload"
     src="../../images/blog/phone-interviews-with-users/cover.png"
+    data-src="../../images/blog/phone-interviews-with-users/cover.png"
     alt="On the phone with a healthcare worker"
   >
   <h4>
@@ -264,7 +266,9 @@
 </section>
 <div class="image--contain">
   <img
-    src="../../images/blog/phone-interviews-with-users/android-team.png"
+    class="lazyload"
+    src="../../images/blog/phone-interviews-with-users/android-team-placeholder.png"
+    data-src="../../images/blog/phone-interviews-with-users/android-team.png"
     alt="The Android engineering and design teams during a regular stand-up meeting"
   >
   <h4>
@@ -298,7 +302,9 @@
 </section>
 <div class="image--contain">
   <img
-    src="../../images/blog/phone-interviews-with-users/observing-a-nurse.png"
+    class="lazyload"
+    src="../../images/blog/phone-interviews-with-users/observing-a-nurse-placeholder.png"
+    data-src="../../images/blog/phone-interviews-with-users/observing-a-nurse.png"
     alt="Observing a nurse at a PHC in Sindhudurg, Maharashtra"
   >
   <h4>
@@ -332,8 +338,9 @@
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
     <a class="article-preview--cover" href="/blog/co-creation-with-nurses/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/co-creation-with-nurses/cover.jpg"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/co-creation-with-nurses/cover-placeholder.jpg"
+        data-src="../../images/blog/co-creation-with-nurses/cover.jpg"
         alt="A nurse and a Community Health Officer sharing their ideas for Simple at a Health and Wellness Centre in Bathinda, Punjab"
       >
     </a>
@@ -374,8 +381,9 @@
   <div class="article-preview m-0 w-50pt-large pl-24px-large">
     <a class="article-preview--cover" href="/blog/a-day-in-the-life/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/a-day-in-the-life/cover.jpg"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/a-day-in-the-life/cover-placeholder.jpg"
+        data-src="../../images/blog/a-day-in-the-life/cover.jpg"
         alt="Action shot of a patient named Harnanth Singh who offered to share his story"
       >
     </a>
@@ -435,5 +443,9 @@
         </span>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script>
+      lazyload();
+    </script>
   </body>
 </html>

@@ -140,7 +140,9 @@
 </section>
 <div class="image--contain">
   <img
-    src="../../images/blog/a-day-in-the-life/a-doctor-recording-patient-visits.jpg"
+    class="lazyload"
+    src="../../images/blog/a-day-in-the-life/a-doctor-recording-patient-visits-placeholder.jpg"
+    data-src="../../images/blog/a-day-in-the-life/a-doctor-recording-patient-visits.jpg"
     alt="A doctor recording patient visits using Simple"
   >
   <h4>
@@ -157,7 +159,9 @@
 </section>
 <div class="image--contain">
   <img
-    src="../../images/blog/a-day-in-the-life/time-spent-in-simple.png"
+    class="lazyload"
+    src="../../images/blog/a-day-in-the-life/time-spent-in-simple-placeholder.jpg"
+    data-src="../../images/blog/a-day-in-the-life/time-spent-in-simple.jpg"
     alt="Table of metrics Simple team uses to assess app's performance"
   >
 </div>
@@ -212,7 +216,9 @@
 </section>
 <div class="image--contain">
   <img
-    src="/images/blog/a-day-in-the-life/behind-the-scenes.jpg"
+    class="lazyload"
+    src="../../images/blog/a-day-in-the-life/behind-the-scenes-placeholder.jpg"
+    data-src="../../images/blog/a-day-in-the-life/behind-the-scenes.jpg"
     alt="Behind the scenes with Harnanth Singh and Nurse Ranjit Kaur"
   >
   <h4>
@@ -221,11 +227,14 @@
 </div>
 <div class="image--contain">
   <img
-    src="../../images/blog/a-day-in-the-life/cover.jpg"
+    class="lazyload"
+    src="../../images/blog/a-day-in-the-life/cover-placeholder.jpg"
+    data-src="../../images/blog/a-day-in-the-life/cover.jpg"
     alt="Action shot of a patient named Harnanth Singh who offered to share his story"
   >
   <h4>
     Action shot of a patient named Harnanth Singh who offered to share his story
+  </h4>
 </div>
       </div>
       <div class="separators"></div>
@@ -233,8 +242,9 @@
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
     <a class="article-preview--cover" href="/blog/phone-interviews-with-users/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/phone-interviews-with-users/cover.png"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/phone-interviews-with-users/cover-placeholder.png"
+        data-src="../../images/blog/phone-interviews-with-users/cover.png"
         alt="On the phone with a healthcare worker"
       >
     </a>
@@ -275,8 +285,9 @@
   <div class="article-preview m-0 w-50pt-large pl-24px-large">
     <a class="article-preview--cover" href="/blog/training-the-simple-way/">
       <img
-        class="article-preview--cover--image"
-        src="../../images/blog/training-the-simple-way/cover.jpg"
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/training-the-simple-way/cover-placeholder.jpg"
+        data-src="../../images/blog/training-the-simple-way/cover.jpg"
         alt="Training video for Simple"
       >
     </a>
@@ -336,5 +347,9 @@
         </span>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script>
+      lazyload();
+    </script>
   </body>
 </html>
