@@ -61,6 +61,7 @@ social: social.jpg
     <% if index == 0 || index % 3 == 0 %>
       <div class="articles--normal">
     <% end %>
+      <!-- <%= index %> -->
       <div class="article-preview">
         <a href="<%= article.url %>" class="article-preview--cover">
           <img
@@ -106,7 +107,7 @@ social: social.jpg
           </div>
         </div>
       </div>
-    <% if index + 1 % 3 == 0 %>
+    <% if (index + 1) % 3 == 0 %>
       </div>
     <% end %>
   <% end %>
