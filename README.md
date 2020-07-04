@@ -49,6 +49,7 @@ To add a new blog article, do the following:
 6. **Add article images:** Add your article images in `/images/blog/my-new-article/`.
 7. **Image placeholders:** Re-export your images with a width of `50px` and a Figma layer blur of `1`. Image placeholders are used to lazy-load images and reduce initial page load times.
 8. **Create your content:** Use an existing article for reference to properly format and structure your article's content. There are no wrapping `div`s around the content—it's just a bunch of `section`s and image `div`s!
-9. **Review your article:** Check your article in mobile and larger devices. Once it's ready to go feel free to merge into master, or, request a review from Claudio.
+9. **Merge to master:** Check your article in your local on small and large devices. Once it's ready merge into master.
+10. **Publish your article:** Follow the instructions in the "Deployment" section above to publish your new article.
 
-If you have any questions along the way, Slack Claudio or send him an email at cvallejo@resolvetosavelives.org
+If you have any questions Slack Claudio or send him an email at cvallejo@resolvetosavelives.org
