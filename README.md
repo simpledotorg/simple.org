@@ -1,18 +1,7 @@
 # Simple.org
-
 This repository houses the source code for the Simple app website.
 
-## Add a new contributor to Simple.org
-
-To add a new contributor to [simple.org/about](https://simple.org/about), do the following:
-
-1. Add a contributor item to `data/contributors.yml`
-2. Check out `locales/en.yml` for a list of available roles and countries. **Note:** Please make sure the string you set in `contributors.yml` exactly matches the key in the `en.yml` file. Otherwise the role/country will display an error.
-3. Check the contributor is properly displayed in your local
-4. Merge and deploy (if you have deployment issues, check "Deployment" section below)
-
 ## Development
-
 We use [Middleman](https://middlemanapp.com/) to build the static pages which are hosted on [GitHub Pages](https://pages.github.com/).
 
 To run the site on your own machine, simply clone the repo, install the packages necessary, and start up a Middleman server.
@@ -24,10 +13,7 @@ $ bundle install
 $ middleman server
 ```
 
-Now you should be able to go to http://localhost:4567 and see the site running locally.
-
 ## Deployment
-
 After merging your commits to `master` and pulling the latest, run `rake publish`.
 
 ### Deployment errors
@@ -43,3 +29,27 @@ Error: `Could not find middleman-blog-4.0.3 in any of the sources`
 3. Run `rake publish`
 
 If you continue to have issues deploying, email cvallejo@resolvetosavelives.org.
+Now you should be able to go to http://localhost:4567 and see the site running locally.
+
+## Add a new contributor to Simple.org
+To add a new contributor to [simple.org/about](https://simple.org/about), do the following:
+
+1. Add a contributor item to `data/contributors.yml`
+2. Open `locales/en.yml` for a list of available roles and countries. **Note:** Please make sure the string you set in `contributors.yml` exactly matches the key in the `en.yml` file. Otherwise the role/country will display an error.
+3. Make sure the contributor is properly displayed in your local
+4. Merge and deploy (if you have deployment issues, check "Deployment" section below)
+
+## Create a new blog article
+To add a new blog article, do the following:
+
+0. **Create a new branch:** Pull the lastest from master and create a new branch.
+1. **Create a new file:** Add a new file in `source/blog/` using the following extension and naming convention: `year-month-day-my-new-article.html.erb`.
+2. **Paste front-matter:** Open an existing file and copy and paste the front-matter content to your new article.
+3. **Update front-matter:** Update the front-matter variables with your content. **Note:** Make sure to wrap all variable content within `" "`.
+4. **Set an author:** If the article's author is a contributor listed in `data/contributors/yml`, make sure to add their exact name in the `author` variable. If the author isn't a contributor, follow the "Add a new contributor to Simple.org" instructions above before proceeding.
+5. **Add article images:** Add your article images in `/images/blog/my-new-article/`.
+6. **Image placeholders:** Re-export your images with a width of `50px` and a Figma layer blur of `1`. Image placeholders are used to lazy-load images and reduce initial page load times.
+7. **Create your content:** Use an existing article for reference to properly format and structure your article's content. There are no wrapping `div`s around the content—it's just a bunch of `section`s and image `div`s!
+8. **Review your article:** Check your article in mobile and larger devices. Once it's ready to go feel free to merge into master, or, request a review from Claudio.
+
+If you have any questions along the way, Slack Claudio or send him an email at cvallejo@resolvetosavelives.org
