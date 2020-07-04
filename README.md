@@ -1,10 +1,8 @@
 # Simple.org
 This repository houses the source code for the Simple app website.
 
----
-
-# Development
-## Setup
+## Development
+### Setup
 We use [Middleman](https://middlemanapp.com/) to build the static pages which are hosted on [GitHub Pages](https://pages.github.com/).
 
 To run the site on your own machine, simply clone the repo, install the packages necessary, and start up a Middleman server.
@@ -16,7 +14,7 @@ $ bundle install
 $ middleman server
 ```
 
-## Deployment
+### Deployment
 After merging your commits to `master` and pulling the latest, run `rake publish`.
 
 ### Common deployment errors
@@ -31,10 +29,8 @@ After merging your commits to `master` and pulling the latest, run `rake publish
 2. Run `rm -rf build` to delete your `build/` directory
 3. Run `rake publish`
 
----
-
-# Contribute
-## Add a new contributor to Simple.org
+## Contribute
+### Add a new contributor to Simple.org
 To add a new contributor to [simple.org/about](https://simple.org/about), do the following:
 
 1. Add a contributor item to `data/contributors.yml`
@@ -42,7 +38,7 @@ To add a new contributor to [simple.org/about](https://simple.org/about), do the
 3. Make sure the contributor is properly displayed in your local
 4. Merge and deploy (if you have deployment issues, check "Deployment" section below)
 
-## Create a new blog article
+### Create a new blog article
 To add a new blog article, do the following:
 
 1. **Create a new branch:** Pull the lastest from master and create a new branch.
