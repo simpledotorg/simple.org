@@ -1,10 +1,10 @@
 <%
   next_article =
-    current_article.previous_article ? current_article.previous_article : blog.articles.first
+    current_article.article_previous ? current_article.article_previous : blog.articles.first
   next_article_author =
     get_contributor_by_name next_article.data.author
   previous_article =
-    current_article.next_article ? current_article.next_article : blog.articles.last
+    current_article.article_next ? current_article.article_next : blog.articles.last
   previous_article_author =
     get_contributor_by_name previous_article.data.author
 %>
