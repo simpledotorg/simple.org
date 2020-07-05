@@ -75,42 +75,40 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
   </head>
   <body class="<%= t(:lang) %> body-blog">
+    <div class="h-20px bg-dark-blue d-none-large"></div>
+    <div class="mr-45pt-large p-20px pt-80px-large px-0px-large">
+      <div class="mw-600px mx-auto-large">
+        <%= partial "partials/nav" %>
+      </div>
+    </div>
     <div class="contents">
-      <nav>
-        <h1><a href="<%= localized_url("/") %>">Simple</a></h1>
-        <span class="nav-links">
-          <a class="link" href="<%= localized_url("/about/") %>"><%= t(:about) %></a>
-          <a class="link" href="<%= localized_url("/blog/") %>"><%= t(:blog) %></a>
-          <a class="link" href="https://docs.simple.org"><%= t(:documentation) %></a>
-          <a class="link" href="https://github.com/simpledotorg/"><%= t(:github) %></a>
-        </span>
-      </nav>
       <%= partial "partials/article_header" %>
       <div class="article-content">
         <%= yield %>
       </div>
       <%= partial "partials/article_footer" %>
       <footer class="mw-medium mx-auto">
-        <a class="fs-medium fs-small:large" href="<%= localized_url("/screens/") %>">
+        <a class="fs-medium fs-small-large" href="<%= localized_url("/screens/") %>">
           Screenshots
         </a>
-        <a class="fs-medium fs-small:large" href="<%= localized_url("/privacy/") %>">
+        <a class="fs-medium fs-small-large" href="<%= localized_url("/privacy/") %>">
           <%= t(:privacy) %>
         </a>
-        <a class="fs-medium fs-small:large" href="<%= localized_url("/license/") %>">
+        <a class="fs-medium fs-small-large" href="<%= localized_url("/license/") %>">
           Open source license
         </a>
-        <a class="fs-medium fs-small:large" href="<%= localized_url("/digitalprinciples/") %>">
+        <a class="fs-medium fs-small-large" href="<%= localized_url("/digitalprinciples/") %>">
           Digital principles
         </a>
-        <a class="fs-medium fs-small:large" href="<%= localized_url("/contact/") %>">
+        <a class="fs-medium fs-small-large" href="<%= localized_url("/contact/") %>">
           <%= t(:contact) %>
         </a>
-        <span class="fs-medium fs-small:large">
+        <span class="fs-medium fs-small-large">
           * Note: All patients in screenshots are fake
         </span>
       </footer>
     </div>
+    <%= javascript_include_tag "javascript/nav" %>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script>
       lazyload();

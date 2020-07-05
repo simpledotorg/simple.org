@@ -73,16 +73,13 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
   </head>
   <body class="<%= t(:lang) %> body-blog">
+    <div class="h-20px bg-dark-blue d-none-large"></div>
+    <div class="mr-45pt-large p-20px pt-80px-large px-0px-large">
+      <div class="mw-600px mx-auto-large">
+        <%= partial "partials/nav" %>
+      </div>
+    </div>
     <div class="contents">
-      <nav>
-        <h1><a href="<%= localized_url("/") %>">Simple</a></h1>
-        <span class="nav-links">
-          <a class="link" href="<%= localized_url("/about/") %>"><%= t(:about) %></a>
-          <a class="link" href="<%= localized_url("/blog/") %>"><%= t(:blog) %></a>
-          <a class="link" href="https://docs.simple.org"><%= t(:documentation) %></a>
-          <a class="link" href="https://github.com/simpledotorg/"><%= t(:github) %></a>
-        </span>
-      </nav>
       <main class="mw-xlarge mx-auto">
         <%= yield %>
       </main>
@@ -95,6 +92,7 @@
         <span>* Note: All patients in screenshots are fake</span>
       </footer>
     </div>
+    <%= javascript_include_tag "javascript/nav" %>
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
     <script>
       lazyload();
