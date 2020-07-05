@@ -3,22 +3,70 @@ title: Blog
 social: social.jpg
 ---
 
-<div>
-  <p class="intro">
-    <%= t(:intro) %>
-  </p>
-  <div class="articles--large">
-    <% blog.articles[0...2].each do |article| %>
-      <% author = get_contributor_by_name(article.data.author) %>
-      <div class="article-preview">
-        <a class="article-preview--cover" href="<%= article.url %>">  
-          <img
-            class="lazyload article-preview--cover--image"
-            src="<%= article.data.cover_image_placeholder_path %>"
-            data-src="<%= article.data.cover_image_path %>"
-            alt="<%= article.data.cover_image_alt %>"
-          >
-        </a>
+<div class="articles--large">
+  <% blog.articles[0...2].each do |article| %>
+    <% author = get_contributor_by_name(article.data.author) %>
+    <div class="article-preview">
+      <a class="article-preview--cover" href="<%= article.url %>">  
+        <img
+          class="lazyload article-preview--cover--image"
+          src="<%= article.data.cover_image_placeholder_path %>"
+          data-src="<%= article.data.cover_image_path %>"
+          alt="<%= article.data.cover_image_alt %>"
+        >
+      </a>
+      <div class="article-preview--details">
+        <h4>
+          <%= article.date.strftime('%b %e %Y') %>
+        <h4>
+        <h4>
+          <%= article.data.reading_time %> minutes
+        </h4>
+      </div>
+      <a href="<%= article.url %>">
+        <h2>
+          <%= article.title %>
+        </h2>
+      </a>
+      <p class="global">
+        <%= article.data.intro %>
+      </p>
+      <div class="person--blog">
+        <img
+          class="person--photo"
+          src="<%= author.image_path %>"
+          alt="<%= author.name %>"
+        >
+        <div class="person--details">
+          <h3>
+            <a href="<%= author.social_media_path %>">
+              <%= author.name %>
+            </a>
+            </h3>
+          <h5>
+            <%= t(author.role) %>, <%= t(author.country) %>
+          </h5>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<% total_articles = blog.articles.length %>
+<% blog.articles[2...total_articles].each_with_index do |article, index| %>
+  <% author = get_contributor_by_name(article.data.author) %>
+  <% if index == 0 || index % 3 == 0 %>
+    <div class="articles--normal">
+  <% end %>
+    <div class="article-preview">
+      <a href="<%= article.url %>" class="article-preview--cover">
+        <img
+          class="lazyload article-preview--cover--image"
+          src="<%= article.data.cover_image_placeholder_path %>"
+          data-src="<%= article.data.cover_image_path %>"
+          alt="<%= article.data.cover_image_alt %>"
+        >
+      </a>
+      <div class="article-preview--details">
         <div class="article-preview--details">
           <h4>
             <%= article.date.strftime('%b %e %Y') %>
@@ -43,71 +91,18 @@ social: social.jpg
           >
           <div class="person--details">
             <h3>
-              <a href="<%= author.social_media_path %>">
+              <a href="<%= author.social_media_link %>">
                 <%= author.name %>
               </a>
-             </h3>
+            </h3>
             <h5>
-              <%= t(author.role) %>, <%= t(author.country) %>
+              <%= t(author.role) %>, <%= t(author.country) %> 
             </h5>
           </div>
         </div>
       </div>
-    <% end %>
-  </div>
-  <% total_articles = blog.articles.length %>
-  <% blog.articles[2...total_articles].each_with_index do |article, index| %>
-    <% author = get_contributor_by_name(article.data.author) %>
-    <% if index == 0 || index % 3 == 0 %>
-      <div class="articles--normal">
-    <% end %>
-      <div class="article-preview">
-        <a href="<%= article.url %>" class="article-preview--cover">
-          <img
-            class="lazyload article-preview--cover--image"
-            src="<%= article.data.cover_image_placeholder_path %>"
-            data-src="<%= article.data.cover_image_path %>"
-            alt="<%= article.data.cover_image_alt %>"
-          >
-        </a>
-        <div class="article-preview--details">
-          <div class="article-preview--details">
-            <h4>
-              <%= article.date.strftime('%b %e %Y') %>
-            <h4>
-            <h4>
-              <%= article.data.reading_time %> minutes
-            </h4>
-          </div>
-          <a href="<%= article.url %>">
-            <h2>
-              <%= article.title %>
-            </h2>
-          </a>
-          <p class="global">
-            <%= article.data.intro %>
-          </p>
-          <div class="person--blog">
-            <img
-              class="person--photo"
-              src="<%= author.image_path %>"
-              alt="<%= author.name %>"
-            >
-            <div class="person--details">
-              <h3>
-                <a href="<%= author.social_media_link %>">
-                  <%= author.name %>
-                </a>
-              </h3>
-              <h5>
-                <%= t(author.role) %>, <%= t(author.country) %> 
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    <% if (index + 1) % 3 == 0 %>
-      </div>
-    <% end %>
+    </div>
+  <% if (index + 1) % 3 == 0 %>
+    </div>
   <% end %>
-</div>
+<% end %>
