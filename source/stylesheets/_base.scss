@@ -171,9 +171,6 @@ p {
     color: rgba(0,0,0,0.85);
 }
 
-.feature {
-}
-
 .feature video,
 .feature img {
     max-height: 100%;
@@ -804,7 +801,7 @@ a.button-play {
     }
 
     .contents {
-        padding: 40px;
+        padding: 0 40px;
         max-width: 600px;
         margin: 0 auto;
     }
