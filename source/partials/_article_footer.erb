@@ -8,8 +8,12 @@
   previous_article_author =
     get_contributor_by_name previous_article.data.author
 %>
-<div class="separators"></div>
-<div class="mw-xlarge mx-auto d-flex-large f-wrap-large">
+<div class="mw-medium mb-60px mx-auto py-40px bt bb btc-gray-light bbc-gray-light">
+  <p class="mb-0 fs-large lh-168pt">
+    <%= t(:articleFooter) %>
+  </p>
+</div>
+<div class="mw-medium mx-auto d-flex-large f-wrap-large">
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
     <a class="article-preview--cover" href="<%= previous_article.url %>">
       <img
