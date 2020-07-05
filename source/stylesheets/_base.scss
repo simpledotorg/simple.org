@@ -246,15 +246,20 @@ nav span {
     text-align: center;
     font-weight: 500;
     font-size: 110%;
+    color: rgba(0,0,0,0.5);
 }
 
 nav a.link:hover {
-    color: #000;
+    color: #0075EB;
 }
 
 nav .nav-links {
     display: block;
     text-align: left;
+}
+
+nav a.active {
+    color: #0075EB;
 }
 
 .languages {
