@@ -625,15 +625,24 @@ img {
 .mw-xlarge { max-width: $width-xlarge; }
 // Spacing
 .m-0 { margin: 0; }
+.mb-0 { margin-bottom: 0px; }
+.mb-60px { margin-bottom: 60px; }
 .mb-48px { margin-bottom: 48px; }
 .mx-auto { margin-right: auto; margin-left: auto; }
 .mb-medium { margin-bottom: 16px; }
 .p-20px { padding: 20px; }
+.py-40px { padding-top: 40px; padding-bottom: 40px; }
 // Typography
 .fs-small { font-size: 14px; }
 .fs-medium { font-size: 16px; }
 .fs-large { font-size: 20px; }
 .fs-xlarge { font-size: 24px; }
+.lh-168pt { line-height: 168%; }
+// Border
+.bt { border-top: 1px solid; }
+.bb { border-bottom: 1px solid; }
+.btc-gray-light { border-top-color: $color-grey4; }
+.bbc-gray-light { border-bottom-color: $color-grey4; }
 // Background color
 .bg-dark-blue { background-color: #0A2E52; }
 
