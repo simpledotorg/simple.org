@@ -83,7 +83,9 @@
           <a class="link" href="https://github.com/simpledotorg/"><%= t(:github) %></a>
         </span>
       </nav>
-      <%= yield %>
+      <main class="mw-xlarge mx-auto">
+        <%= yield %>
+      </main>
       <footer class="small">
         <a href="<%= localized_url("/screens/") %>">Screenshots</a>
         <a href="<%= localized_url("/privacy/") %>"><%= t(:privacy) %></a>
