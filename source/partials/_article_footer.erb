@@ -1,15 +1,19 @@
 <%
   next_article =
-    current_article.previous_article ? current_article.previous_article : blog.articles.first
+    current_article.article_previous ? current_article.article_previous : blog.articles.first
   next_article_author =
     get_contributor_by_name next_article.data.author
   previous_article =
-    current_article.next_article ? current_article.next_article : blog.articles.last
+    current_article.article_next ? current_article.article_next : blog.articles.last
   previous_article_author =
     get_contributor_by_name previous_article.data.author
 %>
-<div class="separators"></div>
-<div class="mw-xlarge mx-auto d-flex-large f-wrap-large">
+<div class="mw-medium mb-60px mx-auto py-40px bt bb btc-gray-light bbc-gray-light">
+  <p class="mb-0 fs-large lh-168pt">
+    <%= t(:articleFooter) %>
+  </p>
+</div>
+<div class="mw-medium mx-auto d-flex-large f-wrap-large">
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
     <a class="article-preview--cover" href="<%= previous_article.url %>">
       <img
