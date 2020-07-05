@@ -1050,7 +1050,6 @@ p {
   padding: 20px; }
 
 nav {
-  margin: 0 0 2em 0;
   padding-top: 0;
   position: relative; }
 
@@ -1061,14 +1060,18 @@ nav span {
   height: 30px;
   text-align: center;
   font-weight: 500;
-  font-size: 110%; }
+  font-size: 110%;
+  color: rgba(0, 0, 0, 0.5); }
 
 nav a.link:hover {
-  color: #000; }
+  color: #0075EB; }
 
 nav .nav-links {
   display: block;
   text-align: left; }
+
+nav a.active {
+  color: #0075EB; }
 
 .languages {
   position: absolute;
@@ -1537,7 +1540,7 @@ a.button-play {
     display: inline; }
 
   .contents {
-    padding: 40px;
+    padding: 0 40px;
     max-width: 600px;
     margin: 0 auto; }
 
@@ -1578,3 +1581,5 @@ a.button-play {
   .people li {
     padding: 6px 0 16px 62px;
     font-size: 16px; } }
+.mb-32px {
+  margin-bottom: 32px; }
