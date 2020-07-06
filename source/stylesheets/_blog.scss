@@ -50,7 +50,9 @@ $width-xlarge: 1192px;
 	h1.intro {
 		top: 0;
 		text-indent: 0;
+		font-weight: 400;
 		letter-spacing: 0;
+		line-height: 115%;
 	}
 
 	p.intro {
@@ -298,6 +300,7 @@ $width-xlarge: 1192px;
 		}
 
 		h3 a {
+			display: inline-block;
 			margin: 0 0 8px 0;
 			font-size: 18px;
 			line-height: 100%;
