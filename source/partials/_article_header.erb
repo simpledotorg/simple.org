@@ -8,14 +8,6 @@
   </div>
 <% end %>
 <div class="article-header">
-  <div class="article-header--details">
-    <h4>
-      <%= current_page.date.strftime('%d %B %Y') %>
-    </h4>
-    <h4>
-      <%= current_page.data.reading_time %> min read
-    </h4>
-  </div>
   <h1 class="intro">
     <%= current_page.data.title %>
   </h1>
@@ -35,7 +27,7 @@
         </a>
       </h3>
       <h5>
-        <%= t(author.role) %>, <%= t(author.country) %>
+        <%= current_page.date.strftime('%d-%b-%Y') %>, <%= current_page.data.reading_time %> minute read
       </h5>
     </div>
   </div>
