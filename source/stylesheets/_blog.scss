@@ -1,5 +1,5 @@
 $color-link: #0075eb;
-$color-text: rgba(0, 0, 0, 0.7);
+$color-text: #000000;
 $color-text--faded: rgba(0, 0, 0, 0.55);
 $color-grey4: #f0f2f5;
 
@@ -230,7 +230,7 @@ $width-xlarge: 1192px;
 .article-preview {
 	width: 100%;
 	display: inline-block;
-	margin: 0 auto 64px auto;
+	margin: 0 auto 70px auto;
 
 	a {
 		display: block;
@@ -238,14 +238,28 @@ $width-xlarge: 1192px;
 		text-transform: none;
 	}
 
-	.article-preview--cover {
+	.article-preview--cover-small,
+	.article-preview--cover-large {
 		display: block;
 		width: 100%;
-		height: 400px;
 		margin: 0 0 23px 0;
 		border-radius: 4px;
 		border: 1px solid $color-grey4;
 		overflow: hidden;
+	}
+
+	.article-preview--cover-small {
+		height: 200px;
+	}
+
+	.article-preview--cover-large {
+		height: 200px;
+	}
+
+	@media (min-width: $width-large) {
+		.article-preview--cover-large {
+			height: 300px;
+		}
 	}
 
 	.article-preview--cover--image {
@@ -276,7 +290,7 @@ $width-xlarge: 1192px;
 
 	.person--details {
 		display: inline-block;
-		margin: -4px 0 0 0;
+		margin: 0;
 		vertical-align: middle;
 
 		h3 {
@@ -284,7 +298,7 @@ $width-xlarge: 1192px;
 		}
 
 		h3 a {
-			margin: 0 0 4px 0;
+			margin: 0 0 8px 0;
 			font-size: 18px;
 			line-height: 100%;
 			letter-spacing: 0;
@@ -302,13 +316,13 @@ $width-xlarge: 1192px;
 			font-weight: 300;
 			line-height: 100%;
 			text-transform: none;
-			color: $color-text;
+			color: $color-text--faded;
 			letter-spacing: 0;
 		}
 
 		@media (min-width: $width-large) {
 			h3 a {
-				margin: 0 0 5px 0;
+				margin: 0 0 8px 0;
 				font-size: 16px;
 			}
 
