@@ -242,7 +242,7 @@ nav span {
     text-align: center;
     font-weight: 500;
     font-size: 110%;
-    color: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,1);
 }
 
 nav a.link:hover {
@@ -255,7 +255,7 @@ nav .nav-links {
 }
 
 nav a.active {
-    color: #0075EB;
+    color: #FF3355;
 }
 
 .languages {

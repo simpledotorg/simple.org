@@ -246,6 +246,11 @@ $width-xlarge: 1192px;
 		border-radius: 4px;
 		border: 1px solid $color-grey4;
 		overflow: hidden;
+        transition: 0.2s ease-in-out border-color;
+        
+        &:hover {
+            border-color: #FF3355;
+        }
 	}
 
 	.article-preview--cover-small {
