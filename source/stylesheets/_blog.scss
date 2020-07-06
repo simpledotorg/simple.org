@@ -253,7 +253,13 @@ $width-xlarge: 1192px;
 	}
 
 	.article-preview--cover-large {
-		height: 300px;
+		height: 200px;
+	}
+
+	@media (min-width: $width-large) {
+		.article-preview--cover-large {
+			height: 300px;
+		}
 	}
 
 	.article-preview--cover--image {
