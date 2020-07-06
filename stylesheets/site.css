@@ -1487,8 +1487,7 @@ a.button-play {
     width: 220px; }
 
   .intro, h2 {
-    font-size: 36px;
-    margin-top: -40px;
+    font-size: 32px;
     max-width: 15em; }
 
   .half {
@@ -1528,8 +1527,7 @@ a.button-play {
     background-image: url(../images/screenshots-dashboard.png); }
 
   nav {
-    padding-top: 80px;
-    padding-bottom: 80px; }
+    padding-top: 80px; }
 
   nav a.link,
   nav span {
