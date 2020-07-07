@@ -95,11 +95,11 @@
   </head>
   <body class="<%= t(:lang) %> body-<%= global_current_url %>">
       <div class="feature <%= global_current_url %>">
-          <a href="/screens">See screenshots...</a>
+          <div></div>
       </div>
       <div class="half">
         <div class="contents <%= t(:lang) %>">
-            <div class="mb-32px">
+            <div class="header mb-32px">
               <%= partial "partials/nav" %>
             </div>
             <%= yield %>

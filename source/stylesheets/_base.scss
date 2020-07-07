@@ -12,6 +12,14 @@
 
 body {
     font-size: 16px;
+    background: #fff url(/images/header.png) 0 -170px no-repeat;
+    background-size: 1000px;
+    padding-top: 100px;
+    
+    &.barebones {
+        padding-top: 0;
+        background: #fff;
+    }
 }
 
 .barebones-wrapper {
@@ -226,11 +234,11 @@ p {
 }
 
 .contents {
-    padding: 20px;
+    padding: 40px;
 }
 
 nav {
-    padding-top: 0;
+    padding: 0 0 80px 0;
     position: relative;
 }
 
@@ -438,16 +446,16 @@ footer span {
 
 .image-float {
     float: right;
-    margin: 0 24px 16px 16px;
+    margin: 0 16px 16px 16px;
     display: block;
     text-align: center;
-    width: 150px;
+    width: 130px;
     z-index: 1000000;
     position: relative;
 }
 
 .image-float img {
-    width: 150px;
+    width: 136px;
     border: 5px solid #fff;
     box-shadow: 2px 4px 10px rgba(0,0,0,0.15);
     display: block;
@@ -668,11 +676,6 @@ a.button-play {
     }
     
     .feature {
-        height: 20px;
-        background: #0A2E52;
-    }
-    
-    .feature a {
         display: none;
     }
 }
@@ -685,6 +688,8 @@ a.button-play {
     
     body {
         font-size: 18px;
+        background: #fff;
+        padding-top: 0;
     }
     
     h1 {
@@ -755,14 +760,6 @@ a.button-play {
         background-position: 50% 50%;
     }
     
-    .feature a {
-        position: absolute;
-        bottom: 24px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-    }
-    
     .feature.about {
         background-image: url(/images/screenshots-progress.png);
     }
@@ -785,6 +782,7 @@ a.button-play {
 
     nav {
         padding-top: 80px;
+        padding-bottom: 20px;
     }
 
     nav a.link,
