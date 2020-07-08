@@ -35,6 +35,15 @@ $width-xlarge: 1192px;
 
 .body-blog {
 	color: $color-text;
+    
+    a:hover h1, 
+    a:hover h2, 
+    a:hover h3, 
+    a:hover h4, 
+    a:hover h5, 
+    a:hover h6 {
+        color: #0075EB;
+    } 
 
 	nav {
 		@media (min-width: $width-medium) {
@@ -86,19 +95,27 @@ $width-xlarge: 1192px;
 		h2 {
 			margin-bottom: 12px;
 			padding: 0;
-			font-weight: 700;
-			font-size: 28px;
+			font-weight: 500;
+			font-size: 22px;
 			line-height: 115%;
 			letter-spacing: 0;
 			color: $color-text;
+            
+            @media (min-width: $width-medium) {
+                font-size: 26px;
+            }
 		}
 
 		h3 {
 			margin: 33px 0 8px 0;
-			font-size: 21px;
-			font-weight: 700;
+			font-size: 18px;
+			font-weight: 500;
 			line-height: 136%;
 			letter-spacing: 0;
+            
+            @media (min-width: $width-medium) {
+                font-size: 22px;
+            }
 		}
 
 		h4 {
@@ -249,7 +266,7 @@ $width-xlarge: 1192px;
         transition: 0.2s ease-in-out border-color;
         
         &:hover {
-            border-color: #FF3355;
+            border-color: #0075EB;
         }
 	}
 
