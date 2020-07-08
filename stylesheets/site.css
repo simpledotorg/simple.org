@@ -1377,7 +1377,7 @@ a.button-play {
   float: right;
   width: 140px;
   height: 140px;
-  margin: -24px 0 16px 16px;
+  margin: -24px 0 32px 32px;
   position: relative;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out; }
@@ -1491,7 +1491,9 @@ a.button-play {
     width: 220px; }
 
   .intro, h2 {
-    font-size: 32px;
+    font-size: 32px; }
+
+  .intro {
     max-width: 15em; }
 
   .half {

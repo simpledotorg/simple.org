@@ -1377,7 +1377,7 @@ a.button-play {
   float: right;
   width: 140px;
   height: 140px;
-  margin: -24px 0 16px 16px;
+  margin: -24px 0 32px 32px;
   position: relative;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out; }
@@ -1491,7 +1491,9 @@ a.button-play {
     width: 220px; }
 
   .intro, h2 {
-    font-size: 32px;
+    font-size: 32px; }
+
+  .intro {
     max-width: 15em; }
 
   .half {
@@ -1582,6 +1584,13 @@ a.button-play {
 
 .body-blog {
   color: #000000; }
+  .body-blog a:hover h1,
+  .body-blog a:hover h2,
+  .body-blog a:hover h3,
+  .body-blog a:hover h4,
+  .body-blog a:hover h5,
+  .body-blog a:hover h6 {
+    color: #0075EB; }
   @media (min-width: 688px) {
     .body-blog nav {
       padding: 0 0 60px 0;
@@ -1617,20 +1626,32 @@ a.button-play {
   .body-blog .article-end h2 {
     margin-bottom: 12px;
     padding: 0;
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: 500;
+    font-size: 22px;
     line-height: 115%;
     letter-spacing: 0;
     color: #000000; }
+    @media (min-width: 688px) {
+      .body-blog .article-cover h2,
+      .body-blog .article-content h2,
+      .body-blog .article-preview h2,
+      .body-blog .article-end h2 {
+        font-size: 26px; } }
   .body-blog .article-cover h3,
   .body-blog .article-content h3,
   .body-blog .article-preview h3,
   .body-blog .article-end h3 {
     margin: 33px 0 8px 0;
-    font-size: 21px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 136%;
     letter-spacing: 0; }
+    @media (min-width: 688px) {
+      .body-blog .article-cover h3,
+      .body-blog .article-content h3,
+      .body-blog .article-preview h3,
+      .body-blog .article-end h3 {
+        font-size: 22px; } }
   .body-blog .article-cover h4,
   .body-blog .article-content h4,
   .body-blog .article-preview h4,
@@ -1745,7 +1766,7 @@ a.button-play {
     transition: 0.2s ease-in-out border-color; }
     .article-preview .article-preview--cover-small:hover,
     .article-preview .article-preview--cover-large:hover {
-      border-color: #FF3355; }
+      border-color: #0075EB; }
   .article-preview .article-preview--cover-small {
     height: 200px; }
   .article-preview .article-preview--cover-large {
