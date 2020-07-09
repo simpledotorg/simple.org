@@ -1,0 +1,75 @@
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8">
+<!-- Use the title from a page's frontmatter if it has one -->
+<title><%= current_page.data.title %> <%= t(:simple) %></title>
+<meta name="description" content="<%= t(:intro) %>">
+<meta name="author" content="<%= t(:simple) %>">
+
+<!-- Font Awesome
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://kit.fontawesome.com/72c701f5ae.js" crossorigin="anonymous"></script>
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:url"                content="http://www.simple.org/" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="<%= current_page.data.title %> / Simple.org" />
+<meta property="og:description"        content="<%= t(:intro) %>" />
+<meta property="og:image"              content="https://simple.org/images/<%= current_page.data.social %>" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@resolvetsl">
+<meta name="twitter:title" content="<%= current_page.data.title %> / Simple.org">
+<meta name="twitter:description" content="<%= t(:intro) %>">
+<meta name="twitter:creator" content="@resolvetsl">
+<meta name="twitter:image:src" content="https://simple.org/images/<%= current_page.data.social %>">
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<%= stylesheet_link_tag "site" %>
+<style type="text/css">
+
+    <% if lang != :en %>
+      h3 {
+            font-weight: 900;
+            font-size: 22px;
+        }
+    <% end %>
+
+
+</style>
+
+<!-- Fix for Flash of Unstyled Content
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+<style type="text/css">
+  .hidden {display:none;}
+</style>
+<script type="text/javascript" src="/scripts/jquery.js"></script>
+<script type="text/javascript">
+  $('html').addClass('hidden');
+  $(document).ready(function() {    
+      $(window).on('load', function () {...});
+    $('html').show();  
+  });  
+</script>
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<% if lang == :hi %>
+  <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <style type="text/css">
+      body {
+          font-family: Hind, sans-serif;
+      }
+  </style>
+<% end %>
+
+<!-- JS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <%= javascript_include_tag "site" %> -->
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="/images/favicon.png">
