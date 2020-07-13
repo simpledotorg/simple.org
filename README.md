@@ -43,7 +43,7 @@ To add a new blog article, do the following:
 
 1. **Create a new branch:** Pull the lastest from master and create a new branch.
 2. **Create a new file:** Add a new file in `source/blog/` using the following extension and naming convention: `year-month-day-my-new-article.html.erb`.
-3. **Paste front-matter:** Open an existing file and copy and paste the front-matter content to your new article.
+3. **Paste front-matter:** Open an old article in `source/blog/` and copy and paste the front-matter content to your new article.
 4. **Update front-matter:** Update the front-matter variables with your content. **Note:** Make sure to wrap all variable content within `" "`.
 5. **Set an author:** If the article's author is a contributor listed in `data/contributors/yml`, make sure to add their exact name in the `author` variable. If the author isn't a contributor, follow the "Add a new contributor to Simple.org" instructions above before proceeding.
 6. **Add article images:** Add your article images in `/images/blog/my-new-article/`.
