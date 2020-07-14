@@ -1,0 +1,354 @@
+<!doctype html>
+  <html>
+  <head>
+    <!-- Google Analytics
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121312461-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121312461-1');
+    </script>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>BP Passport app for patients Simple</title>
+    <meta name="description" content="Fast, free software for clinicians to manage patients with hypertension.">
+    <meta name="author" content="Simple">
+    <!-- Font Awesome
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://kit.fontawesome.com/72c701f5ae.js" crossorigin="anonymous"></script>
+    <!-- Browser/Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Open Graph Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta property="og:url"                content="https://www.simple.org">
+    <meta property="og:type"               content="article">
+    <meta property="og:title"              content="BP Passport app for patients">
+    <meta property="og:description"        content="The world's simplest personal hypertension charting app">
+    <meta property="og:image"              content="https://simple.org//images/blog/bp-passport-app/cover.jpg">
+    <!-- Twitter Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="twitter:card"              content="summary_large_image">
+    <meta name="twitter:site"              content="@resolvetsl">
+    <meta name="twitter:title"             content="BP Passport app for patients">
+    <meta name="twitter:description"       content="The world's simplest personal hypertension charting app">
+    <meta name="twitter:creator"           content="@resolvetsl">
+    <meta name="twitter:image"             content="https://simple.org/images/blog/bp-passport-app/cover.jpg">
+    <meta name="twitter:image:alt"         content="Action shot of a patient named Harnanth Singh who offered to share his story">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="../../stylesheets/blog.css" rel="stylesheet" />
+    <style type="text/css">
+    </style>
+    <!-- Fix for Flash of Unstyled Content
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->    
+    <style type="text/css">
+      .hidden { display:none; }
+    </style>
+    <script type="text/javascript" src="/scripts/jquery.js"></script>
+    <script type="text/javascript">
+      $('html').addClass('hidden');
+      $(document).ready(function() {    
+          $(window).on('load', function () {...});
+        $('html').show();  
+      });  
+    </script>
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
+  </head>
+  <body class="en body-blog">
+    <div class="h-20px bg-dark-blue d-none-large"></div>
+    <div class="mr-45pt-large p-20px pt-80px-large px-0px-large">
+      <div class="mw-600px mx-auto-large">
+        <nav>
+  <h1>
+    <a href="/">
+      Simple
+    </a>
+  </h1>
+  <span class="nav-links">
+    <a id="about" class="link" href="/about/">
+      About
+    </a>
+    <a id="blog" class="link" href="/blog/">
+      Blog
+    </a>
+    <a class="link" href="https://docs.simple.org">
+      Docs
+    </a>
+    <a class="link" href="https://github.com/simpledotorg/">
+      GitHub
+    </a>
+  </span>
+</nav>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="article-cover">
+  <img
+    src="../../images/blog/bp-passport-app/cover.jpg"
+    alt="Action shot of a patient named Harnanth Singh who offered to share his story"
+  >
+</div>
+<div class="article-header">
+  <h1 class="intro">
+    BP Passport app for patients
+  </h1>
+  <p class="brief global">
+    The world's simplest personal hypertension charting app
+  </p>
+  <div class="person--blog">
+    <img
+      class="person--photo"
+      src="../../images/people/mahima.jpg"
+      alt="Mahima Chandak"
+    >
+    <div class="person--details">
+      <h3>
+        <a href="https://twitter.com/mahima_chandak">
+          Mahima Chandak
+        </a>
+      </h3>
+      <h5>
+        14-Jul-2020, 3 minute read
+      </h5>
+    </div>
+  </div>
+</div>
+      <div class="article-content">
+        <section>
+  <p>
+    Patients are at the center of an effective hypertension management program. In a place like India, we know that patients fluidly move through the healthcare ecosystem. A patient might be registered at a large government hospital, then visit a private doctor in their village next month, and follow-up for care at a local government clinic later in the year.
+  </p>
+  <p>
+    In a patient-centric program, a patient can manage their own health record and get excellent care no matter where they go for care.
+  </p>
+  <p>
+    We made a very basic app for patients, called the BP Passport app. The BP Passport app is simple enough for any smartphone owner to use and connects the patient to their own record in the public health program so they can carry it with them no matter where they go.
+  </p>
+</section>
+<section>
+  <h2>
+    Manage your health, the simple way
+  </h2>
+  <p>
+    The BP Passport app is radically simple. There are many apps available to track your blood pressure, but none are designed to be easily used by patients in rural India or Bangladesh, who may not know much about hypertension or about downloading and using apps. The app only does a few things:
+  </p>
+  <ul>
+    <li>
+      Charts your blood pressures and blood sugars
+    </li>
+    <li>
+      Reminds you to take medications on time
+    </li>
+    <li>
+      Helps you learn about managing hypertension
+    </li>
+  </ul>
+</section>
+<section>
+  <h3>
+    Chart blood pressures and blood sugars
+  </h3>
+  <p>
+    Patients rarely read their own health records. On paper, they’re often hard to understand and are stored at the facility where care was given. The BP Passport app has simple language and easy to read charts, so that patients and their caregivers can easily engage with their health data.
+  </p>
+  <div class="image--contain">
+    <img
+      class="lazyload"
+      src="../../images/blog/bp-passport-app/charts-placeholder.jpg"
+      data-src="../../images/blog/bp-passport-app/charts.jpg"
+      alt="Mobile devices showing a list of BPs and a graph of a user's BP trend"
+    >
+  </div>
+</section>
+<section>
+  <h3>
+    Timely reminders for medication
+  </h3>
+  <p>
+    Medication adherence is very important in managing hypertension and diabetes. But, it’s hard to consistently remember to take your daily medicines. The BP Passport app sends reminders to take your medications.
+  </p>
+  <div class="image--contain">
+    <img
+      class="lazyload"
+      src="../../images/blog/bp-passport-app/medicine-reminders-placeholder.jpg"
+      data-src="../../images/blog/bp-passport-app/medicine-reminders.jpg"
+      alt="Mobile devices showing a medicine reminder screen and a notification reminding a user to take their medicine"
+    >
+  </div>
+</section>
+<section>
+  <h3>
+    Tips on managing hypertension
+  </h3>
+  <p>
+    Hypertension can be impacted by lifestyle changes. The app teaches a few simple ways that patients can improve through healthy changes.
+  </p>
+  <div class="image--contain">
+    <img
+      class="lazyload"
+      src="../../images/blog/bp-passport-app/health-reminders-placeholder.jpg"
+      data-src="../../images/blog/bp-passport-app/health-reminders.jpg"
+      alt="Mobile devices showing a medicine reminder screen and a notification reminding a user to take their medicine"
+    >
+  </div>
+</section>
+<section>
+  <h2>
+    Available in local languages
+  </h2>
+  <p>
+    There are very few hypertension management apps available in languages that are spoken by hundreds of millions of people.
+  </p>
+  <p>
+    The BP Passport app is currently available in six languages: Bangla, English, French, Hindi, Marathi, and Spanish. In the next few weeks, it will also be available in Amharic, Bengali, Kannada, Marathi, Oromo, Tamil, Telugu, and Tigrinya.
+  </p>
+  <div class="quote">
+    <p>
+      I barely use my phone because everything in here is in English. The best part about this app is that it is available in Hindi. I can easily read, write and understand things here.
+    </p>
+    <p>
+      54-year old hypertensive patient from Madhya Pradesh, India
+    </p>
+  </div>
+</section>
+<section>
+  <h2>
+    Part of a hypertension program
+  </h2>
+  <p>
+    The BP Passport app can be used all on its own or it can be integrated into a hypertension program with the Simple app for clinicians.
+  </p>
+  <p>
+    If patients are enrolled in a hypertension program, like the India Hypertension Control Initiative or the National Heart Foundation program in Bangladesh, the patient can scan their paper ID card and connect it to their existing health record. Any time that the patient gets a BP or diabetes measure at their local hospital, their reading will automatically be synced to their BP Passport app.
+  </p>
+</section>
+<section>
+  <h3>
+    Available on Android and iOS
+  </h3>
+  <p>
+    Download the app from your <a href="https://play.google.com/store/apps/details?id=org.simple.bppassport">Play Store</a> or <a href="https://apps.apple.com/us/app/bp-passport/id1510811893">App Store</a>.
+  </p>
+</section>
+      </div>
+      <div class="mw-medium mb-60px mx-auto py-40px bt bb btc-gray-light bbc-gray-light">
+  <p class="mb-0 fs-large lh-168pt">
+    <dfn>Simple is the fast, free app for clinicians to manage their patients with high blood pressure.</dfn>
+  </p>
+</div>
+<div class="mw-medium mb-60px mx-auto">
+  <p class="mb-0 fs-large lh-168pt">
+    All blog content is public domain: <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">Creative Commons CC0 license</a>
+  </p>
+</div>
+<div class="mw-xlarge mx-auto d-flex-large f-wrap-large">
+  <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
+    <a class="article-preview--cover-small" href="/blog/open-source-brand-design-for-simple/">
+      <img
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/open-source-brand-for-simple/cover-placeholder.jpg"
+        data-src="../../images/blog/open-source-brand-for-simple/cover.jpg"
+        alt="Open source brand for Simple"
+      >
+    </a>
+    <a href="/blog/open-source-brand-design-for-simple/">
+      <h2>
+        Open source brand for Simple
+      </h2>
+    </a>
+    <p class="global">
+      The process and ideas that shaped Simple's open-source indentity
+    </p>
+    <div class="person--blog">
+      <img
+        class="person--photo"
+        src="../../images/people/daniel-burka.jpg"
+        alt="Daniel Burka"
+      >
+      <div class="person--details">
+        <h3>
+          <a href="">
+            Daniel Burka
+          </a>
+        </h3>
+        <h5>
+          25-Oct-2018, 4 minute read
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="article-preview m-0 w-50pt-large pl-24px-large">
+    <a class="article-preview--cover-small" href="/blog/remote-user-testing-during-lockdown/">
+      <img
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/remote-user-testing-during-lockdown/cover-placeholder.png"
+        data-src="../../images/blog/remote-user-testing-during-lockdown/cover.png"
+        alt="Remote user testing illustration"
+      >
+    </a>
+    <a href="/blog/remote-user-testing-during-lockdown/">
+      <h2>
+        Remote user testing during lockdown
+      </h2>
+    </a>
+    <p class="global">
+      How we create better software for healthcare workers with remote user testing methods
+    </p>
+    <div class="person--blog">
+      <img
+        class="person--photo"
+        src="../../images/people/pragati.jpg"
+        alt="Pragati Mehrotra"
+      >
+      <div class="person--details">
+        <h3>
+          <a href="">
+            Pragati Mehrotra
+          </a>
+        </h3>
+        <h5>
+          08-Jun-2020, 4 minute read
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+      <footer class="mw-medium mx-auto">
+        <a class="fs-medium fs-small-large" href="/screens/">
+          Screenshots
+        </a>
+        <a class="fs-medium fs-small-large" href="/privacy/">
+          Privacy policy
+        </a>
+        <a class="fs-medium fs-small-large" href="/license/">
+          Open source license
+        </a>
+        <a class="fs-medium fs-small-large" href="/digitalprinciples/">
+          Digital principles
+        </a>
+        <a class="fs-medium fs-small-large" href="/contact/">
+          Contact
+        </a>
+        <span class="fs-medium fs-small-large">
+          * Note: All patients in screenshots are fake
+        </span>
+      </footer>
+    </div>
+    <script src="../../javascript/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script>
+      lazyload();
+    </script>
+  </body>
+</html>
