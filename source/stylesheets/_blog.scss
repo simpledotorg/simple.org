@@ -145,6 +145,8 @@ $width-xlarge: 1192px;
 		}
 	}
 
+	.article-cover img { width: 100%; }
+
 	@media (min-width: $width-large) {
 		.contents {
 			max-width: 100%;

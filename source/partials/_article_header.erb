@@ -1,12 +1,10 @@
 <% author = get_contributor_by_name current_page.data.author %>
-<% if current_page.data.cover_image_path %>
-  <div class="article-cover">
-    <img
-      src="<%= current_page.data.cover_image_path %>"
-      alt="<%= current_page.data.cover_image_alt %>"
-    >
-  </div>
-<% end %>
+<div class="article-cover">
+  <img
+    src="<%= current_page.data.cover_image_path %>"
+    alt="<%= current_page.data.cover_image_alt %>"
+  >
+</div>
 <div class="article-header">
   <h1 class="intro">
     <%= current_page.data.title %>
