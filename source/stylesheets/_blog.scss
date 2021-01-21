@@ -35,15 +35,15 @@ $width-xlarge: 1192px;
 
 .body-blog {
 	color: $color-text;
-    
-    a:hover h1, 
-    a:hover h2, 
-    a:hover h3, 
-    a:hover h4, 
-    a:hover h5, 
+
+    a:hover h1,
+    a:hover h2,
+    a:hover h3,
+    a:hover h4,
+    a:hover h5,
     a:hover h6 {
         color: #0075EB;
-    } 
+    }
 
 	nav {
 		@media (min-width: $width-medium) {
@@ -100,7 +100,7 @@ $width-xlarge: 1192px;
 			line-height: 115%;
 			letter-spacing: 0;
 			color: $color-text;
-            
+
             @media (min-width: $width-medium) {
                 font-size: 26px;
             }
@@ -112,7 +112,7 @@ $width-xlarge: 1192px;
 			font-weight: 500;
 			line-height: 136%;
 			letter-spacing: 0;
-            
+
             @media (min-width: $width-medium) {
                 font-size: 22px;
             }
@@ -146,6 +146,12 @@ $width-xlarge: 1192px;
 	}
 
 	.article-cover img { width: 100%; }
+
+  .card-info {
+    border-radius: 5px;
+    background: #ecf5fe;
+    padding: 14px;
+  }
 
 	@media (min-width: $width-large) {
 		.contents {
@@ -266,7 +272,7 @@ $width-xlarge: 1192px;
 		border: 1px solid $color-grey4;
 		overflow: hidden;
         transition: 0.2s ease-in-out border-color;
-        
+
         &:hover {
             border-color: #0075EB;
         }
