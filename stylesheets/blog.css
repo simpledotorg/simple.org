@@ -1686,6 +1686,10 @@ a.button-play {
     line-height: 168%; }
   .body-blog .article-cover img {
     width: 100%; }
+  .body-blog .card-info {
+    border-radius: 5px;
+    background: #ecf5fe;
+    padding: 14px; }
   @media (min-width: 880px) {
     .body-blog .contents {
       max-width: 100%;
