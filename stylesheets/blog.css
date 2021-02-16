@@ -999,7 +999,7 @@ ul ul {
   margin-bottom: 2em;
   color: #000; }
 
-p {
+p, li {
   color: rgba(0, 0, 0, 0.85); }
 
 .feature video,
@@ -1394,7 +1394,7 @@ a.button-play {
   h3, h5 {
     font-size: 20px; }
 
-  p {
+  p, li {
     font-size: 20px; }
 
   footer {
@@ -1581,6 +1581,17 @@ a.button-play {
     font-size: 16px; } }
 .mb-32px {
   margin-bottom: 32px; }
+
+ul.checkmarks {
+  margin: 0;
+  list-style: none;
+  padding: 0; }
+  ul.checkmarks li {
+    margin: 1em 0 0 0;
+    padding: 5px 0 5px 50px;
+    position: relative;
+    background: url(../images/icon-check.png) 6px 2px no-repeat;
+    background-size: 30px; }
 
 .body-blog {
   color: #000000; }
