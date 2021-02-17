@@ -945,12 +945,13 @@ h1 a:hover {
   color: rgba(0, 0, 0, 0.7); }
 
 h2 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-weight: 700; }
 
 h3 {
   font-size: 16px;
   margin-bottom: 0.3em;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 2em;
   letter-spacing: 0; }
 
@@ -989,10 +990,11 @@ ul ul {
 
 .intro, h2 {
   font-size: 28px;
-  font-weight: 100;
+  font-weight: 700;
   line-height: 1.2em;
-  padding-top: 0.5em;
+  padding-top: 1.5em;
   margin-bottom: 0.5em;
+  letter-spacing: -1px;
   clear: left; }
 
 .intro {
@@ -1592,3 +1594,5 @@ ul.checkmarks {
     position: relative;
     background: url(../images/icon-check.png) 6px 2px no-repeat;
     background-size: 30px; }
+  ul.checkmarks b {
+    font-weight: 600; }
