@@ -890,7 +890,7 @@ html {
 
 a,
 a:visited {
-  color: #0075EB;
+  color: #0075eb;
   text-decoration: none;
   font-weight: 200;
   -webkit-transition: color 0.2s;
@@ -902,12 +902,16 @@ a:active {
 
 a.button {
   font-size: 12px;
-  color: #0075EB;
+  color: #0075eb;
   border-color: #d6dfe9;
   min-width: 100%; }
 
 a.button img {
   vertical-align: middle; }
+
+mark {
+  background-color: #c0ffc8;
+  padding: 0.2em 0.3em; }
 
 .notice {
   border-top: 1px solid #eee;
@@ -965,7 +969,7 @@ h5 {
   font-size: 16px;
   margin: 1em 0 0.2em 0;
   font-weight: 300;
-  color: #FF3355; }
+  color: #ff3355; }
 
 h1 i,
 h2 i,
@@ -980,7 +984,8 @@ h6 i {
   position: relative;
   top: -2px; }
 
-p, li {
+p,
+li {
   margin-top: 0;
   line-height: 1.4;
   font-weight: 100; }
@@ -988,7 +993,8 @@ p, li {
 ul ul {
   margin-top: 1em; }
 
-.intro, h2 {
+.intro,
+h2 {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.2em;
@@ -1001,7 +1007,8 @@ ul ul {
   margin-bottom: 2em;
   color: #000; }
 
-p, li {
+p,
+li {
   color: rgba(0, 0, 0, 0.85); }
 
 .feature video,
@@ -1072,14 +1079,14 @@ nav span {
   color: black; }
 
 nav a.link:hover {
-  color: #FF3355; }
+  color: #ff3355; }
 
 nav .nav-links {
   display: block;
   text-align: left; }
 
 nav a.active {
-  color: #FF3355; }
+  color: #ff3355; }
 
 .languages {
   position: absolute;
@@ -1119,7 +1126,7 @@ nav a.active {
 
 .free p:after {
   color: transparent;
-  content: '.';
+  content: ".";
   width: 60px;
   height: 60px;
   position: absolute;
@@ -1264,7 +1271,7 @@ p.icons i {
   position: absolute;
   top: 2px;
   left: 0;
-  color: #FF3355;
+  color: #ff3355;
   font-size: 28px;
   width: 32px;
   text-align: center; }
@@ -1389,14 +1396,16 @@ a.button-play {
     left: 20px;
     height: 180px; }
   .product-image:hover {
-    background: #0075EB; }
+    background: #0075eb; }
 
 /* For small screens */
 @media (max-width: 880px) {
-  h3, h5 {
+  h3,
+  h5 {
     font-size: 20px; }
 
-  p, li {
+  p,
+  li {
     font-size: 20px; }
 
   footer {
@@ -1466,7 +1475,8 @@ a.button-play {
     font-size: 22px;
     letter-spacing: -0.03em; }
 
-  h4, h5 {
+  h4,
+  h5 {
     font-size: 13px;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -1492,7 +1502,8 @@ a.button-play {
   .image-float img {
     width: 220px; }
 
-  .intro, h2 {
+  .intro,
+  h2 {
     font-size: 32px; }
 
   .intro {
@@ -1502,7 +1513,7 @@ a.button-play {
     margin-right: 45%; }
 
   .feature {
-    background: #F0F2F5 url(../images/screenshot-mobile.jpg) 50% 0 no-repeat;
+    background: #f0f2f5 url(../images/screenshot-mobile.jpg) 50% 0 no-repeat;
     position: fixed;
     top: 0;
     right: 0;
@@ -1553,7 +1564,7 @@ a.button-play {
   .howitworks div {
     -webkit-transform: translate(0, 50%);
             transform: translate(0, 50%);
-    border-top: 1px solid #FF3355; }
+    border-top: 1px solid #ff3355; }
 
   .howitworks-left div {
     margin: 0 40px 0 204px; }
