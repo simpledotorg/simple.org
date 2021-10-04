@@ -20,7 +20,7 @@
 </div>
 <div class="mw-xlarge mx-auto d-flex-large f-wrap-large">
   <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
-    <a class="article-preview--cover-small" href="<%= previous_article.url %>">
+    <a class="article-preview--cover-large" href="<%= previous_article.url %>">
       <img
         class="lazyload article-preview--cover--image"
         src="<%= previous_article.data.cover_image_placeholder_path %>"
@@ -55,7 +55,7 @@
     </div>
   </div>
   <div class="article-preview m-0 w-50pt-large pl-24px-large">
-    <a class="article-preview--cover-small" href="<%= next_article.url %>">
+    <a class="article-preview--cover-large" href="<%= next_article.url %>">
       <img
         class="lazyload article-preview--cover--image"
         src="<%= next_article.data.cover_image_placeholder_path %>"
@@ -84,7 +84,7 @@
           </a>
         </h3>
         <h5>
-          <%= next_article.date.strftime('%d-%b-%Y') %>, <%= previous_article.data.reading_time %> minute read
+          <%= next_article.date.strftime('%d-%b-%Y') %>, <%= next_article.data.reading_time %> minute read
         </h5>
       </div>
     </div>

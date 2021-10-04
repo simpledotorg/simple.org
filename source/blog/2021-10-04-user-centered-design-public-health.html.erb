@@ -1,0 +1,132 @@
+---
+title: "Clinical software must respect clinicians' precious time"
+date: "2021/10/04"
+reading_time: "18"
+cover_image_path: "/images/blog/user-centered-design/cover.png"
+cover_image_placeholder_path: "/images/blog/user-centered-design/cover-placeholder.jpg"
+cover_image_alt: "Time is the most important factor in designing tools that work."
+intro: "A user-centered approach to designing digital tools for global public health quickly surfaces that “time” is the most underappreciated factor."
+author: "Daniel Burka"
+published: true
+---
+
+<section>
+  <div class="sidenote">
+  <h3>Authors</h3>
+  <p><a href="https://drtomfrieden.net/">Dr Tom Frieden</a>, President of Resolve to Save Lives. Former Director of the US Centers for Disease Control and Prevention, and Commissioner of the New York City Health Department.</p>
+  <p><a href="https://www.linkedin.com/in/andrew-moran-3817b318/">Dr Andrew Moran</a>, Director of Hypertension Control at Resolve to Save Lives, Columbia University Vagelos College of Physicians and Surgeons, New York</p>
+  <p><a href="https://www.linkedin.com/in/rebecca-b-74965032/">Becca Birnbaum</a>, Consultant, Resolve to Save Lives, New York</p>
+  <p><a href="https://www.linkedin.com/in/dburka/">Daniel Burka</a>, Director of Product and Design at Resolve to Save Lives, Product for Simple.</p>
+  </div>
+</section>
+<section>
+  <h2>Introduction</h2>
+  <p>Every morning at 8:00 am, a long line of patients queue outside a busy public hospital in northern India. Many patients carry a clear plastic bag with paper records from their previous visits. The hard-pressed staff at the intake counter scribble down each patient’s name, address, and age at the top of a fresh paper slip and send most adults down the hall to the non-communicable disease (NCD) clinic.</p>
+  <p>At the NCD clinic, the patients queue again before a staff nurse quickly takes blood pressure and blood sugar readings. Anyone with high blood pressure is sent next door to the medical officer’s room to queue again before she will diagnose and treat the patient. As a patient talks to the medical officer, a few other patients stand immediately over his shoulder while the medical officer counsels him and prescribes his anti-hypertensive medications. The patient leaves with 30 days of pills in his hand and a note about today’s encounter scrawled on the paper slip clutched in his hand.</p>
+  <p>This hospital mostly keeps paper records. The staff nurse will keep basic transactional details of each NCD patient in a big paper register book and will write down the patient’s recordings in their personal slip, which the patient will take home. The only computer in the hospital is downstairs in a locked office. Once a month, someone tallies the basic numbers from the register book and types the totals into the computer to submit them to the Ministry of Health in the capital, a requirement for public health officials to assess the efficacy of their NCD programs.</p>
+  <figure class="image-float image--left"><a href="/images/blog/user-centered-design/patients-line.jpg"><img src="/images/blog/user-centered-design/patients-line.jpg" /></a><figcaption>A line at an NCD clinic in Bangladesh</figcaption></figure>
+  <p>A similar scene plays out every day in thousands of hospitals where we work with hypertension control programs across India, Bangladesh, and Ethiopia. The sheer volume of patients who visit NCD clinics in India means patients typically see an overworked healthcare worker for less than four minutes per visit. In Bangladesh it’s closer to two minutes.<sup>1</sup> Clinicians use their precious time filling large register books for different health programs, writing key notes on paper medical records, and jotting down instructions on a paper slip. A digital system could clearly help here, but previous electronic health record software never gained traction in busy NCD clinics. <em>Why?</em></p>
+  <p>In short, clinical software is often designed to collect as much “required” data as possible, while ignoring healthcare workers’ very real time constraints at the point of care. Burdening healthcare workers with data entry tasks when they’re already overworked undermines adoption of the system. To be explicit: <mark>it’s completely unreasonable to expect a healthcare worker to spend even 30 seconds on data entry during a 3 minute patient visit</mark>.</p>
+  <p>Is an effective digital system possible in a high volume clinic? Yes, but success requires a truly human-centered design approach and a ruthless commitment to simplicity.</p>
+</section>
+<section>
+  <div class="sidenote">
+    <h2>The public health conundrum</h2>
+    <p>
+    A healthcare worker in an NCD clinic and a public health official, often in a distant capital city, look at the world very differently. A clinician thinks in terms of the one patient sitting across the table from her. A public health expert thinks in terms of an entire population — often millions of people.</p>
+    <p>Doctors and public health officials are both trying to help patients, but their different perspectives and needs create a real challenge in clinical software development. Public health teams will develop software to answer population-level questions, while the healthcare worker out in the field wants a system to help her manage each of her patients better.</p>
+    <p>And, lost in the middle, is the patient. The patient wants to know whether he’s succeeding along the path to better health and wants to visit a convenient local clinic where lines are short and the local healthcare worker knows his name.
+    <p>In a hypertension control program, a health system manager cares a great deal about aggregate screening and diagnosis totals, so it’s very common to monitor how many patients have been screened for hypertension and how many were diagnosed with the disease.Meanwhile, the medical officer doesn’t care how many aggregate patients she screened this month; she wants to know the status of each of her hypertensive patients and whether they are on the path to getting their blood pressure below 140/90 mmHg. Finally, the patient definitely doesn’t care how many patients the hospital screened this month — he wants to know if his own health is improving.</p>
+    <p>The core challenge, therefore, is to design software that somehow meets the needs of these three user groups simultaneously, while also operating pragmatically within the very real constraints at the point of care, where there is little time to enter data.</p>
+  </div>
+    
+  <h2>Human-centered design</h2>
+  <p>Nobody got into software development to make peoples’ lives harder. Everyone believes their software is created to help people. So why is human-centered design special, especially in the public health context?</p>
+  <p>Human-centered design takes into consideration all of the people involved in the chain of care, the realities of their environment and workflows, and involves those people in creating tools that actually work for them. A human-centered system doesn’t just report data up to the central authorities: It delivers value to patients, nurses, and doctors, as well as people who work upstream.</p>
+  
+  <h3>What human-centered design isn’t</h3>
+  <p>Most public health software claims to be “user-centered” or “user friendly;” however, it’s not actually designed for many of its actual users. The software is instead optimized to collect the “required data” determined by health experts.</p>
+  <p>In a typical software development process, public health officials and other experts confer and define requirements. This typically means choosing the required data elements for “correctly” treating patients and measuring programs.</p>
+  <p>As we’ve seen over and over, the experts’ requirements often don’t reflect real-world treatment. The experts might decide that two BP readings must be entered for every patient (even though there is practically only time for one), that serum creatinine labs are required for all patients (even though many clinics don’t have the time or equipment to do the labs), and that only specific medications can be prescribed (even though stock outs of those medicines are common). The experts also require weight and height to calculate BMI for every patient (again, not enough time at the clinic), a hypertension program-specific unique ID number (the patient already has two other IDs at the hospital), and require weekly patient follow-ups (patients ride a bus for an hour and then have to stand in line for 2 hours for treatment).</p>
+  <p>Once “requirements” are identified, technologists work with clinicians to make the data entry as usable as possible. In the best cases, the data input forms might be designed to be user-friendly, but the overwhelming quantity of “required data” input means that healthcare workers spend too much of their time with their noses buried in their screens, entering data and not enough time to talking to patients. Even worse, when healthcare workers are too busy to enter accurate data, they sometimes enter anything in order to complete the required data entry forms.</p>
+  <p>Human-centered software cannot simply take a set of public health data requirements and then make them as usable as possible — it needs to be designed around how real nurses and busy doctors in real clinics are pragmatically treating patients, so tools reflect the reality and constraints of the healthcare workers’ and patients’ lives.</p>
+  
+  <h3>Designing for every user &#8212; actually</h3>
+  <p>In a human-centered approach, we identify the ‘actors’ who play a role in care, observe the way that they currently work, and involve them directly in creating a process and a tool that suits their needs. </p>
+  <p>In hypertension clinics, for example, there are at least three distinct user groups who all work together for a public health program to be successful: healthcare workers, health system managers, and patients<sup>2</sup>.</p>
+  <p>Each user group interacts with the digital system in a different way, and each has their own goals and constraints:</p>
+  <table class="table-example">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Patients</th>
+        <th>Healthcare workers</th>
+        <th>Health system managers</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><em>Relationship to software</em></td>
+        <td>Uses individual data from software</td>
+        <td>Uses software to treat each patient correctly</td>
+        <td>Uses aggregate data from software</td>
+      </tr>
+      <tr>
+        <td><em>Ultimate goal</em></td>
+        <td>Monitor their own progress toward BP control</td>
+        <td>Monitor each patient’s progress to control BP</td>
+        <td>Monitor BP control of patient population</td>
+      </tr>
+      <tr>
+        <td><em>Critical needs</em></td>
+        <td>Monitor progress, visit convenient clinics</td>
+        <td>Quick overview of patient’s recent history</td>
+        <td>Big picture view of where BP is controlled and where to focus effort</td>
+      </tr>
+      <tr>
+        <td><em>Constraints</em></td>
+        <td>Busy life, hypertension is a low priority</td>
+        <td>~18 seconds available for data entry, high turnover so easy training is key</td>
+        <td>Manages 99 other health programs, little time</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Despite each actor having unique needs and constraints, user-centered design means accommodating all actors with the same technology system. In hypertension clinics, this means understanding and monitoring the indicators that are truly valuable to everyone.</p>
+</section>
+<section>
+  <h2>Designing software <em>with</em> your users</h2>
+  <p>There are many books on human-centered design, so we won’t repeat all of the lessons here. But, there are a few things we’ve found useful in a public health setting:</p>
+  <figure class="image-float image--right"><a href="/images/blog/user-centered-design/user-testing.jpg"><img src="/images/blog/user-centered-design/user-testing.jpg" /></a><figcaption>Testing prototypes with a doctor in Punjab, India</figcaption></figure>
+  <ul type="square">
+  <li><strong>Observe real clinical care.</strong> Early on we spent many hours in hospitals and clinics watching the workflows of clinicians. Understanding existing workflows, task switching, teamwork, and resource constraints are really important to developing a system that will work in the real world.</li>
+  <li><strong>Follow patients.</strong> We also (with permission) followed patients around the hospital. Patients wait in a lot of lines, they get confused, and they feel intimidated. In high-volume clinics, improving patient flows is as important as designing good software.</li>
+  <li><strong>Ask your users what they want.</strong> It’s astonishing how infrequently healthcare workers are asked for their ideas and their input. Not only will you get great ideas, but you’ll build better rapport with users.</li>
+  <li><strong>Test prototypes early and often.</strong> Too often, software is only tested at the last second to see if it’s ready to be deployed. This is too late. We test many ideas in the form of quick, realistic prototypes so we can get directional feedback early enough to make major changes based on user feedback.</li>
+  <li><strong>Don’t over-rely on quantitative data.</strong> We like numbers. But numbers will only tell you one side of the story. Talk to your users as much as possible to find out “why” something is working or not working.</li>
+  </ul>
+</section>
+<section>
+  <h2>Time is the elephant in the room</h2>
+  <p>A healthcare worker only has 3 minutes to greet the patient, check the patient’s outpatient slip, discuss medical history, ask further questions, conduct diagnostic tests, distribute medications, and counsel the patient. Even 10% of this visit gives about 18 seconds per visit allocated for data entry — and that’s a high percentage! This is the reality for healthcare workers in low resource clinics.</p>
+  <p>Looking at the critical needs and constraints across the three user groups, the obvious constraint is time to record data at the point of care. Limiting a digital tool to <20 seconds of data entry certainly complicates things! It's hard to make a tool that is so efficient, especially when clinical software is often designed to maximize data collection. Particularly in low resource settings the reality is that clinicians have very little time and designing around the false pretense that they have more time will only ensure the software is never adopted, or isn’t used well, at the point of care.</p>
+  <p>Protecting healthcare workers’ time is the linchpin in the successful adoption of clinical software. We have found success with <a href="https://simple.org">Simple</a> because it takes a median of 14 seconds to record a follow-up visit. Healthcare workers in 4500+ clinics and hospitals don't hate Simple, because it's fast, easy-to-learn, and addresses their needs.</p>
+  <h3>Keep it simple</h3>
+  <p>The trick to making fast software? Keep it simple. We identified <a href="/blog/requirements-of-a-hypertension-management-system/">a very small set of data</a> that could be entered within 18 seconds yet provide both individual, longitudinal insights as well as population insights. We relentlessly committed to simplicity and ruthlessly culled anything that wasn’t critical.</p>
+  <h3>Simpler to use, simpler to train</h3>
+  <p>Overworked healthcare workers also don’t have much time to learn new software. A tool that’s fast to use can also be fast to train, and minimizing the data entry required minimizes what healthcare workers need to learn.</p>
+  <p>In a hypertension clinic, staff turnover is really common. If you keep a tool simple enough, the outgoing staff can train new workers.</p>
+</section>
+<section>
+  <h2>Conclusion</h2>
+  <p>A digital system in a low resource healthcare clinic could greatly improve clinic operations, care delivery, and recordkeeping, reporting and health system management; however, any digital system must accommodate the very real time constraints of healthcare workers in order to be successful. A human-centered approach enables technologists to deeply understand each actor in the broader system — patients, healthcare workers, and health system managers — and designs around their core needs and constraints. </p>
+  <p>The limiting factor in hypertension clinics is undoubtedly the healthcare workers’ time for data entry, and it’s highly probable this constraint isn’t limited to hypertension clinics. Software designed for any clinician needs to protect their precious time.</p>
+</section>
+<section>
+  <div class="footnotes">
+    <h3>Footnotes</h3>
+    <ol>
+      <li>Irving G, Neves AL, Dambha-Miller H, et al International variations in primary care physician consultation time: a systematic review of 67 countries. BMJ Open 2017;7:e017902. doi: 10.1136/bmjopen-2017-017902</li>
+      <li>There are more people, like caregivers, community health workers, and pharmacists too, but let’s keep it relatively simple for this article.</li>
+    </ol>
+  </div>
+</section>

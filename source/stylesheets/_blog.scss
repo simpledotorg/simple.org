@@ -47,7 +47,7 @@ $width-xlarge: 1192px;
 
   nav {
     @media (min-width: $width-medium) {
-      padding: 0 0 60px 0;
+      padding: 0 0 60px 30px;
       margin: 0;
     }
   }
@@ -140,6 +140,21 @@ $width-xlarge: 1192px;
       line-height: 100%;
       text-transform: none;
       letter-spacing: 0;
+    }
+
+    figcaption {
+      font-size: 85%;
+    }
+
+    .table-example {
+      margin: 2em 0;
+
+      td,
+      th {
+        font-size: 85%;
+        line-height: 1.2;
+        vertical-align: top;
+      }
     }
 
     section p,
@@ -514,6 +529,7 @@ $width-xlarge: 1192px;
       padding-left: 4px;
       color: $color-text--faded;
     }
+
     .image {
       width: 50%;
       margin: 30px 0 25px 0;
@@ -553,8 +569,8 @@ $width-xlarge: 1192px;
     }
 
     .image--left {
-      @media (min-width: $width-large) {
-        margin: 30px 40px 25px 0;
+      @media (min-width: $width-xlarge) {
+        margin: 30px 40px 25px -140px;
         float: left;
 
         div {
@@ -564,8 +580,8 @@ $width-xlarge: 1192px;
     }
 
     .image--right {
-      @media (min-width: $width-large) {
-        margin: 30px 0 25px 40px;
+      @media (min-width: $width-xlarge) {
+        margin: 30px -140px 25px 40px;
         float: right;
 
         div {
@@ -574,7 +590,7 @@ $width-xlarge: 1192px;
       }
     }
 
-    @media (min-width: $width-large) {
+    @media (min-width: $width-xlarge) {
       .sidenote {
         float: right;
         width: 300px;
