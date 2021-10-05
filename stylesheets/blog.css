@@ -1723,9 +1723,21 @@ ul.checkmarks {
     .body-blog .article-preview .table-example th,
     .body-blog .article-end .table-example td,
     .body-blog .article-end .table-example th {
-      font-size: 85%;
+      font-size: 75%;
       line-height: 1.2;
-      vertical-align: top; }
+      vertical-align: top;
+      padding: 10px 5px; }
+    @media (min-width: 688px) {
+      .body-blog .article-cover .table-example td,
+      .body-blog .article-cover .table-example th,
+      .body-blog .article-content .table-example td,
+      .body-blog .article-content .table-example th,
+      .body-blog .article-preview .table-example td,
+      .body-blog .article-preview .table-example th,
+      .body-blog .article-end .table-example td,
+      .body-blog .article-end .table-example th {
+        font-size: 85%;
+        padding: 1em; } }
   .body-blog .article-cover section p,
   .body-blog .article-cover li,
   .body-blog .article-content section p,
