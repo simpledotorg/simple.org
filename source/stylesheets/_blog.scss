@@ -148,12 +148,19 @@ $width-xlarge: 1192px;
 
     .table-example {
       margin: 2em 0;
-
       td,
       th {
-        font-size: 85%;
+        font-size: 75%;
         line-height: 1.2;
         vertical-align: top;
+        padding: 10px 5px;
+      }
+      @media (min-width: $width-medium) {
+        td,
+        th {
+          font-size: 85%;
+          padding: 1em;
+        }
       }
     }
 
