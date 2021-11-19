@@ -1202,7 +1202,11 @@ footer a {
   display: inline-block; }
 
 footer span {
-  white-space: nowrap; }
+  display: block;
+  padding-top: 3rem;
+  clear: left;
+  font-size: 85%;
+  color: #999; }
 
 .features img {
   width: 29%;
