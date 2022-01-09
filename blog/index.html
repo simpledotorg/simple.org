@@ -16,7 +16,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <meta charset="utf-8">
 <!-- Use the title from a page's frontmatter if it has one -->
-<title>Simple: <%= article.title %></title>
+<title>Simple <%= article.title %></title>
 <meta name="description" content="Fast, free software for clinicians to manage patients with hypertension &amp; diabetes.">
 <meta name="author" content="Simple">
 
@@ -29,7 +29,7 @@
 
 <meta property="og:url"                content="http://www.simple.org/" />
 <meta property="og:type"               content="article" />
-<meta property="og:title"              content="<%= article.title %> / Simple.org" />
+<meta property="og:title"              content="Simple.org <%= article.title %>" />
 <meta property="og:description"        content="Fast, free software for clinicians to manage patients with hypertension &amp; diabetes." />
 <meta property="og:image"              content="https://simple.org/images/<%= article.data.cover_image_path %>" />
 

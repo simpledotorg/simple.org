@@ -16,7 +16,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <meta charset="utf-8">
 <!-- Use the title from a page's frontmatter if it has one -->
-<title>सिम्पल: <%= article.title %></title>
+<title>सिम्पल <%= article.title %></title>
 <meta name="description" content="उच्च रक्तचाप वाले रोगियों को ट्रैक करने के लिए चिकित्सकों के लिए तेज़, मुफ़्त ऐप।">
 <meta name="author" content="सिम्पल">
 
@@ -29,7 +29,7 @@
 
 <meta property="og:url"                content="http://www.simple.org/" />
 <meta property="og:type"               content="article" />
-<meta property="og:title"              content="<%= article.title %> / Simple.org" />
+<meta property="og:title"              content="Simple.org <%= article.title %>" />
 <meta property="og:description"        content="उच्च रक्तचाप वाले रोगियों को ट्रैक करने के लिए चिकित्सकों के लिए तेज़, मुफ़्त ऐप।" />
 <meta property="og:image"              content="https://simple.org/images/<%= article.data.cover_image_path %>" />
 
