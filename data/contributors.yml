@@ -123,7 +123,7 @@
   role: "clinician"
   country: "USA"
   image_path: "/images/people/marc-jaffe.jpg"
-  social_media_path: "http://www.vitalstrategies.org/executive-team/marc-g-jaffee-md/"
+  social_media_path: "https://twitter.com/jaffemarc"
 - name: "Tanushree Jindal"
   role: "research"
   country: "India"
