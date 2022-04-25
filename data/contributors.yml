@@ -233,7 +233,7 @@
   role: "PM"
   country: "Nigeria"
   image_path: "/images/people/bolatito.jpg"
-social_media_path: "https://www.linkedin.com/in/praizux/"
+  social_media_path: "https://www.linkedin.com/in/praizux/"
 - name: "Praise Onyehanere"
   role: "research"
   country: "Nigeria"
