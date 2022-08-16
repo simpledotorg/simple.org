@@ -52,4 +52,4 @@ To add a new blog article, do the following:
 9. **Merge to master:** Check your article in your local on small and large devices. Once it's ready merge into master.
 10. **Publish your article:** Follow the instructions in the "Deployment" section above to publish your new article.
 
-If you have any questions Slack Claudio or send him an email at cvallejo@resolvetosavelives.org
+If you have any questions please contact Jamie at [jcarter@rtsl.org](mailto:jcarter@rtsl.org?subject=Simple.org%20Website).
