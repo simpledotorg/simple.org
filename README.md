@@ -1,8 +1,11 @@
 # Simple.org
+
 This repository houses the source code for the Simple app website.
 
 ## Development
+
 ### Setup
+
 We use [Middleman](https://middlemanapp.com/) to build the static pages which are hosted on [GitHub Pages](https://pages.github.com/).
 
 To run the site on your own machine, simply clone the repo, install the packages necessary, and start up a Middleman server.
@@ -14,23 +17,41 @@ $ bundle install
 $ middleman server
 ```
 
+If you see an error with middleman, 'Unknown command middleman' then try:
+
+```
+$ bundle exec middleman
+```
+
+OR
+
+```
+$ bundle exec middleman server
+```
+
 ### Deployment
+
 After merging your commits to `master` and pulling the latest, run `rake publish`.
 
 ### Common deployment errors
+
 **Error:** `src refspec gh-pages does not match any`
+
 1. Run `git pull origin master`
 2. Run `git fetch`
 3. Run `rm -rf build` to delete your `build/` directory
 4. Run `rake publish`
 
 **Error:** `Could not find middleman-blog-4.0.3 in any of the sources`
+
 1. Make sure you have the proper ruby version installed. **Note:** If you're using `rvm`, run `rvm use 2.5.1` to use Ruby version 2.5.1.
 2. Run `rm -rf build` to delete your `build/` directory
 3. Run `rake publish`
 
 ## Contribute
+
 ### Add a new contributor to Simple.org
+
 To add a new contributor to [simple.org/about](https://simple.org/about), do the following:
 
 1. Add a contributor item to `data/contributors.yml`
@@ -38,7 +59,10 @@ To add a new contributor to [simple.org/about](https://simple.org/about), do the
 3. Make sure the contributor is properly displayed in your local
 4. Merge and deploy (if you have deployment issues, check "Deployment" section below)
 
+> Contributors are listed **alphabetically** by **last name**
+
 ### Create a new blog article
+
 To add a new blog article, do the following:
 
 1. **Create a new branch:** Pull the lastest from master and create a new branch.
