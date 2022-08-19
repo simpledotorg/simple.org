@@ -359,3 +359,8 @@
   country: "India"
   image_path: "/images/people/averma.jpg"
   social_media_path: "https://twitter.com/akshayverma1"
+- name: "Jon Williams"
+  role: "development"
+  country: "USA"
+  image_path: "/images/people/jon-williams.jpg"
+  social_media_path: ""
