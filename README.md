@@ -1,6 +1,6 @@
 # Simple.org
 
-This repository houses the source code for the Simple app website.
+This repository houses the source code for the [Simple.org](https://www.simple.org/) website.
 
 ## Development
 
