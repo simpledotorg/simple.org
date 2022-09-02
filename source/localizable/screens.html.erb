@@ -69,15 +69,16 @@ dashboard_screens:
 
     - img: dashboard-home.png
       title: Dashboard home
-      caption: Managers can oversee new user permissions and access all districts
+      caption: Managers can oversee new health worker requests, access data for all districts, see recent Simple updates and find tech team office hours.
 
-    - img: dashboard-district-view.png
-      title: Dashboard district view
-      caption: Oversee hypertension control rates, lost-to-follow-up rates, and compare facility performance.
+    - img: dashboard-reports-bp-cropped.png
+      img_full: dashboard-reports-bp.png
+      title: Dashboard district view for hypertension
+      caption: Oversee hypertension control rates, registrations, missed visits, population coverage, lost-to-follow-up rates and compare facility performance.
 
-    - img: dashboard-facility-view.png
-      title: Dashboard facility view
-      caption: See hypertension control rate performance and each healthcare worker's activity. Also view data entry log of BPs added at this facility.
+    - img: dashboard-overdue.png
+      title: Dashboard overdue patients list
+      caption: A line list of patients that are overdue for their appointment.
 
 ---
 
@@ -98,13 +99,16 @@ dashboard_screens:
 <h3 style="margin-bottom: 2em;"><i class="fas fa-globe-asia"></i> Simple dashboard for managers: Web-based</h3>
 
 <% current_page.data.dashboard_screens.each do |screen| %>
+    <% if defined?(screen.img_full) %>
+    <a href="/images/screens/<%= screen.img_full %>" class="dashboard-screen-wrapper">
+    <% else %>
     <a href="/images/screens/<%= screen.img %>" class="dashboard-screen-wrapper">
+    <% end %>
         <span class="title"><strong><%= screen.title %></strong></span>
         <img src="/images/screens/<%= screen.img %>" alt="">
         <span class="desc"><%= screen.caption %></span>
         <i class="fas fa-search-plus"></i>
     </a>
-    
 <% end %>
 
 <br style="clear: both;">
