@@ -1,6 +1,5 @@
 ---
 en:
-  
   lang: "en"
   simple: "Simple"
   intro: "Fast, free software for clinicians to manage patients with hypertension &amp; diabetes."
@@ -10,7 +9,7 @@ en:
   features: "Features"
   googleplay: "Google Play"
   github: "GitHub"
-  
+
   Canada: "Canada"
   India: "India"
   USA: "USA"
