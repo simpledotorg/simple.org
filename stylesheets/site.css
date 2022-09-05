@@ -1298,8 +1298,9 @@ a.button-play {
   display: block;
   margin-top: 12px;
   margin-bottom: 24px;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
 
 .mobile-screen-wrapper i,
 .dashboard-screen-wrapper i {
@@ -1331,7 +1332,8 @@ a.button-play {
   background-size: 252px auto;
   background-repeat: no-repeat;
   background-position: 50% 24px;
-  display: block; }
+  display: block;
+  margin-bottom: 8px; }
 
 .mobile-screen-overlay {
   background-image: url(../images/mobile.png);
