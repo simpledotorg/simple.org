@@ -1619,6 +1619,14 @@ ul.checkmarks {
     font-weight: 500;
     line-height: 136%;
     letter-spacing: 0; }
+    .body-blog .article-cover h3 span,
+    .body-blog .article-content h3 span,
+    .body-blog .article-preview h3 span,
+    .body-blog .article-end h3 span {
+      display: block;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem; }
     @media (min-width: 688px) {
       .body-blog .article-cover h3,
       .body-blog .article-content h3,
@@ -1950,7 +1958,8 @@ ul.checkmarks {
   .body-blog .article-content .image img {
     width: calc(100vw - 40px);
     max-width: 688px;
-    margin: 0; }
+    margin: 0;
+    height: auto; }
   .body-blog .article-content .image h4 {
     width: calc(100vw - 40px);
     max-width: 688px;
