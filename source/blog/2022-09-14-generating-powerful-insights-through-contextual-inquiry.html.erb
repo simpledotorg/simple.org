@@ -1,0 +1,125 @@
+---
+title: "Generating powerful insights through contextual inquiry"
+date: "2022/09/14"
+reading_time: "10"
+cover_image_path: "/images/blog/2022-09-14-generating-powerful-insights-through-contextual-inquiry/cover.jpg"
+cover_image_placeholder_path: "/images/blog/2022-09-14-generating-powerful-insights-through-contextual-inquiry/cover-placeholder.jpg"
+cover_image_alt: "Generating powerful insights through contextual inquiry"
+intro: "Sometimes, quiet observation surpasses extended interviews."
+author: "Aarti Bhatnagar"
+
+---
+
+<section>
+  <p>On a recent vacation to Sikkim, I saw a large Border Roads Organisation road sign in the snow that read, “Sometimes, the best discoveries are the result of simple observation.” Such a great, simple insight from these road builders! Too often, we’re over-focused on driving and miss the beautiful discoveries right in front of our eyes.</p>
+  <div class="image">
+    <img       
+    class="lazyload"
+    src="/images/blog/2022-09-14-generating-powerful-insights-through-contextual-inquiry/boarder-roads-organisation-simple-observations-placeholder.jpg"
+    data-src="/images/blog/2022-09-14-generating-powerful-insights-through-contextual-inquiry/boarder-roads-organisation-simple-observations.jpg"
+    alt="Border Roads Organisation road sign"
+    width="768" height="1024">
+    <h4>"Sometimes the best discoveries are the result of simple observation."</h4>
+  </div>
+  <p>UX researchers often fall into a comfortable, yet dangerous trap — we rely too much on familiar techniques like interviews and usability tests. Researchers can talk and talk to users and still only uncover partial insights. In our experience, the bulk of key insights come from observing users in their work context. To make great products, we need to spend more time as flies on the wall, patiently observing people doing their jobs.</p>
+</section>
+<section>
+  <h2>The challenge</h2>
+  <p>At Simple, we work on software that is used by healthcare workers to manage their patients with hypertension (high blood pressure) and diabetes. Many doctors are expected to titrate medicines (i.e. change the dosage of a medicine) when patients have a follow-up visit with high blood pressure readings. Normally, doctors titrate when the patient’s current medicines are unable to control their blood pressure. Timely titration helps reduce the patient’s risk of having a heart attack or stroke.</p>
+  <p>While treating patients by increasing their medications might seem obvious, when we looked at the treatment data it was clear that this was not the standard of care. Our data showed that only 5.9% of patients in India with an uncontrolled blood pressure were being titrated immediately. This helped us understand the “what” (what percentage of patients are not being titrated?), but we were still curious to investigate the “why” - why were patients with uncontrolled blood pressure not being titrated immediately?</p>
+  <p>To learn more, we decided to adopt the research technique called “contextual inquiry”, which helped us uncover key insights that are hard to come by during structured interviews.</p>
+</section>
+<section>
+  <h2>Our hunch</h2>
+  <p>Before visiting the field, we reached out to subject experts who gave us informed guesses about possible reasons for low titration:</p>
+  <ol>
+    <li>Busy clinics make it difficult for doctors to evaluate each patient carefully.</li>
+    <li>Shortage of medications restrict doctors from providing timely titration.</li>
+    <li>Patients have low medication adherence and it’s not suitable to titrate a patient who is not regularly taking their medications.</li>
+  </ol>
+</section>
+<section>
+  <h2>The solution we tested</h2>
+  <p>We considered ways to improve the chance of patients being titrated on time. One possible solution was to nudge users to treat as per protocol whenever they recorded a high blood pressure (see below). We wanted to observe if there is any change in a user’s behaviour when the alert pops up.</p>
+    <div class="image" style="width: 100%;">
+    <div  style="width: 100%; background-color: #A3A9B1; text-align: center; padding-top: 20px; padding-bottom: 10px;">
+      <img 
+        src="/images/blog/2022-09-14-generating-powerful-insights-through-contextual-inquiry/CDSSgif.gif"
+        alt="Example alert pop up"
+        width="600" height="970"
+        style="max-height:480px; width: auto;"
+      >
+    </div>
+    <h4>One of the proposed solutions.</h4>
+  </div>
+</section>
+<section>
+  <h2>Some ground rules</h2>
+  <p>In order to observe healthcare workers doing their job in the most realistic settings, we need to be mindful: </p>
+  <h3>Be discreet</h3>
+  <p>Aim to be a fly on the wall. While this may not always be possible, we do our best to not stick out too much. Only up to 2 people are in a clinician’s room at the same time. It is also tempting to record every interesting event with a recording device like a microphone or camera, but in the context of a doctor’s office we simply carry a pen and paper to record notes.</p>
+  <div class="image">
+    <img 
+      class="lazyload"
+      src="/images/blog/2022-09-14-generating-powerful-insights-through-contextual-inquiry/in-clinic-placeholder.jpg"
+      data-src="/images/blog/2022-09-14-generating-powerful-insights-through-contextual-inquiry/in-clinic.jpg"
+      alt="Discreet observation of nurses working in clinic"
+      width="1600" height="899"
+      >
+    <h4>Our engineer, Janhavi found a quiet corner to quietly observe the room.</h4>
+  </div>
+
+  <h3>Adopt the language of a learner</h3>
+  <p>It is natural for health care workers to feel “judged” or “tested”, when there are outsiders from far-away places with important-looking notepads. They understandably want to project their best selves. So it becomes incredibly useful to constantly remind users that they are the experts — you simply want to learn more from them. We also make it clear that we are not reporting their activities to superiors.</p>
+  <h3>Inquire within context (only when absolutely necessary)</h3>
+  <p>We do not want to hassle users, inadvertently distracting them from their important jobs of treating patients. We only pose questions when they are not in the middle of important work and we have two humble rules for asking questions:</p>
+  <ul>
+    <li>
+      <p>Ask when you don’t understand something that the user has done.
+      <br/>
+      (“Why exactly did the nurse do that? I’ve no idea. Let me ask her.")
+      </p>
+    </li>
+    <li>
+      <p>Ask when you are trying to confirm an interpretation.
+      <br/>
+      (“Ah, looks like the nurse is switching between two screens to ensure the data was saved correctly, but I’m unsure. Let me ask her.”)
+      </p>
+    </li>
+  </ul>
+  <h3>Ask questions (the non-leading way)</h3>
+  <p>A leading question is one that prompts a specific answer. We try not to ask leading questions, so users tell us what they really think and not what we want to hear.</p>
+  <p>E.g. Instead of “Why did you not titrate this patient?”, we’d ask “What will be the next steps for this patient?”</p>
+
+</section>
+<section>
+  <h2>Prime participants at facilities</h2>
+  <p>We arrived at the facilities at peak hours — patients crowded in doorways, holding onto hospital slips. While we introduced ourselves to the staff, our engineers enabled the alert nudge in some healthcare workers’ devices. We only explained that we updated their phones with some improvements. This way, we could observe their genuine first response on seeing the alert.</p>
+  <p>We transitioned from introductions to conducting research explicitly — we told them, “We would like to spend a couple of hours quietly learning what it is like to work here. Don’t worry, we aren’t here to inspect; we just want to learn from you”. We also pre-warned participants to expect silences, and encouraged them to continue with their work as they would on any other day.</p>
+  <p>While performing contextual inquiries, it becomes important to make such transitions explicit. Failing to do so leads to awkward, silent encounters, where participants feel the urge to fill silences with conversation, derailing their actual medical tasks.</p>
+</section>
+<section>
+  <h2>What we learned about the technique</h2>
+  <h3><span>Learning #1</span> Less preparation time</h3>
+  <p>Unlike other research techniques, plain observation takes relatively less time to prepare for. Other techniques may require creating prototypes, aligning the team with interview scripts, and even roleplaying the sessions. These aren’t mandates for contextual inquiry. Good research questions are usually enough to anchor a strong contextual enquiry session.</p>
+  <h3><span>Learning #2</span> Build organic rapport with users</h3>
+  <p>Over time, users opened up with the research team more organically than through interviews. Because we ask fewer questions, users continue to do their work with minimal interruptions. Also, donning the role of a learner helps users remain confident in their daily tasks and feel less judged.</p>
+  <h3><span>Learning #3</span> Contextual enquiry can be slow</h3>
+  <p>As a rule of thumb, expect boredom. Do not expect to be wowed every few minutes. We spent 2 hours at each facility, observing how nurses and doctors interacted with each patient. In some facilities, there weren’t many patients walking in, and it was difficult to assess whether our nudge would invoke users to take action and titrate the patients. Allow yourselves a comfortable amount of time to patiently get realistic insights.</p>
+</section>
+<section>
+  <h2>Our results</h2>
+  <p>Our initial hunches were only some of the many reasons that eventually got discovered through contextual enquiry. For example, we saw health care workers advising high BP patients to modify their lifestyles before titrating them to the next step of the protocol. In other cases, we also found out that many facilities were already titrating medicines, but a complicated patient flow made it unintuitive for patients to return to healthcare workers after collecting their medicines.</p>
+</section>
+<section>
+  <h2>Conclusion</h2>
+  <p>Is learning by observation a revolutionary idea? No. Do people regularly use this technique while building tools for their users? Unfortunately, also no. Observing is one of the easiest ways to make sure you understand the context within which your product will be used, and whether it solves a problem… or adds to it.</p>
+
+</section>
+<section>
+  <div class="footnotes">
+    <h3>Thanks</h3>
+    <p>Thanks to <a href="https://twitter.com/dburka">Daniel Burka</a> for editing the article and for constantly nudging me to keep things simple.</p>
+    <p>Also thanks to <a href="https://twitter.com/mahima_chandak">Mahima Chandak</a> for her excellent inputs on  ways to elevate research techniques on-field.</p>
+  </div>
+</section>
