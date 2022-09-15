@@ -1958,8 +1958,7 @@ ul.checkmarks {
   .body-blog .article-content .image img {
     width: calc(100vw - 40px);
     max-width: 688px;
-    margin: 0;
-    height: auto; }
+    margin: 0; }
   .body-blog .article-content .image h4 {
     width: calc(100vw - 40px);
     max-width: 688px;
@@ -1973,6 +1972,9 @@ ul.checkmarks {
       text-decoration: underline; }
       .body-blog .article-content .image h4 a:hover {
         color: #000; }
+
+.body-blog .article-content img {
+  height: auto; }
 
 .body-blog .article-content .footnotes {
   border: 3px solid #f0f2f5;
@@ -2086,6 +2088,13 @@ ul.checkmarks {
 .image--contain h4 {
   text-align: center;
   line-height: 150%; }
+
+.image--cover .image--wide h4.image-description,
+.image--contain h4.image-description {
+  text-align: center;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.55);
+  margin-top: 8px; }
 
 .image--cover {
   max-width: 100%; }
