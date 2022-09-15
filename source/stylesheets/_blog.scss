@@ -575,7 +575,6 @@ $width-xlarge: 1192px;
     }
 
     // images inside <section>
-
     img {
       height: auto;
     }
@@ -717,12 +716,12 @@ $width-xlarge: 1192px;
   h4 {
     text-align: center;
     line-height: 150%;
-  }
-  h4.image-description {
-    text-align: center;
-    line-height: 150%;
-    color: $color-text--faded;
-    margin-top: 8px;
+    &.image-description {
+      text-align: center;
+      line-height: 150%;
+      color: $color-text--faded;
+      margin-top: 8px;
+    }
   }
 }
 .image--cover {
