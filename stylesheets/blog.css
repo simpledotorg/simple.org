@@ -2088,13 +2088,12 @@ ul.checkmarks {
 .image--contain h4 {
   text-align: center;
   line-height: 150%; }
-
-.image--cover .image--wide h4.image-description,
-.image--contain h4.image-description {
-  text-align: center;
-  line-height: 150%;
-  color: rgba(0, 0, 0, 0.55);
-  margin-top: 8px; }
+  .image--cover .image--wide h4.image-description,
+  .image--contain h4.image-description {
+    text-align: center;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.55);
+    margin-top: 8px; }
 
 .image--cover {
   max-width: 100%; }
