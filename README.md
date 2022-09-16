@@ -77,4 +77,4 @@ To add a new blog article, do the following:
 10. **Publish your article:** Follow the instructions in the "Deployment" section above to publish your new article.
 11. **Optimse any images:** Head to [tinypng](https://tinypng.com/) and minimise all images used in the blog post for faster loading. _It will minimise both png and jpg_ files in the same drop zone.
 
-If you have any questions please contact Jamie at [jcarter@rtsl.org](mailto:jcarter@rtsl.org?subject=Simple.org%20Website).
+If you have any questions please contact Jamie at [jamie@simple.org](mailto:jamie@simple.org?subject=Simple.org%20Website).
