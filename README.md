@@ -75,6 +75,6 @@ To add a new blog article, do the following:
 8. **Create your content:** Use an existing article for reference to properly format and structure your article's content. There are no wrapping `div`s around the content—it's just a bunch of `section`s and image `div`s!
 9. **Merge to master:** Check your article in your local on small and large devices. Once it's ready merge into master.
 10. **Publish your article:** Follow the instructions in the "Deployment" section above to publish your new article.
-11. **Optimse any images:** Head to [tinypng](https://tinypng.com/) and minimise all images used in the blog post for faster loading. _It will minimise both png and jpg_ files in the same drop zone.
+11. **Optimise any images:** Head to [tinypng](https://tinypng.com/) and minimise all images used in the blog post for faster loading. _It will minimise both png and jpg_ files in the same drop zone.
 
 If you have any questions please contact Jamie at [jamie@simple.org](mailto:jamie@simple.org?subject=Simple.org%20Website).
