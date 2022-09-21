@@ -1376,6 +1376,13 @@ a.button-play {
   .product-image:hover {
     background: #0075eb; }
 
+.product-pargraph {
+  margin-bottom: 6px; }
+
+.product-link {
+  font-size: 16px;
+  padding: 4px 0; }
+
 /* For small screens */
 @media (max-width: 880px) {
   h3,
