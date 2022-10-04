@@ -8,26 +8,26 @@ en:
   meta_image: "social-2-5.jpg"
 
   # Number of active facilities
-  active_facilities_india: 10587
-  active_facilities_bd: 64
+  active_facilities_india: 11608 
+  active_facilities_bd: 66
   active_facilities_sl: 3
   active_facilities_et: 58
 
   # Total patients registered
-  total_patients_india: 2477519
-  total_patients_bd: 133752
+  total_patients_india: 2616662
+  total_patients_bd: 145107
   total_patients_sl: 4161
   total_patients_et: 13343
 
   # Total BP checks recored
-  total_BP_checks_india: 11967500
-  total_BP_checks_bd: 729388
+  total_BP_checks_india: 12977284
+  total_BP_checks_bd: 796972
   total_BP_checks_sl: 20805
   total_BP_checks_et: 66715
 
   # Date of statitics update 
   # Format 'DD-MMM-YYYY' 1-Jan-2022
-  date_stats_updated: "1-Sep-2022"
+  date_stats_updated: "5-OCT-2022"
 
 
   # --------------------------
