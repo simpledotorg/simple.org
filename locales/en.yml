@@ -9,7 +9,7 @@ en:
 
   # Region Data --
   # India (IN)
-  active_facilities_india: 11608 
+  active_facilities_india: 11608
   total_patients_india: 2616662
   total_BP_checks_india: 12977284
 
@@ -21,7 +21,7 @@ en:
   # Sri Lanka (LK)
   active_facilities_lk: 3
   total_patients_lk: 4624
-  total_BP_checks_lk: 20805
+  total_BP_checks_lk: 20804
 
   # Ethiopia (ET)
   active_facilities_et: 56
