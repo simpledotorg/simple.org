@@ -7,26 +7,29 @@ en:
   # Site social card image
   meta_image: "social-2-5.jpg"
 
-  # Number of active facilities
+  # Region Data --
+  # India (IN)
   active_facilities_india: 11608 
-  active_facilities_bd: 66
-  active_facilitie_lk: 3
-  active_facilities_et: 58
-
-  # Total patients registered
   total_patients_india: 2616662
-  total_patients_bd: 145107
-  total_patients_lk: 4161
-  total_patients_et: 13343
-
-  # Total BP checks recored
   total_BP_checks_india: 12977284
+
+  # Bangladesh (BD)
+  active_facilities_bd: 66
+  total_patients_bd: 145107
   total_BP_checks_bd: 796972
+
+  # Sri Lanka (LK)
+  active_facilities_lk: 3
+  total_patients_lk: 4161
   total_BP_checks_lk: 20805
+
+  # Ethiopia (ET)
+  active_facilities_et: 58
+  total_patients_et: 13343
   total_BP_checks_et: 66715
 
   # Date of statitics update 
-  # Format 'DD-MMM-YYYY' 1-Jan-2022
+  # Format 'D-MMM-YYYY' 1-Jan-2022 (D is one or 2 characters, eg 5 or 14)
   date_stats_updated: "5-OCT-2022"
 
 
