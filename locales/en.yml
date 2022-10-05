@@ -10,19 +10,19 @@ en:
   # Number of active facilities
   active_facilities_india: 11608 
   active_facilities_bd: 66
-  active_facilities_sl: 3
+  active_facilitie_lk: 3
   active_facilities_et: 58
 
   # Total patients registered
   total_patients_india: 2616662
   total_patients_bd: 145107
-  total_patients_sl: 4161
+  total_patients_lk: 4161
   total_patients_et: 13343
 
   # Total BP checks recored
   total_BP_checks_india: 12977284
   total_BP_checks_bd: 796972
-  total_BP_checks_sl: 20805
+  total_BP_checks_lk: 20805
   total_BP_checks_et: 66715
 
   # Date of statitics update 
