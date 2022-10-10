@@ -30,11 +30,11 @@ en:
 
   # Time for data entry
   time_to_followup: 13
-  time_to_register: 75
+  time_to_register: 76
   
   # Date of statitics update 
   # Format 'D-MMM-YYYY' 1-Jan-2022 (D is one or 2 characters, eg 5 or 14)
-  date_stats_updated: "5-OCT-2022"
+  date_stats_updated: "7-OCT-2022"
 
 
   # --------------------------
