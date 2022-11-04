@@ -9,14 +9,14 @@ en:
 
   # Region Data --
   # India (IN)
-  active_facilities_india: 11608
-  total_patients_india: 2616662
-  total_BP_checks_india: 12977284
+  active_facilities_india: 11334
+  total_patients_india: 2747005
+  total_BP_checks_india: 13939246
 
   # Bangladesh (BD)
-  active_facilities_bd: 66
-  total_patients_bd: 145107
-  total_BP_checks_bd: 796972
+  active_facilities_bd: 67 
+  total_patients_bd: 156431
+  total_BP_checks_bd: 867937
 
   # Sri Lanka (LK)
   active_facilities_lk: 3
@@ -34,7 +34,7 @@ en:
   
   # Date of statitics update 
   # Format 'D-MMM-YYYY' 1-Jan-2022 (D is one or 2 characters, eg 5 or 14)
-  date_stats_updated: "7-OCT-2022"
+  date_stats_updated: "3-Nov-2022"
 
 
   # --------------------------
