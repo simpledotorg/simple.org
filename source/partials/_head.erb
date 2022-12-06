@@ -10,6 +10,9 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script src="https://kit.fontawesome.com/72c701f5ae.js" crossorigin="anonymous"></script>
 
+
+<!-- Meta Info - Social Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,14 +20,23 @@
 <meta property="og:type"               content="article" />
 <meta property="og:title"              content="Simple.org <%= current_page.data.title %>" />
 <meta property="og:description"        content="<%= t(:intro) %>" />
+<% if defined?(current_page.data.social) %>
 <meta property="og:image"              content="https://simple.org/images/<%= current_page.data.social %>" />
+<% else %>
+<meta property="og:image"              content="https://simple.org/images/<%= t(:meta_image) %>" />
+<%end%>
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@resolvetsl">
-<meta name="twitter:title" content="Simple.org <%= current_page.data.title %>">
-<meta name="twitter:description" content="<%= t(:intro) %>">
+<meta name="twitter:card"              content="summary_large_image">
+<meta name="twitter:site"              content="@resolvetsl">
+<meta name="twitter:title"             content="Simple.org <%= current_page.data.title %>">
+<meta name="twitter:description"       content="<%= t(:intro) %>">
 <meta name="twitter:creator" content="@resolvetsl">
+<% if defined?(current_page.data.social) %>
 <meta name="twitter:image:src" content="https://simple.org/images/<%= current_page.data.social %>">
+<% else %>
+<meta name="twitter:image:src" content="https://simple.org/images/<%= t(:meta_image) %>">
+<%end%>
+
 
 <!-- CSS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
