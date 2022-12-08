@@ -725,6 +725,7 @@ a.button-play {
 
   h3 {
     margin-top: 3em;
+    margin-bottom: 0.4em;
     font-size: 22px;
     letter-spacing: -0.03em;
   }
@@ -736,6 +737,14 @@ a.button-play {
     margin-bottom: 1em;
     letter-spacing: 0.05em;
     font-weight: 500;
+  }
+
+  .h4-privacy-policy {
+    text-transform: none;  
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    margin-top: 1em;
+    font-weight: 600;
   }
 
   a.button {
