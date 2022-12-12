@@ -29,8 +29,8 @@ en:
   total_BP_checks_et: 79445
 
   # Time for data entry
-  time_to_followup: 14
-  time_to_register: 84
+  time_to_followup: 13
+  time_to_register: 83
   
   # Date of statitics update 
   # Format 'D-MMM-YYYY' 1-Jan-2022 (D is one or 2 characters, eg 5 or 14)
