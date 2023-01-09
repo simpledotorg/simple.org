@@ -1553,6 +1553,12 @@ ul.checkmarks {
   ul.checkmarks b {
     font-weight: 600; }
 
+.rtsl-logo-contact {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  display: block;
+  width: 60%; }
+
 .body-blog {
   color: #000000; }
   .body-blog a:hover h1,
