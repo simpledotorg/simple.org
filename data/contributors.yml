@@ -188,7 +188,7 @@
   role: "cvho"
   country: "India"
   image_path: "/images/people/user.jpg"
-  social_media_path: "https://twitter.com/prxtl"
+  social_media_path: "#"
 - name: "Dr. Ashish Krishna"
   role: "epidemiologist"
   country: "India"
