@@ -9,24 +9,24 @@ en:
 
   # Region Data --
   # India (IN)
-  active_facilities_india: 8848
-  total_patients_india: 3033777
-  total_BP_checks_india: 15661649
+  active_facilities_india: 8080
+  total_patients_india: 3164019
+  total_BP_checks_india: 16590303
 
   # Bangladesh (BD)
   active_facilities_bd: 66
-  total_patients_bd: 174547
-  total_BP_checks_bd: 1019262
+  total_patients_bd: 181887
+  total_BP_checks_bd: 1106978
 
   # Sri Lanka (LK)
-  active_facilities_lk: 4
-  total_patients_lk: 5383
-  total_BP_checks_lk: 29120
+  active_facilities_lk: 8
+  total_patients_lk: 5622
+  total_BP_checks_lk: 32266
 
   # Ethiopia (ET)
-  active_facilities_et: 81
-  total_patients_et: 15419
-  total_BP_checks_et: 85715
+  active_facilities_et: 57
+  total_patients_et: 16577
+  total_BP_checks_et: 91835
 
   # Time for data entry
   time_to_followup: 13
