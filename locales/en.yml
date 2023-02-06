@@ -34,8 +34,11 @@ en:
   
   # Date of statitics update 
   # Format 'D-MMM-YYYY' 1-Jan-2022 (D is one or 2 characters, eg 5 or 14)
-  date_stats_updated: "9-Jan-2023"
+  date_stats_updated: "6-Feb-2023"
 
+  # One pagers to update:
+  # International - https://drive.google.com/drive/u/1/search?q=simple-one-pager
+  # India - https://drive.google.com/drive/u/1/search?q=simple-one-pager
 
   # --------------------------
   # All other variables
