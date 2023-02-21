@@ -1,12 +1,17 @@
 ---
-title: / Privacy Policy for Patients
+title: / Privacy Policy for Simple app
 social: social-bp-passport.jpg
 ---
 
-
-      <h2>
-        Privacy Policy<br>for the Simple app for clincians
-      </h2>
+<div class="privacy-policy-title">
+    <h2 class="privacy-policy-h2">
+        <span class="privacy-policy-h2-span"><%= t(:privacy) %></span>
+        Simple app <br>for clinicians
+    </h2>
+    <%# <p class="privacy-policy-p">
+      
+    </p> %>
+</div>
 
     <p>Patient data collected through the Simple app</p>
     <ul>
@@ -69,11 +74,4 @@ social: social-bp-passport.jpg
 
     <p>The database and servers are provisioned in different VPCs (Virtual Private Clouds).</p>
 
-    <p>&nbsp;</p>
-    <h3>Also:</h3>
-    <p>&nbsp;</p>
-    <p><a href="/patient-privacy">Privacy Policy: BP Passport app</a></p>
-    <p><a href="/simple-privacy">Privacy Policy: Simple app for clinicians</a></p>
-    <p><a href="/privacy">Privacy Policy: Vital Strategies</a></p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+<%= partial "partials/_nav_privacy_policy" %>
