@@ -923,7 +923,7 @@ h2 {
 
 h3 {
   font-size: 16px;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.4em;
   font-weight: 700;
   margin-top: 2em;
   letter-spacing: 0; }
@@ -1558,3 +1558,47 @@ ul.checkmarks {
   margin-bottom: 8px;
   display: block;
   width: 60%; }
+
+.privacy-policy-title {
+  background-color: #f0f2f5;
+  width: 75%;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 8px; }
+
+.privacy-policy-h2 {
+  font-size: 2.3em;
+  padding-top: 0; }
+
+.privacy-policy-h2-span {
+  display: block;
+  font-size: 0.6em;
+  font-weight: 900;
+  color: #6b6b6b;
+  line-height: 1.4em;
+  margin-bottom: 6px; }
+
+.privacy-policy-p {
+  margin-bottom: 0;
+  font-weight: 700; }
+
+.privacy-policy-nav-h3 {
+  font-size: 2em; }
+
+.privacy-policy-nav-links {
+  display: inline-block;
+  width: 80%;
+  margin: 12px 0;
+  font-size: 1.2em;
+  font-weight: 900;
+  background-color: #f0f2f5;
+  padding: 22px 24px 16px;
+  border-radius: 8px; }
+
+.privacy-policy-nav-links-span {
+  display: block;
+  font-size: 0.7em;
+  font-weight: 900;
+  color: #6b6b6b;
+  line-height: 1.4em;
+  margin-bottom: 2px; }
