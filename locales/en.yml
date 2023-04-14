@@ -38,6 +38,7 @@ en:
   github: "GitHub"
 
   Canada: "Canada"
+  Chile: "Chile"
   India: "India"
   USA: "USA"
   UK: "UK"
@@ -45,6 +46,7 @@ en:
   SriLanka: "Sri Lanka"
   Nigeria: "Nigeria"
   Mexico: "Mexico"
+  Colombia: "Colombia"
   Bangladesh: "Bangladesh"
   productdesign: "Product and design"
   design: "Design"
@@ -57,6 +59,7 @@ en:
   clinician: "Clinician"
   illustration: "Illustrator"
   operations: "Operations"
+  translation: "Translation"
   ICMR: "ICMR"
   PM: "Project management"
 
