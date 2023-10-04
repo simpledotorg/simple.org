@@ -9,9 +9,9 @@ en:
   date_stats_updated: "4-Sep-2023"
 
   # Aggregate data
-  active_facilities: 6931
-  total_patients: 4110985
-  total_bp_measures: 24479150
+  active_facilities: 6365
+  total_patients: 4207255
+  total_bp_measures: 25368291
   
   # Time for data entry
   time_to_followup: 13
