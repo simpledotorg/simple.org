@@ -745,6 +745,18 @@ img {
   max-width: 100%;
 }
 
+.article-quote {
+  max-width: $width-large;
+  display: block;
+  margin: 0 auto 64px;
+
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+  color: #000;
+  border-left: 6px solid #fefefe;
+}
+
 // General
 .d-block {
   display: block;
