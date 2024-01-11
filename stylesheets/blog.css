@@ -2170,6 +2170,16 @@ ul.checkmarks {
 img {
   max-width: 100%; }
 
+.article-quote {
+  max-width: 880px;
+  display: block;
+  margin: 0 auto 64px;
+  font-weight: bold;
+  font-size: 24px;
+  font-style: italic;
+  color: #000;
+  border-left: 6px solid #fefefe; }
+
 .d-block {
   display: block; }
 
