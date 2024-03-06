@@ -482,7 +482,6 @@ function addData(chart, label, data, stepsize) {
   chart.data.datasets.forEach((dataset) => {
     dataset.data.push(data);
   });
-  console.log(chart.config);
   chart.config.options.scales.y.ticks.stepSize = stepsize;
   chart.update();
 }
@@ -718,9 +717,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(target);
 
-  function yourFunction() {
-    console.log('Function triggered: Target is in view!');
-  }
 });
 
 
