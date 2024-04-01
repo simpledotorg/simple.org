@@ -6,12 +6,12 @@ en:
 
   # Date of statitics update 
   # Format 'D-MMM-YYYY' 1-Jan-2022 (D is one or 2 characters, eg 5 or 14)
-  date_stats_updated: "6-Mar-2024"
+  date_stats_updated: "1-Apr-2024"
 
   # Aggregate data
-  active_facilities: 5286
-  total_patients:    4637649
-  total_bp_measures: 30225482
+  active_facilities: 5235
+  total_patients:    4679231
+  total_bp_measures: 31027546
   
   # Time for data entry
   time_to_followup: 13
