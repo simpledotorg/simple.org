@@ -1,0 +1,92 @@
+---
+title: "HEARTS360: A gold-standard dashboard for hypertension and diabetes programs"
+date: "2024/04/10"
+reading_time: "3"
+cover_image_path: "/images/blog/hearts360-dashboard/hearts360.jpg" 
+cover_image_placeholder_path: "/images/blog/hearts360-dashboard/hearts360-placeholder.jpg"
+cover_image_alt: "Hearts 360: A gold-standard dashboard for hypertension and diabetes programs"
+intro: "Highly effective dashboards designed for managing hypertension and diabetes programs at scale, based on WHO standard indicators."
+author: "Jamie Carter"
+published: true
+---
+
+<section>
+  <p>The design team at Simple share the lessons we learned in the last 6 years designing hypertension and diabetes dashboards that are used to manage over 4 million patients across thousands of facilities. This dashboard is designed to be easy for any team to copy — the code is all freely available and open source and definitions are clearly defined.</p>
+  <p>The <a href="https://hearts360.org">HEARTS360</a> dashboard includes hypertension and diabetes dashboards based on WHO’s standard indicators from <a href="https://www.who.int/publications/i/item/hearts-technical-package">HEARTS</a> and <a href="https://www.who.int/publications/i/item/who-ucn-ncd-20.1">HEARTS-D</a> technical packages.</p>
+  <p>LINK: <a href="https://hearts360.org">Hearts360.org</a></p>
+</section>
+
+<figure class="image--wide">
+  <img
+    class="lazyload"
+    src="/images/blog/hearts360-dashboard/hearts360-hypertension-dashboard-placeholder.jpg"
+    data-src="/images/blog/hearts360-dashboard/hearts360-hypertension-dashboard.jpg"
+    alt="Hearts 360 hypertension dashboard"
+    width="2400"
+    height="1500"
+  >
+  <figcaption class="image-description" style="text-align: center;">HEARTS360 hypertension dashboard</figcaption>
+</figure>
+
+
+<section>
+  <h2>What problem does it solve?</h2>
+  <p>Healthcare programs are often unable to translate large amounts of patient data into useful, actionable metrics for managers and healthcare staff to use.</p>
+  <p>HEARTS360 is a practical framework designed to help teams display basic data more effectively. Dashboards show key program indicators, trending metrics, performance tables and stock management enabling teams to manage patients more effectively and improve patient care.</p>
+</section>
+
+<section>
+  <h2>Features</h2>
+  <ul>
+    <li>Hypertension and diabetes dashboard with visualizations for key indicators</li>
+    <li>Dashboards that align with the WHO ‘HEARTS’ package for hypertension and type 2 diabetes</li>
+    <li>Detailed instructions on how to re-create these dashboards</li>
+    <li>Definitions and calculations for all data points</li>
+    <li>Modular dashboards that you can mix and match to suit your needs</li>
+    <li>Simple and clear language that has been user-tested with healthcare workers and ministries of health</li>
+    <li>Ready-to-use framework for websites (HTML, CSS and Javascript)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Open source and easy-to-use</h2>
+  <p>HEARTS360 is open source under an <a href="https://opensource.org/license/mit">MIT License</a>. All resources, including code, can be used freely by any healthcare or software team to quickly create new dashboards or update existing dashboards.</p>
+  <p>Even teams with no engineering expertise can still utilise Hearts360. Detailed instructions explain how to calculate all the figures, these can be used to re-create the dashboards using familiar tools such as DHIS2, Microsoft PowerBI, and even Excel.</p>
+  <p>PS: If you are creating a hypertension or diabetes dashboard in DHIS2, we have already recreated much of HEARTS360 in a DHIS2 package. Please get in touch with us: help@simple.org</p>
+</section>
+
+<figure class="image--wide">
+  <img
+    class="lazyload"
+    src="/images/blog/hearts360-dashboard/DHIS2-hearts360-hypertension-dashboard-placeholder.jpg"
+    data-src="/images/blog/hearts360-dashboard/DHIS2-hearts360-hypertension-dashboard.jpg"
+    alt="Hearts 360 hypertension dashboard"
+    width="2400"
+    height="1500"
+  >
+  <figcaption class="image-description" style="text-align: center;">HEARTS360 hypertension dashboard implemented in DHIS2</figcaption>
+</figure>
+
+<section>
+  <h2>Who is using HEARTS360?</h2>
+  <ul>
+    <li><a href="https://smartdinkes.slemankab.go.id/portal">SmartDinkes</a> in Indonesia used Hearts360 to create a hypertension dashboard.</li>
+    <li>The Nigeria Hypertension Control Program is using HEARTS360 implemented in DHIS2</li>
+  </ul>
+  <p>The Simple team are eager to hear about HEARTS360 implementations, feel free to share with us your HEARTS360 dashboards.</p>
+</section>
+
+<section>
+  <p>Useful links:</p>
+<ul>
+  <li><a href="https://hearts360.org/">HEARTS360 Dashboard</a></li>
+  <li><a href="https://github.com/simpledotorg/hearts360">HEARTS360 Github</a></li>
+</ul>
+</section>
+
+<section>
+  <% target_article = sitemap.resources.find { |resource| resource.data.title == "Digital playbook" } %>
+  <% if target_article %>
+    <p>Interested in learning how to build the best digital tool to support your hypertension (or other NCD) program. Read our <%= link_to "Digital Playbook", target_article.url %>.</p>
+  <% end %>
+</section>
