@@ -1,0 +1,320 @@
+<!doctype html>
+  <html>
+  <head>
+    <!-- Google Analytics
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121312461-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121312461-1');
+    </script>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Guide: Fast & simple user testing for healthcare Simple</title>
+    <meta name="description" content="Fast, free software for clinicians to manage patients with hypertension &amp; diabetes.">
+    <meta name="author" content="Simple">
+    <link rel="canonical" href="https://www.simple.org/blog/fast-and-simple-user-testing-for-healthcare/" />
+
+    <!-- Font Awesome
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://kit.fontawesome.com/72c701f5ae.js" crossorigin="anonymous"></script>
+    <!-- Browser/Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Open Graph Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta property="og:url"                content="https://www.simple.org">
+    <meta property="og:type"               content="article">
+    <meta property="og:title"              content="Guide: Fast & simple user testing for healthcare">
+    <meta property="og:description"        content="A practical guide for user testing your software, so healthcare workers will love it. The guide is based on 6 years of experience user testing Simple, DHIS2, OpenSRP, and other digital health tools.">
+    <meta property="og:image"              content="https://simple.org//images/blog/user-testing-guide/user-testing-guide.jpg">
+    <!-- Twitter Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="twitter:card"              content="summary_large_image">
+    <meta name="twitter:site"              content="@resolvetsl">
+    <meta name="twitter:title"             content="Guide: Fast & simple user testing for healthcare">
+    <meta name="twitter:description"       content="A practical guide for user testing your software, so healthcare workers will love it. The guide is based on 6 years of experience user testing Simple, DHIS2, OpenSRP, and other digital health tools.">
+    <meta name="twitter:creator"           content="@resolvetsl">
+    <meta name="twitter:image"             content="https://simple.org/images/blog/user-testing-guide/user-testing-guide.jpg">
+    <meta name="twitter:image:alt"         content="Guide: Fast & simple user testing for healthcare">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="../../stylesheets/blog.css" rel="stylesheet" />
+    <style type="text/css">
+    </style>
+    </script>
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
+  </head>
+  <body class="en body-blog">
+    <div class="mr-45pt-large p-20px pt-80px-large px-0px-large">
+      <div class="mw-600px mx-auto-large">
+        <nav>
+  <h1>
+    <a href="/">
+      Simple
+    </a>
+  </h1>
+  <span class="nav-links">
+    <a id="about" class="link" href="/about/">
+      About
+    </a>
+    <a id="blog" class="link" href="/blog/">
+      Blog
+    </a>
+    <a class="link" href="https://docs.simple.org">
+      Docs
+    </a>
+    <a class="link" href="https://github.com/simpledotorg/">
+      GitHub
+    </a>
+  </span>
+</nav>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="article-cover">
+  <img
+    src="../../images/blog/user-testing-guide/user-testing-guide.jpg"
+    alt="Guide: Fast & simple user testing for healthcare"
+  >
+</div>
+<div class="article-header">
+  <h1 class="intro">
+    Guide: Fast & simple user testing for healthcare
+  </h1>
+  <p class="brief global">
+    A practical guide for user testing your software, so healthcare workers will love it. The guide is based on 6 years of experience user testing Simple, DHIS2, OpenSRP, and other digital health tools.
+  </p>
+  <div class="person--blog">
+    <img
+      class="person--photo"
+      src="../../images/people/tony-joy.jpg"
+      alt="Tony Joy"
+    >
+    <div class="person--details">
+      <h3>
+        <a href="https://www.linkedin.com/in/tony-joy/">
+          Tony Joy
+        </a>
+      </h3>
+      <h5>
+        18-Apr-2024, 2 minute read
+      </h5>
+    </div>
+  </div>
+</div>
+      <div class="article-content">
+        <section>
+    <p><b>Easy to use health software is more likely to be used by health workers and will get you better data for driving program improvements.</b> This practical guide teaches you to conduct user tests to collect unbiased feedback from users and make easy-to-use health software.</p>
+</section>
+
+<section>
+    <h2>Who this guide is for</h2>
+    <p>This user testing guide was made for anyone involved in making or implementing digital health software, not just designers or user researchers.</p>
+</section>
+
+<section>
+    <h2>Why conduct user tests?</h2>
+    <ul>
+        <li>
+            <p><b>Software that’s easier to train</b>. Our team has reduced training time on Hypertension management software from 1 day to under 2 hours.</p>
+        </li>
+        <li>
+            <p><b>Easy for staff to transfer knowledge</b>. Healthcare worker turnover is high in hospitals and clinics. If the software is easy to use, existing staff can train new staff on-the-job without formal training sessions.</p>
+        </li>
+        <li>
+            <p><b>Gather accurate data</b>. Difficult-to-use software is irregularly used or worse— inaccurate data is entered into it.</p>
+        </li>
+        <li>
+            <p><b>Reduce stress for busy hospital staff</b>. Complicated software adds to the stress of overburdened health staff.</p>
+        </li>
+        <li>
+            <p>More on the benefits of simple user-centvered software in this <a href="https://resolvetosavelives.org/cardiovascular-health/hypertension/digital-tool-playbook/">playbook</a> published by our team.</p>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Guide</h2>
+    <iframe style="aspect-ratio: 16 / 9; width: 100%;" src="https://www.youtube-nocookie.com/embed/s0QYzP6Xr6w?si=OWLxafYdUmPST-LN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+    <em style="margin: auto;" >45 min <a href="https://www.youtube.com/watch?v=s0QYzP6Xr6w">video guide</a>. Get the <a href="https://docs.google.com/presentation/d/14lP86eTFePyLudzoIhRDUzBV2wNAxTaSDE05ZUWQ8p4/edit?usp=sharing">slide deck</a></em>
+</section>
+
+<section>
+    <h2>Useful templates and examples</h2>
+    <p>These are templates that we use for conducting user tests and now you can use them too. Please modify the templates for your own needs.</p>
+    <h3>Preparing to conduct a user test</h3>
+    <ul>
+        <li>
+            <p><a href="https://docs.google.com/document/d/1nIXkPQWol7Bi03m6slaRtZAngU568CLGFbvlPlFGyZg/edit?usp=sharing">To-do list</a> (Template)</p>
+        </li>
+        <li>
+            <p>
+                <a href="https://docs.google.com/document/d/1BxCJP3GV5-zGeMlWaFtKQN4HQJeC74Hlq0wOJNsPwN0/edit?pli=1">User Testing plan</a> (Template with examples)
+            </p>
+        </li>
+    </ul>
+    
+    <h3>Prototyping</h3>
+    <ul>
+        <li>
+            <p>
+                <a href="https://www.figma.com/file/el6I5kDZ1A3SpDlzUIhIzY/Sample-prototypes---User-Testing-for-Healthcare?type=design&node-id=0%3A1&mode=design&t=tpdBiAZuRYVsRX0s-1">Hypertension visit prototype</a> (Example of a prototype)
+            </p>
+        </li>
+    </ul>
+
+    <h3>Conducting interviews with healthcare workers</h3>
+    <ul>
+        <li>
+            <p><a href="https://docs.google.com/document/d/1PU8X8UAtGn1ZiESvdTFfMmj8eGT1nQSNZ1X9KOYRDdQ/edit?usp=sharing">Interview script</a> (Template with examples)</p>
+        </li>
+        <li>
+            <p><a href="https://docs.google.com/document/d/1rrRewM5ge9--JTOojh80S9Ls5Q-kCGBjsbJZNtk4Qw4/edit?usp=sharing">Consent form</a> (Template)</p>
+        </li>
+        <li>
+            <p><a href="https://docs.google.com/spreadsheets/d/1YPwT22AmLOrqBfCpRncOwjXMPFTUgS7S8oa46FAeB-g/edit#gid=982799229">Note-taking template</a> (Template with examples)</p>
+        </li>
+    </ul>
+
+    <h3>Reporting your learnings</h3>
+    <ul>
+        <li>
+            <p><a href="https://docs.google.com/document/d/1KoQyIRRgoZZzNGunHWvoxLuw8YTfO44vOzUK7SQmDVM/edit?usp=sharing">Short user test summary example</a> (Template with examples)</p>
+        </li>
+        <li>
+            <p><a href="https://docs.google.com/document/d/10dxLwB1SF3-pQ_Bzf5nUHdxUp1IzDtnC58Ozgr2gRMw/edit?usp=sharing">Detailed user test report example</a> (Template with examples)</p>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h3>More resources</h3>
+    <p>
+        <a href="https://library.gv.com/user-research-quick-and-dirty-1fcfa54c91c4">Quick and dirty user research by Michael Margolis</a> (Video and worksheet)
+        <br />
+        (Michael’s work at Google Ventures was a major inspiration for this user testing guide)
+    </p>
+
+    <p><a href="https://www.youtube.com/watch?v=U9ZG19XTbd4">7 minute user interview sample</a> (Video)</p> 
+
+    <p><a href="https://www.youtube.com/watch?v=tXJqAYDbRzI">How to help users think out loud</a> (Video)</p>
+
+
+</section>
+      </div>
+      <div class="mw-medium mb-60px mx-auto py-40px bt bb btc-gray-light bbc-gray-light">
+  <p class="mb-0 fs-large lh-168pt">
+    <dfn>Simple is the fast, free app for clinicians to manage their patients with high blood pressure and diabetes.</dfn>
+  </p>
+</div>
+<div class="mw-xlarge mx-auto d-flex-large f-wrap-large">
+  <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
+    <a class="article-preview--cover-large" href="/blog/open-source-brand-design-for-simple/">
+      <img
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/open-source-brand-for-simple/cover-placeholder.jpg"
+        data-src="../../images/blog/open-source-brand-for-simple/cover.jpg"
+        alt="Open source brand for Simple"
+      >
+    </a>
+    <a href="/blog/open-source-brand-design-for-simple/">
+      <h2>
+        Open source brand for Simple
+      </h2>
+    </a>
+    <p class="global">
+      The process and ideas that shaped Simple's open-source indentity
+    </p>
+    <div class="person--blog">
+      <img
+        class="person--photo"
+        src="../../images/people/daniel-burka.jpg"
+        alt="Daniel Burka"
+      >
+      <div class="person--details">
+        <h3>
+          <a href="">
+            Daniel Burka
+          </a>
+        </h3>
+        <h5>
+          25-Oct-2018, 4 minute read
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="article-preview m-0 w-50pt-large pl-24px-large">
+    <a class="article-preview--cover-large" href="/blog/hearts360-dashboard/">
+      <img
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/hearts360-dashboard/hearts360-placeholder.jpg"
+        data-src="../../images/blog/hearts360-dashboard/hearts360.jpg"
+        alt="Hearts 360: A gold-standard dashboard for hypertension and diabetes programs"
+      >
+    </a>
+    <a href="/blog/hearts360-dashboard/">
+      <h2>
+        HEARTS360: A gold-standard dashboard for hypertension and diabetes programs
+      </h2>
+    </a>
+    <p class="global">
+      Highly effective dashboards designed for managing hypertension and diabetes programs at scale, based on WHO standard indicators.
+    </p>
+    <div class="person--blog">
+      <img
+        class="person--photo"
+        src="../../images/people/jamie-carter.jpg"
+        alt="Jamie Carter"
+      >
+      <div class="person--details">
+        <h3>
+          <a href="">
+            Jamie Carter
+          </a>
+        </h3>
+        <h5>
+          11-Apr-2024, 3 minute read
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+      <footer class="mw-medium mx-auto">
+        <a class="fs-medium fs-small-large" href="/screens/">
+          Screenshots
+        </a>
+        <a class="fs-medium fs-small-large" href="/privacy/">
+          Privacy policy
+        </a>
+        <a class="fs-medium fs-small-large" href="/license/">
+          Legal
+        </a>
+        <a class="fs-medium fs-small-large" href="/digitalprinciples/">
+          Digital principles
+        </a>
+        <a class="fs-medium fs-small-large" href="/contact/">
+          Contact
+        </a>
+        <span class="fs-medium fs-small-large">
+          * Note: Patient information in application screenshots is for illustrative purposes and does not represent actual individuals.
+        </span>
+      </footer>
+    </div>
+    <script src="../../javascript/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script>
+      lazyload();
+    </script>
+  </body>
+</html>
