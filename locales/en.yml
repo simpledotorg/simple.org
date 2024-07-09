@@ -10,7 +10,7 @@ en:
 
   # Aggregate data
   active_facilities: 5015
-  total_patients:    4857521
+  total_patients:    "almost 5 million"
   total_bp_measures: 33794197
 
   # Time for data entry
