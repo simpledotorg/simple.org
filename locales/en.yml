@@ -6,7 +6,7 @@ en:
 
   # Date of statitics update 
   # Format 'D-MMM-YYYY' 1-Jan-2022 (D is one or 2 characters, eg 5 or 14)
-  date_stats_updated: "7-Mar-2024"
+  date_stats_updated: "7-Mar-2025"
 
   # Aggregate data
   active_facilities: 7297
