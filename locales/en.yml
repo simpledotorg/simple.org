@@ -9,9 +9,9 @@ en:
   date_stats_updated: "7-Nov-2025"
 
   # Aggregate data
-  active_facilities: 5836
+  active_facilities: 5044
   total_patients:    "over 6 million"
-  total_bp_measures: 50074381
+  total_bp_measures: 51012901
 
   # Time for data entry
   time_to_followup: 13
