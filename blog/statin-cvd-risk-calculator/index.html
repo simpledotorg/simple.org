@@ -1,0 +1,267 @@
+<!doctype html>
+  <html>
+  <head>
+    <!-- Google Analytics
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121312461-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121312461-1');
+    </script>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Statin clinical decision support: Helping more high-risk patients get the medicines they need Simple</title>
+    <meta name="description" content="Fast, free software for clinicians to manage patients with hypertension &amp; diabetes.">
+    <meta name="author" content="Simple">
+    <link rel="canonical" href="https://www.simple.org/blog/statin-cvd-risk-calculator/" />
+
+    <!-- Font Awesome
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://kit.fontawesome.com/72c701f5ae.js" crossorigin="anonymous"></script>
+    <!-- Browser/Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Open Graph Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta property="og:url"                content="https://www.simple.org">
+    <meta property="og:type"               content="article">
+    <meta property="og:title"              content="Statin clinical decision support: Helping more high-risk patients get the medicines they need">
+    <meta property="og:description"        content="A new feature in Simple automates cardiovascular disease risk scoring and flags eligible patients for statin therapy at the point of care, saving time and closing a critical treatment gap.">
+    <meta property="og:image"              content="https://simple.org//images/blog/statins/statin-header.png">
+    <!-- Twitter Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="twitter:card"              content="summary_large_image">
+    <meta name="twitter:site"              content="@resolvetsl">
+    <meta name="twitter:title"             content="Statin clinical decision support: Helping more high-risk patients get the medicines they need">
+    <meta name="twitter:description"       content="A new feature in Simple automates cardiovascular disease risk scoring and flags eligible patients for statin therapy at the point of care, saving time and closing a critical treatment gap.">
+    <meta name="twitter:creator"           content="@resolvetsl">
+    <meta name="twitter:image"             content="https://simple.org/images/blog/statins/statin-header.png">
+    <meta name="twitter:image:alt"         content="A 'systems thinking' approach to saving lives from heart attacks and strokes">
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="../../stylesheets/blog.css" rel="stylesheet" />
+    <style type="text/css">
+    </style>
+    </script>
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
+  </head>
+  <body class="en body-blog">
+    <div class="mr-45pt-large p-20px pt-80px-large px-0px-large">
+      <div class="mw-600px mx-auto-large">
+        <nav>
+  <h1>
+    <a href="/">
+      Simple
+    </a>
+  </h1>
+  <span class="nav-links">
+    <a id="about" class="link" href="/about/">
+      About
+    </a>
+    <a id="blog" class="link" href="/blog/">
+      Blog
+    </a>
+    <a class="link" href="https://docs.simple.org">
+      Docs
+    </a>
+    <a class="link" href="https://github.com/simpledotorg/">
+      GitHub
+    </a>
+  </span>
+</nav>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="article-cover">
+  <img
+    src="../../images/blog/statins/statin-header.png"
+    alt="A 'systems thinking' approach to saving lives from heart attacks and strokes"
+  >
+</div>
+<div class="article-header">
+  <h1 class="intro">
+    Statin clinical decision support: Helping more high-risk patients get the medicines they need
+  </h1>
+  <p class="brief global">
+    A new feature in Simple automates cardiovascular disease risk scoring and flags eligible patients for statin therapy at the point of care, saving time and closing a critical treatment gap.
+  </p>
+  <div class="person--blog">
+    <img
+      class="person--photo"
+      src="../../images/people/claire.jpg"
+      alt="Claire Steiner"
+    >
+    <div class="person--details">
+      <h3>
+        <a href="https://www.linkedin.com/in/clairecsteiner/">
+          Claire Steiner
+        </a>
+      </h3>
+      <h5>
+        19-May-2026, 5 minute read
+      </h5>
+    </div>
+  </div>
+</div>
+      <div class="article-content">
+        <section>
+ <p>Cardiovascular disease (CVD) is one of the leading causes of premature death worldwide, and high cholesterol is among the most treatable risk factors driving it. Statins are safe, effective, and affordable medicines that reduce CVD deaths by 25% in high-risk patients. And yet, in low- and middle-income countries, fewer than 1 in 10 primary CVD prevention patients and fewer than 1 in 5 secondary CVD prevention patients are currently receiving them.</p>
+ <p>The gap isn't because statins are hard to obtain or expensive. Often, it comes down to something more fundamental: identifying which patients are actually eligible.</p>
+</section>
+<section>
+ <h2>
+   The challenge of risk assessment in busy clinics
+ </h2>
+  <p>The World Health Organization has developed robust tools for estimating a patient's 10-year cardiovascular risk (both laboratory-based and non-laboratory-based versions) using information that primary care workers already collect: age, gender, blood pressure, diabetes status, smoking history, and BMI or total cholesterol. WHO has calibrated these tools for different regions, with versions covering Africa, the Americas, South-East Asia, Europe, the Eastern Mediterranean, and the Western Pacific.</p>
+  <p>The problem has been practical. Traditionally, CVD risk assessment relied on paper-based charts that take time to consult during a busy clinic. In a setting where a health worker may be seeing dozens of patients in a day, pulling out a chart, locating the right risk category, and then determining statin eligibility adds friction at precisely the moment when it needs to be frictionless.</p>
+</section>
+<section>
+  <figure class="image--right">
+    <img src="../../images/blog/statins/screenshot.png"
+      alt="A systems diagram showing the initial flow of patients being screened for hypertension at district hospitals" style="width: 300px;">
+  </figure>
+  <h2>Our new cardiovascular disease risk calculator</h2>
+  <p>Simple now automates the entire CVD risk calculation for both the WHO lab-based and non-laboratory tools, and surfaces the result directly during patient data entry. The right regional risk chart is automatically applied based on the patient's country, so there's nothing to configure.</p>
+  <p>When a clinician records a patient visit, Simple prompts for the data points needed to generate a risk score: height and weight (for BMI), smoking status, and cholesterol when available. The app calculates a risk estimate automatically and flags patients who meet the criteria for statin therapy. If some data points are missing, Simple still generates a risk range from the information that is available and flags the patient if appropriate.</p>
+  <p>The result is a faster, more consistent process that reduces the chance that an eligible patient is missed simply because the risk calculation was skipped.</p>
+</section>
+<section>
+  <h2>Who gets flagged?</h2>
+  <p>Eligibility criteria are tailored to each country's hypertension management protocols, but the general thresholds are:</p>
+  <p>Using the non-laboratory risk score:</p>
+  <ul>
+  <li>Any history of CVD</li>
+  <li>Diabetes and age ≥ 40 years</li>
+  <li>10-year CVD risk ≥ 10% per regional WHO risk chart (or an alternate threshold based on country guidelines)</li>
+  </ul>
+  <p>Using the laboratory-based risk score:</p>
+  
+  <ul>
+  <li>Any history of CVD</li>
+  <li>Total cholesterol ≥ 8 mmol/L</li>
+  <li>Diabetes and age ≥ 40 years</li>
+  <li>10-year CVD risk ≥ 10% per regional WHO risk chart</li>
+  </ul>
+  <p>The specific statin prescribed, dosage, and any adjusted risk thresholds are always determined by the national or local treatment protocol.</p>
+</section>
+<section>
+  <h2>Why this matters</h2>
+  <p>Getting more high-risk patients onto statins is one of the highest-impact interventions available in primary care. The barrier has rarely been clinical knowledge, since clinicians know statins work, but rather the time and cognitive load required to apply that knowledge consistently across every patient, every visit.</p>
+  <p>By embedding the risk calculation into the normal flow of patient data entry, Simple removes that barrier. Health workers don't need to consult a separate chart or remember the eligibility criteria. The app does the work, so they can focus on the patient in front of them.</p>
+</section>
+      </div>
+      <div class="mw-medium mb-60px mx-auto py-40px bt bb btc-gray-light bbc-gray-light">
+  <p class="mb-0 fs-large lh-168pt">
+    <dfn>Simple is the fast, free app for clinicians to manage their patients with high blood pressure and diabetes.</dfn>
+  </p>
+</div>
+<div class="mw-xlarge mx-auto d-flex-large f-wrap-large">
+  <div class="article-preview m-0 mb-48px w-50pt-large m-0-large pr-24px-large">
+    <a class="article-preview--cover-large" href="/blog/open-source-brand-design-for-simple/">
+      <img
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/open-source-brand-for-simple/cover-placeholder.jpg"
+        data-src="../../images/blog/open-source-brand-for-simple/cover.jpg"
+        alt="Open source brand for Simple"
+      >
+    </a>
+    <a href="/blog/open-source-brand-design-for-simple/">
+      <h2>
+        Open source brand for Simple
+      </h2>
+    </a>
+    <p class="global">
+      The process and ideas that shaped Simple's open-source indentity
+    </p>
+    <div class="person--blog">
+      <img
+        class="person--photo"
+        src="../../images/people/daniel-burka.jpg"
+        alt="Daniel Burka"
+      >
+      <div class="person--details">
+        <h3>
+          <a href="">
+            Daniel Burka
+          </a>
+        </h3>
+        <h5>
+          25-Oct-2018, 4 minute read
+        </h5>
+      </div>
+    </div>
+  </div>
+  <div class="article-preview m-0 w-50pt-large pl-24px-large">
+    <a class="article-preview--cover-large" href="/blog/a-systems-thinking-approach-to-saving-lives-from-heart-attacks-and-strokes/">
+      <img
+        class="lazyload article-preview--cover--image"
+        src="../../images/blog/a-systems-thinking-approach-to-saving-lives-from-heart-attacks-and-strokes/systems-thinking-cover.jpg"
+        data-src="../../images/blog/a-systems-thinking-approach-to-saving-lives-from-heart-attacks-and-strokes/systems-thinking-cover.jpg"
+        alt="A 'systems thinking' approach to saving lives from heart attacks and strokes"
+      >
+    </a>
+    <a href="/blog/a-systems-thinking-approach-to-saving-lives-from-heart-attacks-and-strokes/">
+      <h2>
+        A ‘systems thinking’ approach to saving lives from heart attacks and strokes
+      </h2>
+    </a>
+    <p class="global">
+      A technologists’ skill set of crafting scalable solutions works well on notoriously hard problems like public health. The way to make it approachable is to adopt ‘systems thinking’.
+    </p>
+    <div class="person--blog">
+      <img
+        class="person--photo"
+        src="../../images/people/atharva-raykar.jpeg"
+        alt="Atharva Raykar"
+      >
+      <div class="person--details">
+        <h3>
+          <a href="">
+            Atharva Raykar
+          </a>
+        </h3>
+        <h5>
+          30-Dec-2024, 18 minute read
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+      <footer class="mw-medium mx-auto">
+        <a class="fs-medium fs-small-large" href="/screens/">
+          Screenshots
+        </a>
+        <a class="fs-medium fs-small-large" href="/privacy/">
+          Privacy policy
+        </a>
+        <a class="fs-medium fs-small-large" href="/license/">
+          Legal
+        </a>
+        <a class="fs-medium fs-small-large" href="/digitalprinciples/">
+          Digital principles
+        </a>
+        <a class="fs-medium fs-small-large" href="/contact/">
+          Contact
+        </a>
+        <span class="fs-medium fs-small-large">
+          * Note: Patient information in application screenshots is for illustrative purposes and does not represent actual individuals.
+        </span>
+      </footer>
+    </div>
+    <script src="../../javascript/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script>
+      lazyload();
+    </script>
+  </body>
+</html>
